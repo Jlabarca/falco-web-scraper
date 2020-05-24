@@ -2,13 +2,13 @@
 
 The idea is to given an specfic URL be able to scrap data and detect changes.
 
-To Do:
+# To Do:
 
-- [ ] Cheerio static web scraper
+- [X] Cheerio static web scraper
 - [ ] Electron synamic web scraper
-- [ ] DB configuration
-- [ ] Change detection
+- [X] DB configuration
+- [ ] Implement data change detection
+- [ ] Email
 - [ ] Frontend
 - [ ] Typescript
-
-# 
+ 
