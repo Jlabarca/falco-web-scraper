@@ -1,5 +1,5 @@
 
-const falcoStatic = require("./falco-static-scrape");
+const falcoStatic = require("./falco-static-scraper");
 
 module.exports = {
     
