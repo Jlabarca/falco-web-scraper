@@ -1,10 +1,17 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
+const utils = require("./falco-utils");
 
 module.exports = {
     async scrape(url, query) {
-        let response = await axios.get(url);
-        let body = response.data.replace(/[^\x00-\x7F]/g, "");  // remove non ASCII chars
+        let response = await axios.request({
+            method: 'GET',
+            url: url,
+            responseType: 'arraybuffer',
+            reponseEncoding: 'binary'
+        });
+        
+        let body = utils.removeAccents(response.data.toString('latin1'));
         return this.getData(body, query);
     },
     getData(html, query) {
