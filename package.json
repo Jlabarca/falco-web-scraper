@@ -1,0 +1,22 @@
+{
+  "name": "falco-web-scraper",
+  "version": "0.0.1",
+  "description": "",
+  "author": "JLabarca",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node falco.js | bunyan",
+    "dev": "",
+    "validate": "npm run standard"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bluebird": "^3.5.1",
+    "bunyan": "^1.8.12",
+    "cheerio": "^1.0.0-rc.3",
+    "cron": "^1.3.0",
+    "monk": "^6.0.5",
+    "nodemailer": "^4.4.0"
+  }
+}
