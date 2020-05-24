@@ -4,7 +4,7 @@ const log = require("./setup/log-setup");
 
 module.exports = {
   async processSnapshots(snapshots) {
-    let allSnapshots = await snapshots.find();
+    let allSnapshots = await snapshots.find({active: true});
 
     allSnapshots.forEach(async (snapshot) => {
       console.log("Processing " + snapshot.name);

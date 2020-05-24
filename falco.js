@@ -39,8 +39,8 @@ var mainRoutine = Promise.coroutine(function* () {
 
 
 async function printInitLog() {
-    let u = await users.find()
-    let s = await snapshots.find()
+    let u = await users.find({active: true})
+    let s = await snapshots.find({active: true})
     console.log("===================================================");
     console.log("Users:");
     console.log("===================================================");
