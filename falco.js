@@ -33,7 +33,7 @@ const freqInMin = 5;
 //Main
 var mainRoutine = Promise.coroutine(function* () {
   log.info("Main Routine starting");
-  falcoCore.processSnapshots();
+  falcoCore.processSnapshots(snapshots);
   return true;
 });
 
