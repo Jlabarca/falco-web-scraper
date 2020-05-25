@@ -64,12 +64,8 @@ commitData = async function(snapshots, snapshot, newData) {
   snapshots.update({ _id: snapshot._id }, snapshot);
 
   let snapshotUsers = await users.find({});
-  console.log(snapshotUsers.length);
   
   snapshotUsers.forEach(user => {
     email.sendEmail(user ,snapshot);
-    console.log(snapshotUsers.name);
-    console.log(snapshotUsers.email);
-  
-  });
+      });
 }
