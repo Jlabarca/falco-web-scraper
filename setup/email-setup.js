@@ -57,7 +57,10 @@ module.exports = {
         if(snapshot.length > 1)
             initMsg = "Falco ha detectado nuevas publicaciones para:"
 
-        return head + bodyInit + initMsg + titleInit + snapshot.name + titleEnd + this.buildCards(snapshot) + bodyEnd
+        return head + bodyInit + initMsg + titleInit + snapshot.name 
+        
+        +"<a target='_blank' style='text-decoration:none; color:#ffffff; display:block; padding:12px 10px 10px;' href='" + snapshot.url +"'</a>"
+        + titleEnd + this.buildCards(snapshot) + bodyEnd
     },
     buildCards: function(snapshot) {
         var cards = ""
@@ -66,8 +69,8 @@ module.exports = {
         snapshot.data.forEach(detection => {
             detection.img_url = "https://via.placeholder.com/140x100"
             detection.price = 100;
-            if(detection.url == null) detection.url = "https://via.placeholder.com/140x100"
-            cards += cardInit + detection.img_url + cardTitle + detection.title + cardPrice + this.formatPrice(detection.price) + cardUrl + detection.url + cardEnd            
+            if(detection.link == null) detection.link = "https://via.placeholder.com/140x100"
+            cards += cardInit + detection.img_url + cardTitle + detection.title + cardPrice + this.formatPrice(detection.price) + cardUrl + detection.link + cardEnd            
         });
         return cards
     },
