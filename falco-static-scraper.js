@@ -67,10 +67,12 @@ var facebookMarketPlaceQuery = function(html) {
         fs.writeFileSync('./test-regexp.js', JSON.stringify(marketplace_search));
         marketplace_search.feed_units.edges.forEach(element => {
             let listing = element.node.listing;
-
+            
             data.push({
                 title : listing.marketplace_listing_title,
-                link : listing.story.url
+                link : listing.story.url,
+                price : listing.formatted_price ? listing.formatted_price.text : "",
+                image : listing.primary_listing_photo ? listing.primary_listing_photo.image.uri : null
             });
         });    
     } catch (error) {
