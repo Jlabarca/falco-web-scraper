@@ -7,8 +7,8 @@ The idea is to given an specfic URL be able to scrap data and detect changes.
 - [X] Cheerio static web scraper
 - [ ] Electron synamic web scraper
 - [X] DB configuration
-- [ ] Implement data change detection
-- [ ] Email
+- [X] Implement data change detection
+- [X] Email
 - [ ] Frontend
 - [ ] Typescript
  
