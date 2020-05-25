@@ -7,17 +7,23 @@ const dJSON = require('dirty-json');
 
 module.exports = {
     async scrape(url, query) {
-        let response = await axios.request({
-            method: 'GET',
-            url: url,
-            responseType: 'arraybuffer',
-            reponseEncoding: 'binary'
-        });
-        
-        let html = utils.removeAccents(response.data.toString('latin1'));
+        try {
+            let response = await axios.request({
+                method: 'GET',
+                url: url,
+                responseType: 'arraybuffer',
+                reponseEncoding: 'binary'
+            });
+            
+            let html = utils.removeAccents(response.data.toString('latin1'));  
+
+            return this.getData(html, query);
+        } catch (error) {
+            log.error(url + "----" + error);
+        }
+       
         //fs.writeFileSync('./test-fb.html', body);
-        
-        return this.getData(html, query);
+        return
     },
     getData(html, query) {
         switch (query) {
@@ -34,11 +40,10 @@ var defaultQuery = function(html, query) {
 
     try {
         const $ = cheerio.load(html);
-
         $(query).each((i, elem) => {
 
             let title = $(elem).text();
-
+            
              if(title !== null && title.length > 0)
                data.push({
                    title : title,
@@ -62,12 +67,11 @@ var facebookMarketPlaceQuery = function(html) {
         fs.writeFileSync('./test-regexp.js', JSON.stringify(marketplace_search));
         marketplace_search.feed_units.edges.forEach(element => {
             let listing = element.node.listing;
-            console.log(listing.marketplace_listing_title);
 
             data.push({
-                           title : listing.marketplace_listing_title,
-                           link : listing.story.url
-                       });
+                title : listing.marketplace_listing_title,
+                link : listing.story.url
+            });
         });    
     } catch (error) {
         log.error(error)

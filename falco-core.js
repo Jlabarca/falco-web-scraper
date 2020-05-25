@@ -1,6 +1,9 @@
 const falcoStatic = require("./falco-static-scraper");
 const utils = require("./falco-utils");
 const log = require("./setup/log-setup");
+const email = require("./setup/email-setup");
+const db = require("./setup/db-setup");
+const users = db.collection("users");
 
 module.exports = {
   async processSnapshots(snapshots) {
@@ -15,10 +18,11 @@ module.exports = {
         console.log("dynamic not implemented yet");
       } else {
         let data = await falcoStatic.scrape(snapshot.url, snapshot.query);
-
-        data = processData(snapshot, data)
-        if(data != null){
-            commitData(snapshots, snapshot, data);
+        if(data != null) {
+            data = processData(snapshot, data)
+            if(data.length > 0){
+                commitData(snapshots, snapshot, data);
+            }
         }
       }
 
@@ -50,12 +54,22 @@ processData = function (snapshot, newData) {
   if(JSON.stringify(newData) != JSON.stringify(snapshot.data))
     return newData
 
-    return null;
+    return [];
 };
 
-commitData = function(snapshots, snapshot, newData) {
+commitData = async function(snapshots, snapshot, newData) {
   log.info("Commiting data change for "+snapshot.name)
   snapshot.data = newData;
   snapshot.last_update = new Date();
   snapshots.update({ _id: snapshot._id }, snapshot);
+
+  let snapshotUsers = await users.find({});
+  console.log(snapshotUsers.length);
+  
+  snapshotUsers.forEach(user => {
+    email.sendEmail(user ,snapshot);
+    console.log(snapshotUsers.name);
+    console.log(snapshotUsers.email);
+  
+  });
 }
