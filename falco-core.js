@@ -11,7 +11,7 @@ module.exports = {
     let allSnapshots = await snapshots.find({active: true});
 
     allSnapshots.forEach(async (snapshot) => {
-      console.log("Processing " + snapshot.name);
+      console.log(`Processing ${snapshot.name}`);
 
       let start = process.hrtime();
 
@@ -27,7 +27,7 @@ module.exports = {
         }
       }
 
-      utils.elapsedTime(start, snapshot.name);
+      utils.elapsedTime(start);
     });
   },
 };
@@ -61,7 +61,7 @@ checkChanges = function (snapshot, newData) {
 
   let data = snapshot.data.concat(diffData);
 
-  console.log("StoredData: "+  snapshot.data.length+" NewData: "+ newData.length+" Difference "+ diffData.length);
+  console.log(`${snapshot.name} =>  StoredData: ${snapshot.data.length} NewData: ${newData.length} Difference: ${diffData.length}`);
 
   return {
       diffData: diffData,
@@ -70,7 +70,7 @@ checkChanges = function (snapshot, newData) {
 };
 
 commitData = async function(snapshots, snapshot, checkDataResult) {
-  log.info("Commiting data change for "+snapshot.name)
+  log.info(`Commiting data change for ${snapshot.name}`)
   snapshot.data = checkDataResult.data;
   snapshot.last_update = new Date();
   snapshots.update({ _id: snapshot._id }, snapshot);

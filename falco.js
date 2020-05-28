@@ -14,7 +14,7 @@ const freqInMin = 5;
 
     printInitLog();
 
-    log.info("Scheduling cron job to every " + freqInMin + " minutes");
+    log.info(`Scheduling cron job to every ${freqInMin} minutes`);
 
     var job = new cronjob({
         cronTime: '1 */'+freqInMin+' * * * *',

@@ -418,16 +418,10 @@ var hasAccents = function(string) {
 	return !!string.match(firstAccent);
 };
 
-var elapsedTime = function(start, note) {
+var elapsedTime = function(start, note = "") {
     var precision = 3; // 3 decimal places
     var elapsed = process.hrtime(start)[1] / 1000000; // divide by a million to get nano to milli
-    console.log(
-        process.hrtime(start)[0] +
-        " s, " +
-        elapsed.toFixed(precision) +
-        " ms - " +
-        note
-    ); // print message + time
+    console.log(`${elapsed.toFixed(precision)} ms ${note}`); // print message + time
     start = process.hrtime(); // reset the timer
 };
 

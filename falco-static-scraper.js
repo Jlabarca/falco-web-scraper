@@ -19,7 +19,7 @@ module.exports = {
 
             return this.getData(html, query);
         } catch (error) {
-            log.error(url + "----" + error);
+            log.error(`${url}" - "${error}`);
         }
        
         //fs.writeFileSync('./test-fb.html', body);
