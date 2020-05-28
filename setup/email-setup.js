@@ -66,7 +66,7 @@ module.exports = {
         var cards = ""
         // not sure if mutating snapshot affects insert to db or something else
     
-        snapshot.data.forEach(detection => {
+        snapshot.diffData.forEach(detection => {
             detection.img_url = "https://via.placeholder.com/140x100"
             if(detection.price == null) detection.price = "";
             if(detection.image == null) detection.image = "https://via.placeholder.com/140x100";

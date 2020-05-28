@@ -77,6 +77,8 @@ commitData = async function(snapshots, snapshot, checkDataResult) {
     
   let snapshotUsers = await users.find({});
   
+  snapshot.diffData = checkDataResult.diffData;
+
   snapshotUsers.forEach(user => {
     email.sendEmail(user ,snapshot);
   });
