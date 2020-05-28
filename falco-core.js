@@ -7,6 +7,7 @@ const users = db.collection("users");
 
 module.exports = {
   async processSnapshots(snapshots) {
+
     let allSnapshots = await snapshots.find({active: true});
 
     allSnapshots.forEach(async (snapshot) => {
@@ -19,9 +20,9 @@ module.exports = {
       } else {
         let data = await falcoStatic.scrape(snapshot.url, snapshot.query);
         if(data != null) {
-            data = processData(snapshot, data)
-            if(data.length > 0){
-                commitData(snapshots, snapshot, data);
+            let checkDataResult = checkChanges(snapshot, data);
+            if(checkDataResult.diffData.length > 0){
+                commitData(snapshots, snapshot, checkDataResult);
             }
         }
       }
@@ -31,41 +32,52 @@ module.exports = {
   },
 };
 
-processData = function (snapshot, newData) {
+/*
+  Compare incoming data with stored one
+*/
+checkChanges = function (snapshot, newData) {
 
-  //Keywords  
+  //Apply keywords filter
   if (snapshot.keywords != null && snapshot.keywords.length > 0) {
     newData = newData.filter((element) => {
       element.keywords = [];
 
       snapshot.keywords.forEach((keyword) => {
         if (element.title.includes(keyword)) 
-            element.keywords.push(keyword);
+          element.keywords.push(keyword);
       });
 
       return element.keywords.length != 0;
     });
   } 
-
-  //Simple comparison, ordered json serialization string
-  newData.sort((a, b) => (a.title > b.title ? 1 : b.title > a.title ? -1 : 0));
-  console.log(newData.length + " - "+ snapshot.data.length);
   
-  if(JSON.stringify(newData) != JSON.stringify(snapshot.data))
-    return newData
+  //Check if in newData contains something that snapshot.data not
+  let diffData = [];
+  newData.forEach(element => {
+    if (!snapshot.data.some(e => e.title === element.title)) {
+      diffData.push(element);
+    }
+  });
 
-    return [];
+  let data = snapshot.data.concat(diffData);
+
+  console.log("StoredData: "+  snapshot.data.length+" NewData: "+ newData.length+" Difference "+ diffData.length);
+
+  return {
+      diffData: diffData,
+      data: data,
+  }
 };
 
-commitData = async function(snapshots, snapshot, newData) {
+commitData = async function(snapshots, snapshot, checkDataResult) {
   log.info("Commiting data change for "+snapshot.name)
-  snapshot.data = newData;
+  snapshot.data = checkDataResult.data;
   snapshot.last_update = new Date();
   snapshots.update({ _id: snapshot._id }, snapshot);
-
+    
   let snapshotUsers = await users.find({});
   
   snapshotUsers.forEach(user => {
     email.sendEmail(user ,snapshot);
-      });
+  });
 }
