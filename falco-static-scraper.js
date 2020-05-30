@@ -39,17 +39,19 @@ var defaultQuery = function(html, query) {
     let data = [];
 
     try {
+
         const $ = cheerio.load(html);
         $(query).each((i, elem) => {
 
             let title = $(elem).text();
             
-             if(title !== null && title.length > 0)
-               data.push({
-                   title : title,
-                   //link : $(elem).value()
-               });
+            if(title !== null && title.length > 0)
+                data.push({
+                    title : title,
+                    //link : $(elem).value()
+                });
            });
+
     } catch (error) {
         log.error(error)
     }
@@ -64,7 +66,7 @@ var facebookMarketPlaceQuery = function(html) {
         let regex = /(?<=marketplace_search:).*(?=,viewer:)/i;
         let result = regex.exec(html);
         let marketplace_search = dJSON.parse(result[0]);
-        fs.writeFileSync('./test-regexp.js', JSON.stringify(marketplace_search));
+
         marketplace_search.feed_units.edges.forEach(element => {
             let listing = element.node.listing;
             

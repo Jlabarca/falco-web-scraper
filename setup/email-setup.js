@@ -79,48 +79,45 @@ module.exports = {
         return num.toLocaleString()
     },
     sendEmail (user, snapshot) {
-        
-            return new Promise((resolve, reject) => {
+        return new Promise((resolve, reject) => {
+            
+            let body = user.name + ', acabo de ver que '
+            let nuevo = 'Nuevos articulos para '
+            if (snapshot.diffData.length == 1) {
+                nuevo = 'Nuevo articulo con título '
+                body += 'publicaron el siguiente aviso de '
+            } else
+                body += 'publicaron los siguientes avisos de '
+    
+            body += snapshot.name + ': <br><br>'
+    
+            let messageList = ''
+    
+            let mailOptions = {
+                from: '"Falco 🦅" <bot@falco.cl>', // sender address
+                to: user.email, // list of receivers
+                subject: nuevo + snapshot.name, // Subject line
+                text: body + messageList, // plain text body
+                html: this.buildEmail(snapshot) // html body
+            }
+            
+            resolve()
+
+            // send mail with defined transport object
+            transporter.sendMail(mailOptions, (error, info) => {
+                if(info != null){
+                    log.info('Email sent with %s of %s to %s', snapshot.diffData.length, snapshot.name, user.email)
+                    log.debug('Message %s sent: %s', info.messageId, info.response)                
+                }else 
+                    log.warn('Email could not be sent')
                 
-                let body = user.name + ', acabo de ver que '
-                let nuevo = 'Nuevos articulos con título '
-                if (snapshot.data.length == 1) {
-                    nuevo = 'Nuevo articulo con título '
-                    body += 'publicaron el siguiente aviso de '
-                } else
-                    body += 'publicaron los siguientes avisos de '
-        
-                body += snapshot.name + ': <br><br>'
-        
-                let messageList = ''
-        
-                let mailOptions = {
-                    from: '"Falco 🦅" <bot@falco.cl>', // sender address
-                    to: user.email, // list of receivers
-                    subject: nuevo + snapshot.name + ' en Yapo', // Subject line
-                    text: body + messageList, // plain text body
-                    html: this.buildEmail(snapshot) // html body
-                }
-                
+                if (error)
+                    log.error(error)
                 resolve()
-
-                // send mail with defined transport object
-                transporter.sendMail(mailOptions, (error, info) => {
-                    if(info != null){
-                        log.info('Email sent with %s of %s to %s', snapshot.data.length, snapshot.name, user.email)
-                        log.debug('Message %s sent: %s', info.messageId, info.response)                
-                    }else 
-                        log.warn('Email could not be sent')
-                    
-                    if (error)
-                        log.error(error)
-                    resolve()
-                })
-            }).catch((error, info) => {
-                log.error(info)
-                reject()
             })
-        
-        }
-
+        }).catch((error, info) => {
+            log.error(info)
+            reject()
+        })
+    }
 }
