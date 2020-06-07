@@ -1,0 +1,11 @@
+[{
+  "_id": {
+    "$oid": "5eca0c62f5ea751c9c12df2b"
+  },
+  "name": "first_user",
+  "email": "jlabarca25@gmail.com",
+  "active": true,
+  "scrap_setups": [
+    1
+  ]
+}]
