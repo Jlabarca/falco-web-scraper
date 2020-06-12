@@ -43,11 +43,24 @@ checkChanges = function (snapshot, newData) {
       element.keywords = [];
 
       snapshot.keywords.forEach((keyword) => {
-        if (element.title.includes(keyword)) 
+        if (keyword.length > 0 && element.title.includes(keyword)) 
           element.keywords.push(keyword);
       });
 
       return element.keywords.length != 0;
+    });
+  } 
+
+  //Apply exclude filter
+  if (snapshot.exclude != null && snapshot.exclude.length > 0) {
+    newData = newData.filter((element) => {
+
+      snapshot.exclude.forEach((excludeWord) => {
+        if (excludeWord.length > 0 && element.title.includes(excludeWord)) 
+          return false;
+      });
+
+      return true;
     });
   } 
   
