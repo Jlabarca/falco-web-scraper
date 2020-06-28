@@ -3,24 +3,43 @@ const utils = require("./falco-utils");
 const log = require("./setup/log-setup");
 const dJSON = require('dirty-json');
 const Nightmare = require('nightmare')
-const nightmare = Nightmare({ show: true })
+
+Nightmare.action('waitforunload', function (done) {
+    this.evaluate_now(function() {
+        return new Promise(function(resolve, reject) {
+            window.onbeforeunload = function() {
+                resolve();
+            };
+        });
+    }, done)
+});
 
 module.exports = {
     async scrape(url, query) {
-        var result = await nightmare
-        .goto(url)
-        .wait('#main')
-        //execute javascript on the page
-        //here, the function is getting the HREF of the first search result
-        .evaluate(function() {
-          return document.querySelector('#main .searchCenterMiddle li a')
-            .href;
-        });
+
+        try {
+            let nightmare = 
+            Nightmare(
+            { 
+                    show: true,
+                    loadTimeout: 10000,
+                    gotoTimeout: 10000,
+                    waitTimeout: 10000,
+                    executionTimeout: 10000 
+            })
+            var result = await nightmare
+            .goto(url)
+            .waitforunload()
+            .end(() => 'some value')
+            //prints "some value"
+            .then(console.log)
+        
+            await nightmare.end();
     
-    
-      //queue and end the Nightmare instance along with the Electron instance it wraps
-      await nightmare.end();
-    
+        } catch (err) {
+        console.error(err);
+        }
+        
       console.log(result);
     },
     getData(html, query) {
