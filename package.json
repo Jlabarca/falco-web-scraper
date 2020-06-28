@@ -19,6 +19,7 @@
     "dirty-json": "^0.8.0",
     "monk": "^6.0.5",
     "nightmare": "^3.0.2",
-    "nodemailer": "^4.4.0"
+    "nodemailer": "^4.4.0",
+    "vo": "^4.0.2"
   }
 }
