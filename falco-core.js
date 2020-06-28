@@ -1,4 +1,5 @@
 const falcoStatic = require("./falco-static-scraper");
+const falcoDynamic = require("./falco-dynamic-scraper");
 const utils = require("./falco-utils");
 const log = require("./setup/log-setup");
 const email = require("./setup/email-setup");
@@ -14,16 +15,17 @@ module.exports = {
       console.log(`Processing ${snapshot.name}`);
 
       let start = process.hrtime();
-
+      let data;
       if (snapshot.dynamic) {
-        console.log("dynamic not implemented yet");
+        data = await falcoDynamic.scrape(snapshot.url, snapshot.query);
       } else {
-        let data = await falcoStatic.scrape(snapshot.url, snapshot.query);
-        if(data != null) {
-            let checkDataResult = checkChanges(snapshot, data);
-            if(checkDataResult.diffData.length > 0){
-                commitData(snapshots, snapshot, checkDataResult);
-            }
+        data = await falcoStatic.scrape(snapshot.url, snapshot.query);
+      }
+
+      if(data != null) {
+        let checkDataResult = checkChanges(snapshot, data);
+        if(checkDataResult.diffData.length > 0){
+            commitData(snapshots, snapshot, checkDataResult);
         }
       }
 
