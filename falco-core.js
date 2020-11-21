@@ -30,6 +30,7 @@ module.exports = {
       }
 
       utils.elapsedTime(start);
+      utils.sleep(config.time_between);
     });
   },
 };

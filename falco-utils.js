@@ -1,5 +1,4 @@
-// Remove accent
-////////////////////////
+
 var characterMap = {
 	"À": "A",
 	"Á": "A",
@@ -436,7 +435,25 @@ var diff = function(a, b) {
     }); //flatten result
 };
 
+var sleep = function(millis) 
+{
+  var e = new Date().getTime() + (millis);
+  while (new Date().getTime() <= e) {}
+};
+
+var writeToFile = function (filename, text) {
+	fs = require('fs')
+	fs.writeFile('./'+filename, text, function (err,data) {
+	if (err) {
+		return console.log(err);
+	}
+	console.log(data);
+	});
+}
+
 module.exports.removeAccents = removeAccents;
 module.exports.hasAccents = hasAccents;
 module.exports.elapsedTime = elapsedTime;
 module.exports.diff = diff;
+module.exports.sleep = sleep;
+module.exports.writeToFile = writeToFile;
