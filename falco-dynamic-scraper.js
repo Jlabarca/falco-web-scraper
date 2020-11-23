@@ -82,7 +82,6 @@ var defaultQuery = function(html, query) {
 }
 
 var facebookMarketPlaceQuery = function(html) {
-    utils.writeToFile("1.html", html)
     let data = [];
     try {
         
