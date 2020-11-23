@@ -13,7 +13,7 @@ module.exports = {
 
     allSnapshots.forEach(utils.delayLoop(  async (snapshot) => {
     
-      console.log(`Processing ${snapshot.name}`);
+      log.info(`Processing ${snapshot.name}`);
 
       let start = process.hrtime();
       let data;
@@ -30,7 +30,7 @@ module.exports = {
         }
       }
 
-      utils.elapsedTime(start);
+      console.log(utils.elapsedTime(start));
 
     }, config.time_between));
   },
@@ -78,7 +78,7 @@ checkChanges = function (snapshot, newData) {
 
   let data = snapshot.data.concat(diffData);
 
-  console.log(`${snapshot.name} =>  StoredData: ${snapshot.data.length} NewData: ${newData.length} Difference: ${diffData.length}`);
+  log.info(`${snapshot.name} =>  StoredData: ${snapshot.data.length} NewData: ${newData.length} Difference: ${diffData.length}`);
 
   return {
       diffData: diffData,

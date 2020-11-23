@@ -44,7 +44,7 @@ module.exports = {
             await nightmare.end();
             return result;
         } catch (err) {
-            console.error(err);
+            log.error(err);
         }
     },
     getData(html, query) {

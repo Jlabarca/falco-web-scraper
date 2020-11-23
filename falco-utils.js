@@ -420,8 +420,9 @@ var hasAccents = function(string) {
 var elapsedTime = function(start, note = "") {
     var precision = 3; // 3 decimal places
     var elapsed = process.hrtime(start)[1] / 1000000; // divide by a million to get nano to milli
-    console.log(`${elapsed.toFixed(precision)} ms ${note}`); // print message + time
-    start = process.hrtime(); // reset the timer
+    var str = (`${elapsed.toFixed(precision)} ms ${note}`); // print message + time
+	start = process.hrtime(); // reset the timer
+	return str;
 };
 
 var diff = function(a, b) {
