@@ -32,8 +32,6 @@ const freqInMin = 5;
       });
     job.start()
 
-    falcoCore.processSnapshots(snapshots)
-
 })().catch((err) => console.error(err));
 
 //Main

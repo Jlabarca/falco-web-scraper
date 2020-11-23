@@ -437,8 +437,15 @@ var diff = function(a, b) {
 
 var sleep = function(millis) 
 {
-  var e = new Date().getTime() + (millis);
-  while (new Date().getTime() <= e) {}
+	return new Promise(resolve => setTimeout(resolve, millis));
+};
+
+var delayLoop = (fn, delay) => {
+	return (x, i) => {
+		setTimeout(() => {
+		fn(x);
+		}, i * delay);
+	}
 };
 
 var writeToFile = function (filename, text) {
@@ -447,7 +454,6 @@ var writeToFile = function (filename, text) {
 	if (err) {
 		return console.log(err);
 	}
-	console.log(data);
 	});
 }
 
@@ -456,4 +462,5 @@ module.exports.hasAccents = hasAccents;
 module.exports.elapsedTime = elapsedTime;
 module.exports.diff = diff;
 module.exports.sleep = sleep;
+module.exports.delayLoop = delayLoop;
 module.exports.writeToFile = writeToFile;

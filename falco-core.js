@@ -11,7 +11,8 @@ module.exports = {
 
     let allSnapshots = await snapshots.find({active: true});
 
-    allSnapshots.forEach(async (snapshot) => {
+    allSnapshots.forEach(utils.delayLoop(  async (snapshot) => {
+    
       console.log(`Processing ${snapshot.name}`);
 
       let start = process.hrtime();
@@ -30,8 +31,8 @@ module.exports = {
       }
 
       utils.elapsedTime(start);
-      utils.sleep(config.time_between);
-    });
+
+    }, config.time_between));
   },
 };
 
@@ -39,14 +40,14 @@ module.exports = {
   Compare incoming data with stored one
 */
 checkChanges = function (snapshot, newData) {
-
+  
   //Apply keywords filter
   if (snapshot.keywords != null && snapshot.keywords.length > 0) {
     newData = newData.filter((element) => {
       element.keywords = [];
 
       snapshot.keywords.forEach((keyword) => {
-        if (keyword.length > 0 && element.title.includes(keyword)) 
+        if (keyword.length > 0 && element.title.toLowerCase().indexOf(keyword.toLowerCase()) != -1) 
           element.keywords.push(keyword);
       });
 
@@ -59,7 +60,7 @@ checkChanges = function (snapshot, newData) {
     newData = newData.filter((element) => {
 
       snapshot.exclude.forEach((excludeWord) => {
-        if (excludeWord.length > 0 && element.title.includes(excludeWord)) 
+        if (excludeWord.length > 0 && element.title.toLowerCase().indexOf(excludeWord.toLowerCase())  != -1) 
           return false;
       });
 
@@ -86,22 +87,17 @@ checkChanges = function (snapshot, newData) {
 };
 
 commitData = async function(snapshots, snapshot, checkDataResult) {
-  
+  log.info(`Commiting data change for ${snapshot.name} ${snapshot._id}`)
   snapshot.data = checkDataResult.data;
   snapshot.last_update = new Date();
+  snapshots.update({ _id: snapshot._id }, snapshot);
+    
+  let snapshotUsers = await users.find({snapshots_ids: snapshot._id});
   
-  let snapshotUsers = await users.find({});
+
   snapshot.diffData = checkDataResult.diffData;
 
   snapshotUsers.forEach(user => {
-    email.sendEmail(user ,snapshot)
-      .then( function(value) {
-          log.info(`Commiting data change for ${snapshot.name}`)
-          snapshots.update({ _id: snapshot._id }, snapshot);
-      })
-      .catch((err) => {
-        log.error('error', err)
-      });
-
-  })
+    email.sendEmail(user ,snapshot);
+  });
 }

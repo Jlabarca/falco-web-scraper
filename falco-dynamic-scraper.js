@@ -82,11 +82,11 @@ var defaultQuery = function(html, query) {
 }
 
 var facebookMarketPlaceQuery = function(html) {
-
+    utils.writeToFile("1.html", html)
     let data = [];
     try {
         
-        let regex = /(?<=marketplace_search:).*(?=,viewer:)/i;
+        let regex = /(?<=marketplace_search":)(.*)(?=,"marketplace_seo_page")/i;
         let result = regex.exec(html);
         if(result == null || result.length == 0) {
             log.warn("no regex results");
@@ -95,15 +95,15 @@ var facebookMarketPlaceQuery = function(html) {
         let marketplace_search = dJSON.parse(result[0]);
         
         marketplace_search.feed_units.edges.forEach(element => {
-            let listing = element.node.listing;
-            
+            let listing = element.node.listing;            
             data.push({
                 title : listing.marketplace_listing_title,
-                link : listing.story.url,
+                link : 'https://www.facebook.com/marketplace/item/'+listing.id,
                 price : listing.formatted_price ? listing.formatted_price.text : "",
-                image : listing.primary_listing_photo ? listing.primary_listing_photo.image.uri : null
+                image : listing.primary_listing_photo ? listing.primary_listing_photo.image.uri.replace(/\\/g,"") : null
             });
-        });    
+        });     
+        
     } catch (error) {
         log.error(error)
     }
