@@ -16,10 +16,8 @@ Nightmare.action('waitforunload', function (done) {
 
 module.exports = {
     async scrape(url, query) {
-
         try {
-            let nightmare = 
-            Nightmare(
+            let nightmare = Nightmare(
             { 
                     show: true,
                     loadTimeout: 10000,
@@ -27,25 +25,32 @@ module.exports = {
                     waitTimeout: 10000,
                     executionTimeout: 10000 
             })
-            var result = await nightmare
+            var result;
+            await nightmare
             .goto(url)
-            .waitforunload()
-            .end(() => 'some value')
-            //prints "some value"
-            .then(console.log)
+            .wait(3000)
+            .evaluate(function(){
+                //returning HTML for cheerio
+                return document.body.innerHTML; 
+            })
+            .then((body) => {
+                // Loading HTML body on jquery cheerio
+                result = this.getData(body, query)
+            })
+            .catch(error => {
+                console.error('Search failed:', error)
+            })
         
             await nightmare.end();
-    
+            return result;
         } catch (err) {
-        console.error(err);
+            console.error(err);
         }
-        
-      console.log(result);
     },
     getData(html, query) {
         switch (query) {
-            //case 'facebook_marketplace':
-            //    return facebookMarketPlaceQuery(html);        
+            case 'facebook_marketplace':
+               return facebookMarketPlaceQuery(html);        
             default:
                 return defaultQuery(html, query);
         }
@@ -77,12 +82,17 @@ var defaultQuery = function(html, query) {
 }
 
 var facebookMarketPlaceQuery = function(html) {
+
     let data = [];
     try {
+        
         let regex = /(?<=marketplace_search:).*(?=,viewer:)/i;
         let result = regex.exec(html);
+        if(result == null || result.length == 0) {
+            log.warn("no regex results");
+            return;
+        }
         let marketplace_search = dJSON.parse(result[0]);
-        console.log(html);
         
         marketplace_search.feed_units.edges.forEach(element => {
             let listing = element.node.listing;
