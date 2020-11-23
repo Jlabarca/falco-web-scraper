@@ -7,7 +7,7 @@ const db = require("./setup/db-setup");
 const users = db.collection("users");
 
 module.exports = {
-  async processSnapshots(snapshots) {
+  async processSnapshots(snapshots, config) {
 
     let allSnapshots = await snapshots.find({active: true});
 
@@ -86,16 +86,22 @@ checkChanges = function (snapshot, newData) {
 };
 
 commitData = async function(snapshots, snapshot, checkDataResult) {
-  log.info(`Commiting data change for ${snapshot.name}`)
+  
   snapshot.data = checkDataResult.data;
   snapshot.last_update = new Date();
-  snapshots.update({ _id: snapshot._id }, snapshot);
-    
-  let snapshotUsers = await users.find({});
   
+  let snapshotUsers = await users.find({});
   snapshot.diffData = checkDataResult.diffData;
 
   snapshotUsers.forEach(user => {
-    email.sendEmail(user ,snapshot);
-  });
+    email.sendEmail(user ,snapshot)
+      .then( function(value) {
+          log.info(`Commiting data change for ${snapshot.name}`)
+          snapshots.update({ _id: snapshot._id }, snapshot);
+      })
+      .catch((err) => {
+        log.error('error', err)
+      });
+
+  })
 }

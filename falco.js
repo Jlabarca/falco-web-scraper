@@ -6,11 +6,17 @@ const falcoCore = require("./falco-core");
 
 const users = db.collection("users");
 const snapshots = db.collection("snapshots");
+const configuration = db.collection("configuration");
+const email = require("./setup/email-setup");
 
 const freqInMin = 5;
 
 (async () => {
     log.info("Starting Falco");
+
+    
+    let config = await getConfig();
+    email.init(config);
 
     printInitLog();
 
@@ -33,10 +39,14 @@ const freqInMin = 5;
 //Main
 var mainRoutine = Promise.coroutine(function* () {
   log.info("Main Routine starting");
-  falcoCore.processSnapshots(snapshots);
+  falcoCore.processSnapshots(snapshots, getConfig());
   return true;
 });
 
+async function getConfig() {
+    let config = await configuration.find({});
+    return config[0];
+}
 
 async function printInitLog() {
     let u = await users.find({active: true})
