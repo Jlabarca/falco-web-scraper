@@ -2,7 +2,6 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const utils = require("./falco-utils");
 const log = require("./setup/log-setup");
-const fs = require('fs');
 const dJSON = require('dirty-json');
 
 module.exports = {
@@ -60,13 +59,18 @@ var defaultQuery = function(html, query) {
 }
 
 var facebookMarketPlaceQuery = function(html) {
-    let data = [];
 
+    let data = [];
     try {
+        
         let regex = /(?<=marketplace_search:).*(?=,viewer:)/i;
         let result = regex.exec(html);
+        if(result == null || result.length == 0) {
+            log.warn("no regex results");
+            return;
+        }
         let marketplace_search = dJSON.parse(result[0]);
-
+        
         marketplace_search.feed_units.edges.forEach(element => {
             let listing = element.node.listing;
             
