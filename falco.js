@@ -31,7 +31,7 @@ const freqInMin = 5;
         timeZone: 'America/Santiago'
       });
     job.start()
-
+    falcoCore.processSnapshots(snapshots, getConfig());
 })().catch((err) => console.error(err));
 
 //Main

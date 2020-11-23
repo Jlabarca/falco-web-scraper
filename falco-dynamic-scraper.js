@@ -19,7 +19,7 @@ module.exports = {
         try {
             let nightmare = Nightmare(
             { 
-                    show: true,
+                    show: false,
                     loadTimeout: 10000,
                     gotoTimeout: 10000,
                     waitTimeout: 10000,
