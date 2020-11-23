@@ -11,9 +11,8 @@ module.exports = {
 
     let allSnapshots = await snapshots.find({active: true});
     //if any dynamic fb
-    allSnapshots.forEach(utils.delayLoop( async (snapshot) => {
-      console.log(config);
-      
+    allSnapshots.forEach(utils.delayLoop( async (snapshot) => {  
+          
       if(allSnapshots[0] === snapshot)
         await falcoDynamic.fbBrowserInit(config.fb_login, config.fb_pass);
 
