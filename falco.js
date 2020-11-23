@@ -31,13 +31,13 @@ const freqInMin = 5;
         timeZone: 'America/Santiago'
       });
     job.start()
-    falcoCore.processSnapshots(snapshots, getConfig());
+    falcoCore.processSnapshots(snapshots, await getConfig());
 })().catch((err) => console.error(err));
 
 //Main
-var mainRoutine = Promise.coroutine(function* () {
+var mainRoutine = Promise.coroutine(async function* () {
   log.info("Main Routine starting");
-  falcoCore.processSnapshots(snapshots, getConfig());
+  falcoCore.processSnapshots(snapshots, await getConfig());
   return true;
 });
 
