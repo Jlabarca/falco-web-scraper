@@ -45,10 +45,10 @@ module.exports = {
             }
         })
     },
-    buildEmail: function(snapshot) {
-        let initMsg = "Falco ha detectado una nueva publicación para:"
-        if(snapshot.length > 1)
-            initMsg = "Falco ha detectado nuevas publicaciones para:"
+    buildEmail: function(user, snapshot) {
+        let initMsg = user.name +", Falco ha detectado una nueva publicación para:"
+        if(snapshot.diffData.length > 1)
+            initMsg = user.name +", Falco ha detectado nuevas publicaciones para:"
 
         return head + bodyInit + initMsg + titleInit + snapshot.name + titleEnd + this.buildCards(snapshot) + bodyEnd
     },
@@ -57,7 +57,6 @@ module.exports = {
         // not sure if mutating snapshot affects insert to db or something else
     
         snapshot.diffData.forEach(detection => {
-            detection.img_url = "https://via.placeholder.com/140x100"
             if(detection.price == null) detection.price = "";
             if(detection.image == null) detection.image = "https://via.placeholder.com/140x100";
             if(detection.link == null) detection.link = snapshot.url;
@@ -88,7 +87,7 @@ module.exports = {
                 to: user.email, // list of receivers
                 subject: nuevo + snapshot.name, // Subject line
                 text: body + messageList, // plain text body
-                html: this.buildEmail(snapshot) // html body
+                html: this.buildEmail(user, snapshot) // html body
             }
             
             resolve()

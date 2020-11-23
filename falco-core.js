@@ -92,9 +92,8 @@ commitData = async function(snapshots, snapshot, checkDataResult) {
   snapshot.last_update = new Date();
   snapshots.update({ _id: snapshot._id }, snapshot);
     
-  let snapshotUsers = await users.find({snapshots_ids: ""+snapshot._id});
+  let snapshotUsers = await users.find({active: true, snapshots_ids: ""+snapshot._id});
   
-
   snapshot.diffData = checkDataResult.diffData;
 
   snapshotUsers.forEach(user => {
