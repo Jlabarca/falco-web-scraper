@@ -22,9 +22,9 @@ const freqInMin = 30;
     log.info(`Scheduling cron job to every ${freqInMin} minutes`);
 
     var job = new cronjob({
-        cronTime: '1 */'+freqInMin+' * * * *',
+        cronTime: `1 */${freqInMin} * * * *`,
         onTick: function() {
-            mainRoutine()
+            falcoCore.processSnapshots(snapshots, config);
         },
         start: false,
         timeZone: 'America/Santiago'
@@ -33,12 +33,6 @@ const freqInMin = 30;
     //falcoCore.processSnapshots(snapshots, await getConfig());
 })().catch((err) => console.error(err));
 
-//Main
-var mainRoutine = Promise.coroutine(async function* () {
-  log.info("Main Routine starting");
-  falcoCore.processSnapshots(snapshots, await getConfig());
-  return true;
-});
 
 async function getConfig() {
     let config = await configuration.find({});
