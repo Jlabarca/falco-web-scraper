@@ -10,13 +10,14 @@ module.exports = {
   async processSnapshots(snapshots, config) {
 
     let allSnapshots = await snapshots.find({active: true});
-    //if any dynamic fb
+    let globalStartTime = process.hrtime();
+
     allSnapshots.forEach(utils.delayLoop( async (snapshot) => {  
-          
+      //TODO: check if any dynamic fb   
       if(allSnapshots[0] === snapshot)
         await falcoDynamic.fbBrowserInit(config.fb_login, config.fb_pass);
 
-      log.info(` Processing ${snapshot.name}`);
+      log.info(` Processing ${snapshot.name} - ${snapshot.url}`);
       let start = process.hrtime();
       let data;
       if (snapshot.dynamic) {
@@ -32,10 +33,11 @@ module.exports = {
         }
       }
 
-      log.info(utils.elapsedTime(start));
+      log.info(`${snapshot.name} time: ${utils.elapsedTime(start)}`);
 
       if(allSnapshots[allSnapshots.length - 1] === snapshot)
-        await falcoDynamic.fbBrowserFinnish();
+        log.info(`Total time: ${utils.elapsedTime(globalStartTime)}`);
+      //await falcoDynamic.fbBrowserFinnish();
 
     }, config.time_between));
   },

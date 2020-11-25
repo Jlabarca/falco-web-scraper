@@ -4,11 +4,13 @@ const log = require("./setup/log-setup");
 const dJSON = require('dirty-json');
 const Nightmare = require('nightmare');
 
-var fbNightmare;
+var fbNightmare = null;
 
 module.exports = {
     async fbBrowserInit(user, pass) {
+        if(fbNightmare !== null) return;
         log.info("fbBrowserInit");
+
         fbNightmare = Nightmare({
             show: true,
             typeInterval: 20,
@@ -44,7 +46,6 @@ module.exports = {
     },
     async facebookNightmare(url, query) {
         try {
-        
             var result;
             await fbNightmare
             .goto(url)
@@ -55,7 +56,7 @@ module.exports = {
             })
             .then((body) => {
                 // Loading HTML body on jquery cheerio
-                utils.writeToFile('stop.html', body)
+                // utils.writeToFile('stop.html', body)
                 result = facebookMarketPlaceQuery(body, query)
             })
             .catch(error => {

@@ -34,7 +34,6 @@ module.exports = {
         console.log("Email Configuration:");
         console.log("===================================================");
         console.log("       "+falcoConfiguration.email_address);
-        //console.log("       "+falcoConfiguration.email_password);
         console.log("===================================================");
     
         transporter = nodemailer.createTransport({

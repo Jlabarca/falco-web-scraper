@@ -9,11 +9,10 @@ const snapshots = db.collection("snapshots");
 const configuration = db.collection("configuration");
 const email = require("./setup/email-setup");
 
-const freqInMin = 5;
+const freqInMin = 30;
 
 (async () => {
     log.info("Starting Falco");
-
     
     let config = await getConfig();
     email.init(config);
@@ -31,7 +30,7 @@ const freqInMin = 5;
         timeZone: 'America/Santiago'
       });
     job.start()
-    falcoCore.processSnapshots(snapshots, await getConfig());
+    //falcoCore.processSnapshots(snapshots, await getConfig());
 })().catch((err) => console.error(err));
 
 //Main
