@@ -64,14 +64,21 @@ checkChanges = function (snapshot, newData) {
 
   //Apply exclude filter
   if (snapshot.exclude != null && snapshot.exclude.length > 0) {
+    log.info(`Exclude: ${snapshot.exclude}`)
     newData = newData.filter((element) => {
+      let excluded = false;  
 
-      snapshot.exclude.forEach((excludeWord) => {
-        if (excludeWord.length > 0 && element.title.toLowerCase().indexOf(excludeWord.toLowerCase())  != -1) 
-          return false;
+      snapshot.exclude.some((excludeWord) => {
+        if (excludeWord.length > 0 && element.title.toLowerCase().indexOf(excludeWord.toLowerCase())  != -1) {
+          excluded = true;
+          return excluded;
+        }
       });
+      
+      if(excluded)
+        log.info(`Excluded ${element.title}`)  
 
-      return true;
+      return !excluded;
     });
   } 
   
