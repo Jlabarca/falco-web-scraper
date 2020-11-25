@@ -12,7 +12,7 @@ module.exports = {
         log.info("fbBrowserInit");
 
         fbNightmare = Nightmare({
-            show: true,
+            show: false,
             typeInterval: 20,
             waitTimeout: 120000,
             gotoTimeout: 120000
