@@ -1,0 +1,15 @@
+run it on pm2 with --auth and --bind-ip
+
+db.createUser(
+   {
+     user:"falco",
+     pwd: "*****",
+     roles: [
+       { role: "readWrite", db: "falco" }
+    ]
+   }
+)
+
+db.config should have something like:
+
+mongodb://falco:******@192.168.1.15:27017/falco?authSource=test&readPreference=primary&appname=MongoDB%20Compass&ssl=false

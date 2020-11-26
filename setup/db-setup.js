@@ -1,6 +1,6 @@
-const monk = require('monk')
+const monk = require("monk");
+const fs = require("fs");
+const token = fs.readFileSync('./db.config')
+const db = monk(token.toString());
 
-const url = '192.168.1.15:27017/falco'
-const db = monk(url)
-
-module.exports = db
+module.exports = db;
