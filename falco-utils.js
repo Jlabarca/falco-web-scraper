@@ -458,6 +458,22 @@ var writeToFile = function (filename, text) {
 	});
 }
 
+var timers = {};
+const {performance} = require('perf_hooks');
+var timer = function (name) {
+    timers[name + '_start'] = performance.now();
+}
+
+var timerEnd = function (name) {
+    if (!timers[name + '_start']) return undefined;
+    var time = performance.now() - timers[name + '_start'];
+    var amount = timers[name + '_amount'] = timers[name + '_amount'] ? timers[name + '_amount'] + 1 : 1;
+    var sum = timers[name + '_sum'] = timers[name + '_sum'] ? timers[name + '_sum'] + time : time;
+    timers[name + '_avg'] = sum / amount;
+    delete timers[name + '_start'];
+    return time;
+}
+
 module.exports.removeAccents = removeAccents;
 module.exports.hasAccents = hasAccents;
 module.exports.elapsedTime = elapsedTime;
@@ -465,3 +481,5 @@ module.exports.diff = diff;
 module.exports.sleep = sleep;
 module.exports.delayLoop = delayLoop;
 module.exports.writeToFile = writeToFile;
+module.exports.timer = timer;
+module.exports.timerEnd = timerEnd;

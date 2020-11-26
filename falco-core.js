@@ -10,7 +10,7 @@ module.exports = {
   async processSnapshots(snapshots, config) {
 
     let allSnapshots = await snapshots.find({active: true});
-    let globalStartTime = process.hrtime();
+    utils.timer("total");
 
     allSnapshots.forEach(utils.delayLoop( async (snapshot) => {  
       //TODO: check if any dynamic fb   
@@ -26,17 +26,19 @@ module.exports = {
         data = await falcoStatic.scrape(snapshot.url, snapshot.query);
       }
 
+      snapshot.lastExecutionDuration = utils.elapsedTime(start)
+      log.info(`${snapshot.name} time: ${snapshot.lastExecutionDuration}`);
+
       if(data != null) {
         let checkDataResult = checkChanges(snapshot, data);
         if(checkDataResult.diffData.length > 0){
             commitData(snapshots, snapshot, checkDataResult);
         }
       }
-
-      log.info(`${snapshot.name} time: ${utils.elapsedTime(start)}`);
+      
 
       if(allSnapshots[allSnapshots.length - 1] === snapshot)
-        log.info(`Total time: ${utils.elapsedTime(globalStartTime)}`);
+        log.info(`Total: ${utils.timerEnd("total")} ms with ${config.time_between} ms pauses`);
       //await falcoDynamic.fbBrowserFinnish();
 
     }, config.time_between));
