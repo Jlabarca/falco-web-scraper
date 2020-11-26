@@ -30,7 +30,10 @@ const freqInMin = 30;
         timeZone: 'America/Santiago'
       });
     job.start()
-    //falcoCore.processSnapshots(snapshots, await getConfig());
+
+    if(process.argv[process.argv.length - 1] == 'go')
+       falcoCore.processSnapshots(snapshots, await getConfig());
+       
 })().catch((err) => console.error(err));
 
 
