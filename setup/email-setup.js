@@ -46,7 +46,7 @@ module.exports = {
     },
     buildEmail: function(user, snapshot) {
         let initMsg = user.name +", Falco ha detectado una nueva publicación para:"
-        if(snapshot.diffData.length > 1)
+        if(snapshot.last_update.data.length > 1)
             initMsg = user.name +", Falco ha detectado nuevas publicaciones para:"
 
         return head + bodyInit + initMsg + titleInit + snapshot.name + titleEnd + this.buildCards(snapshot) + bodyEnd
@@ -55,7 +55,7 @@ module.exports = {
         var cards = ""
         // not sure if mutating snapshot affects insert to db or something else
     
-        snapshot.diffData.forEach(detection => {
+        snapshot.last_update.data.forEach(detection => {
             if(detection.price == null) detection.price = "";
             if(detection.image == null) detection.image = "https://via.placeholder.com/140x100";
             if(detection.link == null) detection.link = snapshot.url;
@@ -71,7 +71,7 @@ module.exports = {
             
             let body = user.name + ', acabo de ver que '
             let nuevo = 'Nuevos articulos para '
-            if (snapshot.diffData.length == 1) {
+            if (snapshot.last_update.data.length == 1) {
                 nuevo = 'Nuevo articulo con título '
                 body += 'publicaron el siguiente aviso de '
             } else
@@ -94,7 +94,7 @@ module.exports = {
             // send mail with defined transport object
             transporter.sendMail(mailOptions, (error, info) => {
                 if(info != null){
-                    log.info('Email sent with %s of %s to %s', snapshot.diffData.length, snapshot.name, user.email)
+                    log.info('Email sent with %s of %s to %s', snapshot.last_update.data.length, snapshot.name, user.email)
                     log.debug('Message %s sent: %s', info.messageId, info.response)    
                     resolve()            
                 }else {

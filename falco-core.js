@@ -105,13 +105,17 @@ checkChanges = function (snapshot, newData) {
 commitData = async function(snapshots, snapshot, checkDataResult) {
   log.info(`Commiting data change for ${snapshot.name} ${snapshot._id}`)
   snapshot.data = checkDataResult.data;
-  snapshot.last_update = new Date();
+
+  snapshot.last_update = {
+    date: new Date().toLocaleString(),
+    receivers: snapshotUsers.map(x => x.name),
+    data: checkDataResult.diffData
+  };
+
   snapshots.update({ _id: snapshot._id }, snapshot);
     
   let snapshotUsers = await users.find({active: true, snapshots_ids: ""+snapshot._id});
   
-  snapshot.diffData = checkDataResult.diffData;
-
   snapshotUsers.forEach(user => {
     email.sendEmail(user ,snapshot);
   });
