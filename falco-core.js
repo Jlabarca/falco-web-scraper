@@ -31,6 +31,8 @@ module.exports = {
 
       if(data != null) {
         let checkDataResult = checkChanges(snapshot, data);
+        snapshot.last_check_date = new Date().toLocaleString();
+
         if(checkDataResult.diffData.length > 0){
             commitData(snapshots, snapshot, checkDataResult);
         }
