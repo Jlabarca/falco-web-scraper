@@ -5,18 +5,18 @@ const log = require("./setup/log-setup");
 const dJSON = require('dirty-json');
 
 module.exports = {
-    async scrape(url, queries) {
+    async scrape(snapshot) {
         try {
             let response = await axios.request({
                 method: 'GET',
-                url: url,
+                url: snapshot.url,
                 responseType: 'arraybuffer',
                 reponseEncoding: 'binary'
             });
             
             let html = utils.removeAccents(response.data.toString('latin1'));  
 
-            return this.getData(html, queries);
+            return this.getData(html, snapshot);
         } catch (error) {
             log.error(`${url}" - "${error}`);
         }
@@ -24,24 +24,23 @@ module.exports = {
         //fs.writeFileSync('./test-fb.html', body);
         return
     },
-    getData(html, queries) {
-        switch (queries.query) {
+    getData(html, snapshot) {
+        switch (snapshot.query) {
             case 'facebook_marketplace':
                 return facebookMarketPlaceQuery(html);        
             default:
-                return defaultQuery(html, queries);
+                return defaultQuery(html, snapshot);
         }
     }
 }
 
-var defaultQuery = function(html, queries) {
+var defaultQuery = function(html, snapshot) {
     let data = [];
-    
     try {
 
         const $ = cheerio.load(html);
 
-        $(queries.query).each((i, elem) => {
+        $(snapshot.query).each((i, elem) => {
 
             let title = $(elem).text();
             
@@ -50,11 +49,11 @@ var defaultQuery = function(html, queries) {
                     title : title,
                     //link : $(elem).value()
                 });
-           });
+        });
         
         //Inject image
-        if(queries.image_query != null){
-            var arr = queries.image_query.split('|');
+        if(snapshot.image_query != null){
+            var arr = snapshot.image_query.split('|');
             let attr = 'src';
             let image_query = arr[0].trim();
             if(arr.length > 1) attr = arr[1].trim();
@@ -67,8 +66,8 @@ var defaultQuery = function(html, queries) {
         }
      
         //Inject link        
-        if(queries.link_query != null)     
-            $(queries.link_query).each((i, elem) => {
+        if(snapshot.link_query != null)     
+            $(snapshot.link_query).each((i, elem) => {
 
                 let link = $(elem).attr('href');
                 
@@ -79,7 +78,7 @@ var defaultQuery = function(html, queries) {
     } catch (error) {
         log.error(error)
     }
-
+    
     return data;
 }
 

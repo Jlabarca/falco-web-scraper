@@ -23,7 +23,7 @@ module.exports = {
       if (snapshot.dynamic) {
         data = await falcoDynamic.scrape(snapshot.url, snapshot.query);
       } else {
-        data = await falcoStatic.scrape(snapshot.url, snapshot.query);
+        data = await falcoStatic.scrape(snapshot);
       }
 
       snapshot.lastExecutionDuration = utils.elapsedTime(start)
