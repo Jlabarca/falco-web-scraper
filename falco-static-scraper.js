@@ -87,7 +87,7 @@ var defaultQuery = function(html, snapshot) {
             $(price_query).each((i, elem) => {
                 let price = evalValue != null?  eval(evalValue, { $, elem, i }) : $(elem).text();
                 if(price !== null && price.length > 0)
-                    data[i].price = price.replace(/\D/g,'').trim()
+                    data[i].price = utils.numberToMoney(price);
             });    
         }
 

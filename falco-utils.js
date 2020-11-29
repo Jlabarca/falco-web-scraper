@@ -474,6 +474,10 @@ var timerEnd = function (name) {
     return time;
 }
 
+var numberToMoney = function (number) {
+    return '$'+number.replace(/\D/g,'').trim().replace(/(.)(?=(\d{3})+$)/g,'$1.');
+}
+
 module.exports.removeAccents = removeAccents;
 module.exports.hasAccents = hasAccents;
 module.exports.elapsedTime = elapsedTime;
@@ -483,3 +487,4 @@ module.exports.delayLoop = delayLoop;
 module.exports.writeToFile = writeToFile;
 module.exports.timer = timer;
 module.exports.timerEnd = timerEnd;
+module.exports.numberToMoney = numberToMoney;
