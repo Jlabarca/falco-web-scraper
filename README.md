@@ -13,6 +13,11 @@ The idea is to given an specfic URL be able to scrap data and detect changes.
 - [ ] Frontend
 - [ ] Typescript
  
+ # Database
+ Uses Mongodb, reads connection string from ./db.config
+ database structure inside /db folder
+
+ configuration, snapshots and users are collections
 
  # Dynamic web scraper
 
