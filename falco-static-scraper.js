@@ -16,7 +16,7 @@ module.exports = {
             
             let html = utils.removeAccents(response.data.toString('latin1'));  
 
-            return getData(html, queries);
+            return this.getData(html, queries);
         } catch (error) {
             log.error(`${url}" - "${error}`);
         }
@@ -34,7 +34,7 @@ module.exports = {
     }
 }
 
-var defaultQuery = function(html, query) {
+var defaultQuery = function(html, queries) {
     let data = [];
     
     try {
@@ -61,8 +61,6 @@ var defaultQuery = function(html, query) {
 
             $(image_query).each((i, elem) => {  
                 let image = $(elem).attr(attr);
-                console.log(image)
-
                 if(image !== null && image.length > 0)
                     data[i].image = image
             });
@@ -82,7 +80,6 @@ var defaultQuery = function(html, query) {
         log.error(error)
     }
 
-    console.log(data)
     return data;
 }
 
