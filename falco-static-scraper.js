@@ -5,7 +5,7 @@ const log = require("./setup/log-setup");
 const dJSON = require('dirty-json');
 
 module.exports = {
-    async scrape(url, query) {
+    async scrape(url, queries) {
         try {
             let response = await axios.request({
                 method: 'GET',
@@ -16,7 +16,7 @@ module.exports = {
             
             let html = utils.removeAccents(response.data.toString('latin1'));  
 
-            return this.getData(html, query);
+            return getData(html, queries);
         } catch (error) {
             log.error(`${url}" - "${error}`);
         }
@@ -24,23 +24,24 @@ module.exports = {
         //fs.writeFileSync('./test-fb.html', body);
         return
     },
-    getData(html, query) {
-        switch (query) {
+    getData(html, queries) {
+        switch (queries.query) {
             case 'facebook_marketplace':
                 return facebookMarketPlaceQuery(html);        
             default:
-                return defaultQuery(html, query);
+                return defaultQuery(html, queries);
         }
     }
 }
 
 var defaultQuery = function(html, query) {
     let data = [];
-
+    
     try {
 
         const $ = cheerio.load(html);
-        $(query).each((i, elem) => {
+
+        $(queries.query).each((i, elem) => {
 
             let title = $(elem).text();
             
@@ -50,6 +51,26 @@ var defaultQuery = function(html, query) {
                     //link : $(elem).value()
                 });
            });
+        
+        //Inject image
+        if(queries.image_query != null)    
+            $(queries.image_query).each((i, elem) => {
+                let image = $(elem).attr('data-src');
+                console.log(image)
+
+                if(image !== null && image.length > 0)
+                    data[i].image = image
+            });
+     
+        //Inject link        
+        if(queries.link_query != null)     
+            $(queries.link_query).each((i, elem) => {
+
+                let link = $(elem).attr('href');
+                
+                if(link !== null && link.length > 0)
+                    data[i].link = link
+            }); 
 
     } catch (error) {
         log.error(error)
