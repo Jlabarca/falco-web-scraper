@@ -3,6 +3,7 @@ const cheerio = require('cheerio');
 const utils = require("./falco-utils");
 const log = require("./setup/log-setup");
 const dJSON = require('dirty-json');
+const eval = require('eval');
 
 module.exports = {
     async scrape(snapshot) {
@@ -75,10 +76,25 @@ var defaultQuery = function(html, snapshot) {
                     data[i].link = link
             }); 
 
+        //Inject price        
+        if(snapshot.price_query != null) {  
+            let arr = snapshot.price_query.split('|');
+            let evalValue = null;
+            let price_query = arr[0].trim();
+
+            if(arr.length > 1) evalValue = arr[1].trim();
+            
+            $(price_query).each((i, elem) => {
+                let price = evalValue != null?  eval(evalValue, { $, elem, i }) : $(elem).text();
+                if(price !== null && price.length > 0)
+                    data[i].price = price.replace(/\D/g,'').trim()
+            });    
+        }
+
     } catch (error) {
         log.error(error)
     }
-    
+
     return data;
 }
 
