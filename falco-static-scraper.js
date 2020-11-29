@@ -53,14 +53,20 @@ var defaultQuery = function(html, query) {
            });
         
         //Inject image
-        if(queries.image_query != null)    
-            $(queries.image_query).each((i, elem) => {
-                let image = $(elem).attr('data-src');
+        if(queries.image_query != null){
+            var arr = queries.image_query.split('|');
+            let attr = 'src';
+            let image_query = arr[0].trim();
+            if(arr.length > 1) attr = arr[1].trim();
+
+            $(image_query).each((i, elem) => {  
+                let image = $(elem).attr(attr);
                 console.log(image)
 
                 if(image !== null && image.length > 0)
                     data[i].image = image
             });
+        }
      
         //Inject link        
         if(queries.link_query != null)     
@@ -76,6 +82,7 @@ var defaultQuery = function(html, query) {
         log.error(error)
     }
 
+    console.log(data)
     return data;
 }
 
