@@ -10,7 +10,7 @@ module.exports = {
         try {
             let response = await axios.request({
                 method: 'GET',
-                url: url,
+                url: snapshot.url,
                 responseType: 'arraybuffer',
                 reponseEncoding: 'UTF-8',
                 headers: {
@@ -22,7 +22,7 @@ module.exports = {
 
             return this.getData(html, snapshot);
         } catch (error) {
-            log.error(`${url}" - "${error}`);
+            log.error(`${snapshot.url}" - "${error}`);
         }
        
         //fs.writeFileSync('./test-fb.html', body);
