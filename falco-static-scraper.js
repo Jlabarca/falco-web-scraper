@@ -11,11 +11,12 @@ module.exports = {
             let response = await axios.request({
                 method: 'GET',
                 url: snapshot.url,
-                responseType: 'arraybuffer',
-                reponseEncoding: 'binary'
+                headers: {
+                    'Content-Type': 'charset=UTF-8'
+                }
             });
             
-            let html = utils.removeAccents(response.data.toString('latin1'));  
+            let html = response.data.toString('utf-8');  
 
             return this.getData(html, snapshot);
         } catch (error) {
