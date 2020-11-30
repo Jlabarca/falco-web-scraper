@@ -10,13 +10,15 @@ module.exports = {
         try {
             let response = await axios.request({
                 method: 'GET',
-                url: snapshot.url,
+                url: url,
+                responseType: 'arraybuffer',
+                reponseEncoding: 'UTF-8',
                 headers: {
-                    'Content-Type': 'charset=UTF-8'
+                    'Content-Type': 'text/html; charset=UTF-8'
                 }
             });
             
-            let html = response.data.toString('utf-8');  
+            let html = snapshot.encoding != null? response.data.toString(snapshot.encoding) : response.data.toString()
 
             return this.getData(html, snapshot);
         } catch (error) {
