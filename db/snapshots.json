@@ -4,7 +4,11 @@
   },
   "name": "Guitarras Epiphone Yapo",
   "url": "https://www.yapo.cl/region_metropolitana/todos_los_avisos?ca=15_s&l=0&q=epiphone&w=1&cmn=",
+  "encoding": "latin1",
   "query": "* > td.thumbs_subject > a",
+  "image_query": "* > td.listing_thumbs_image > div > div > div > img",
+  "link_query": "* > td.thumbs_subject > a.redirect-to-url",
+  "price_query": "* > td.thumbs_subject | module.exports = $(elem).find('span').text();",
   "keywords": [
     "casino",
     "telecaster",
@@ -12,19 +16,29 @@
     "korea"
   ],
   "dynamic": false,
-  "data": [],
+  "data": [
+    {
+      "title": "EpiPhone Pr-350-12 Made In Korea, Guitarra De 1995",
+      "keywords": [
+        "korea"
+      ]
+    }
+  ],
   "last_update": {
-    "$date": "2020-06-11T04:35:06.211Z"
+    "$date": "2020-11-26T20:32:40.102Z"
   },
-  "active": true
-},
-{
+  "active": true,
+  "lastExecutionDuration": "429.690 ms "
+},{
   "_id": {
     "$oid": "5ecaf762ba39b14b689ea7db"
   },
   "name": "Guitarra Mercadolibre",
   "url": "https://listado.mercadolibre.cl/instrumentos/guitarras/electricas/_PriceRange_0-300000_PublishedToday_YES_ITEM*CONDITION_2230581",
-  "query": "* > div.item__info-container.highlighted > div > h2 > a > span.main-title",
+  "query": "#root-app > div > div > section > ol > li > div > div > div.ui-search-result__content-wrapper > div.ui-search-item__group.ui-search-item__group--title > a > h2",
+  "image_query": "#root-app > div > div > section > ol > li > div > div > div.ui-search-result__image > a > div > div > div > div > div > img|data-src",
+  "link_query": "#root-app > div > div > section > ol > li > div > div > div.ui-search-result__image > a",
+  "price_query": "#root-app > div > div > section > ol > li > div > div > div.ui-search-result__content-wrapper > div.ui-search-result__content-columns > div.ui-search-result__content-column.ui-search-result__content-column--left > div.ui-search-item__group.ui-search-item__group--price > div > div > span.price-tag.ui-search-price__part > span.price-tag-fraction",
   "keywords": [
     "casino",
     "telecaster",
@@ -38,14 +52,16 @@
     "$date": "2020-06-05T20:25:03.428Z"
   },
   "active": true
-},
-{
+},{
   "_id": {
     "$oid": "5ecafa88ba39b14b689ea7dd"
   },
   "name": "Consolas Mercadolibre",
   "url": "https://listado.mercadolibre.cl/consolas/_PriceRange_0-200000_PublishedToday_YES_ITEM*CONDITION_2230581",
-  "query": "* > div.item__info-container.highlighted > div > h2 > a > span.main-title",
+  "query": "#root-app > div > div > section > ol > li > div > div > div.ui-search-result__content-wrapper > div.ui-search-item__group.ui-search-item__group--title > a > h2",
+  "image_query": "#root-app > div > div > section > ol > li > div > div > div.ui-search-result__image > a > div > div > div > div > div > img|data-src",
+  "link_query": "#root-app > div > div > section > ol > li > div > div > div.ui-search-result__image > a",
+  "price_query": "#root-app > div > div > section > ol > li > div > div > div.ui-search-result__content-wrapper > div.ui-search-result__content-columns > div.ui-search-result__content-column.ui-search-result__content-column--left > div.ui-search-item__group.ui-search-item__group--price > div > div > span.price-tag.ui-search-price__part > span.price-tag-fraction",
   "keywords": [
     "gameboy",
     "64",
@@ -54,11 +70,235 @@
     "super"
   ],
   "dynamic": false,
-  "data": [],
+  "data": [
+    {
+      "title": "Nintendo Ds Lite Negro",
+      "keywords": [
+        "ds"
+      ],
+      "price": "",
+      "image": "https://via.placeholder.com/140x100",
+      "link": "https://listado.mercadolibre.cl/consolas/_PriceRange_0-200000_PublishedToday_YES_ITEM*CONDITION_2230581"
+    },
+    {
+      "title": "New Nintendo 2ds Xl En Caja + Juegos",
+      "keywords": [
+        "ds"
+      ],
+      "price": "",
+      "image": "https://via.placeholder.com/140x100",
+      "link": "https://listado.mercadolibre.cl/consolas/_PriceRange_0-200000_PublishedToday_YES_ITEM*CONDITION_2230581"
+    },
+    {
+      "title": "Gameboy Color Teal Cib",
+      "keywords": [
+        "gameboy"
+      ],
+      "price": "",
+      "image": "https://via.placeholder.com/140x100",
+      "link": "https://listado.mercadolibre.cl/consolas/_PriceRange_0-200000_PublishedToday_YES_ITEM*CONDITION_2230581"
+    },
+    {
+      "title": "Nintendo 2ds  Original Exclusivo Con 15 Juegos",
+      "keywords": [
+        "ds"
+      ],
+      "price": "",
+      "image": "https://via.placeholder.com/140x100",
+      "link": "https://listado.mercadolibre.cl/consolas/_PriceRange_0-200000_PublishedToday_YES_ITEM*CONDITION_2230581"
+    },
+    {
+      "title": "Nintendo Ds Lite Completo En Caja + Juego",
+      "keywords": [
+        "ds"
+      ],
+      "price": "",
+      "image": "https://via.placeholder.com/140x100",
+      "link": "https://listado.mercadolibre.cl/consolas/_PriceRange_0-200000_PublishedToday_YES_ITEM*CONDITION_2230581"
+    },
+    {
+      "title": "Ps3 Super Slim ",
+      "keywords": [
+        "super"
+      ],
+      "price": "",
+      "image": "https://via.placeholder.com/140x100",
+      "link": "https://listado.mercadolibre.cl/consolas/_PriceRange_0-200000_PublishedToday_YES_ITEM*CONDITION_2230581"
+    },
+    {
+      "title": "Nintendo 3ds Incluye 2 Juegos, En Buen Estado ",
+      "keywords": [
+        "ds"
+      ],
+      "price": "",
+      "image": "https://via.placeholder.com/140x100",
+      "link": "https://listado.mercadolibre.cl/consolas/_PriceRange_0-200000_PublishedToday_YES_ITEM*CONDITION_2230581"
+    },
+    {
+      "title": "Nintendo 3ds. New Xl",
+      "keywords": [
+        "ds"
+      ],
+      "price": "",
+      "image": "https://via.placeholder.com/140x100",
+      "link": "https://listado.mercadolibre.cl/consolas/_PriceRange_0-200000_PublishedToday_YES_ITEM*CONDITION_2230581"
+    },
+    {
+      "title": "Nintendo 3ds Con 4 Juegos FA­sicos ",
+      "keywords": [
+        "ds"
+      ],
+      "price": "",
+      "image": "https://via.placeholder.com/140x100",
+      "link": "https://listado.mercadolibre.cl/consolas/_PriceRange_0-200000_PublishedToday_YES_ITEM*CONDITION_2230581"
+    },
+    {
+      "title": "Consola Nintendo Ds Fat Con Cargador Y Juegos",
+      "image": "https://http2.mlstatic.com/consola-nintendo-ds-fat-con-cargador-y-juegos-D_NQ_NP_877528-MLC44201764737_112020-V.jpg",
+      "link": "https://articulo.mercadolibre.cl/MLC-564433649-consola-nintendo-ds-fat-con-cargador-y-juegos-_JM#position=1&type=item&tracking_id=2a63e5e6-271d-4213-8ebb-f2a4a285c16a",
+      "keywords": [
+        "ds"
+      ],
+      "price": ""
+    },
+    {
+      "title": "Consola Nintendo Ds Fat Gris Usada Sin Problemas",
+      "image": "https://http2.mlstatic.com/consola-nintendo-ds-fat-gris-usada-sin-problemas-D_NQ_NP_924900-MLC44201775392_112020-V.jpg",
+      "link": "https://articulo.mercadolibre.cl/MLC-564433713-consola-nintendo-ds-fat-gris-usada-sin-problemas-_JM#position=2&type=item&tracking_id=2a63e5e6-271d-4213-8ebb-f2a4a285c16a",
+      "keywords": [
+        "ds"
+      ],
+      "price": ""
+    },
+    {
+      "title": "Nintendo Super Famicom Japonesa + 2 Controles + Mario World ",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_707410-MLC44202567306_112020-V.jpg",
+      "link": "https://articulo.mercadolibre.cl/MLC-564447424-nintendo-super-famicom-japonesa-2-controles-mario-world-_JM#searchVariation=69465590602&position=5&type=item&tracking_id=2a63e5e6-271d-4213-8ebb-f2a4a285c16a",
+      "keywords": [
+        "super"
+      ],
+      "price": ""
+    },
+    {
+      "title": "Super Nintendo Junior Original + All Star+super Mario World",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_781720-MLC44202622467_112020-V.jpg",
+      "link": "https://articulo.mercadolibre.cl/MLC-564447969-super-nintendo-junior-original-all-starsuper-mario-world-_JM#searchVariation=69465612252&position=6&type=item&tracking_id=2a63e5e6-271d-4213-8ebb-f2a4a285c16a",
+      "keywords": [
+        "super"
+      ],
+      "price": ""
+    },
+    {
+      "title": "Ps3 Super Slim, Playstation Sony",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_705382-MLC44202094850_112020-V.jpg",
+      "link": "https://articulo.mercadolibre.cl/MLC-564435834-ps3-super-slim-playstation-sony-_JM#searchVariation=69462304583&position=32&type=item&tracking_id=2a63e5e6-271d-4213-8ebb-f2a4a285c16a",
+      "keywords": [
+        "super"
+      ],
+      "price": ""
+    },
+    {
+      "title": "Consola Nintendo 3ds  Poco Uso  Cargador Original Incluido. ",
+      "image": "https://http2.mlstatic.com/consola-nintendo-3ds-poco-uso-cargador-original-incluido-D_NQ_NP_738810-MLC44202401951_112020-V.jpg",
+      "link": "https://articulo.mercadolibre.cl/MLC-564444791-consola-nintendo-3ds-poco-uso-cargador-original-incluido-_JM#position=34&type=item&tracking_id=2a63e5e6-271d-4213-8ebb-f2a4a285c16a",
+      "keywords": [
+        "ds"
+      ],
+      "price": ""
+    },
+    {
+      "title": "Nintendo 3ds + Pokemon Sol Y Super Smash Bros Como Nuevo",
+      "image": "https://http2.mlstatic.com/nintendo-3ds-pokemon-sol-y-super-smash-bros-como-nuevo-D_NQ_NP_698980-MLC44202752939_112020-V.jpg",
+      "link": "https://articulo.mercadolibre.cl/MLC-564451755-nintendo-3ds-pokemon-sol-y-super-smash-bros-como-nuevo-_JM#position=7&type=item&tracking_id=84142c55-e362-4ac5-b4be-6bac246872fb",
+      "price": "170000",
+      "keywords": [
+        "ds",
+        "super"
+      ]
+    },
+    {
+      "title": "Nintendo 3ds ",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_836669-MLC44202777415_112020-V.jpg",
+      "link": "https://articulo.mercadolibre.cl/MLC-564452477-nintendo-3ds-_JM#searchVariation=69466634520&position=8&type=item&tracking_id=84142c55-e362-4ac5-b4be-6bac246872fb",
+      "price": "127000",
+      "keywords": [
+        "ds"
+      ]
+    },
+    {
+      "title": "Nintendo 3ds Xl EdiciA³n Especial 30 AA±os De Luigi",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_813668-MLC44203152041_112020-V.jpg",
+      "link": "https://articulo.mercadolibre.cl/MLC-564465015-nintendo-3ds-xl-edicion-especial-30-anos-de-luigi-_JM#searchVariation=69469507868&position=38&type=item&tracking_id=5141eb78-4cda-42d4-aa3b-c210d0cabdc7",
+      "price": "$200.000",
+      "keywords": [
+        "ds"
+      ]
+    },
+    {
+      "title": "Nintendo 3ds Con 4 Juegos Físicos ",
+      "image": "https://http2.mlstatic.com/nintendo-3ds-con-4-juegos-fisicos-D_NQ_NP_775213-MLC44201651184_112020-V.jpg",
+      "link": "https://articulo.mercadolibre.cl/MLC-564427775-nintendo-3ds-con-4-juegos-fisicos-_JM#position=16&type=item&tracking_id=c1826469-03a7-4762-bd36-ccdf058db0dd",
+      "price": "$160.000",
+      "keywords": [
+        "ds"
+      ]
+    },
+    {
+      "title": "Nintendo 3ds Xl Edición Especial 30 Años De Luigi",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_813668-MLC44203152041_112020-V.jpg",
+      "link": "https://articulo.mercadolibre.cl/MLC-564465015-nintendo-3ds-xl-edicion-especial-30-anos-de-luigi-_JM#searchVariation=69469507868&position=32&type=item&tracking_id=c1826469-03a7-4762-bd36-ccdf058db0dd",
+      "price": "$200.000",
+      "keywords": [
+        "ds"
+      ]
+    },
+    {
+      "title": "Play Station 3 Super Slim",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_840274-MLC44203116771_112020-V.jpg",
+      "link": "https://articulo.mercadolibre.cl/MLC-564466039-play-station-3-super-slim-_JM#searchVariation=69470069032&position=34&type=item&tracking_id=c1826469-03a7-4762-bd36-ccdf058db0dd",
+      "price": "$85.000",
+      "keywords": [
+        "super"
+      ]
+    }
+  ],
   "last_update": {
-    "$date": "2020-06-17T18:00:02.763Z"
+    "date": "11/29/2020, 9:02:46 PM",
+    "receivers": [
+      "Julio"
+    ],
+    "data": [
+      {
+        "title": "Nintendo 3ds Con 4 Juegos Físicos ",
+        "image": "https://http2.mlstatic.com/nintendo-3ds-con-4-juegos-fisicos-D_NQ_NP_775213-MLC44201651184_112020-V.jpg",
+        "link": "https://articulo.mercadolibre.cl/MLC-564427775-nintendo-3ds-con-4-juegos-fisicos-_JM#position=16&type=item&tracking_id=c1826469-03a7-4762-bd36-ccdf058db0dd",
+        "price": "$160.000",
+        "keywords": [
+          "ds"
+        ]
+      },
+      {
+        "title": "Nintendo 3ds Xl Edición Especial 30 Años De Luigi",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_813668-MLC44203152041_112020-V.jpg",
+        "link": "https://articulo.mercadolibre.cl/MLC-564465015-nintendo-3ds-xl-edicion-especial-30-anos-de-luigi-_JM#searchVariation=69469507868&position=32&type=item&tracking_id=c1826469-03a7-4762-bd36-ccdf058db0dd",
+        "price": "$200.000",
+        "keywords": [
+          "ds"
+        ]
+      },
+      {
+        "title": "Play Station 3 Super Slim",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_840274-MLC44203116771_112020-V.jpg",
+        "link": "https://articulo.mercadolibre.cl/MLC-564466039-play-station-3-super-slim-_JM#searchVariation=69470069032&position=34&type=item&tracking_id=c1826469-03a7-4762-bd36-ccdf058db0dd",
+        "price": "$85.000",
+        "keywords": [
+          "super"
+        ]
+      }
+    ]
   },
-  "active": true
+  "active": true,
+  "lastExecutionDuration": "218.138 ms "
 },{
   "_id": {
     "$oid": "5ecb1636ba39b14b689ea7de"
@@ -70,13 +310,73 @@
   "keywords": [
     "Epiphone"
   ],
-  "data": [],
+  "data": [
+    {
+      "title": "Vendo Bajo \"Viola\" Epiphone",
+      "link": "https://www.facebook.com/marketplace/item/137432437828367",
+      "price": "$300",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.139.539.539a/s261x260/126990247_10221300740659951_2145209879098141247_n.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=4K0yBGFQzfgAX9wct9v&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=4043ffa5f00fd8c6206064f12d6b5c8d&oe=5FE7194A",
+      "keywords": [
+        "Epiphone"
+      ]
+    },
+    {
+      "title": "Guitarra Dean ML & Epiphone sg 310",
+      "link": "https://www.facebook.com/marketplace/item/395961061529807",
+      "price": "$123",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.277.640.640a/s261x260/127243751_3744657668887364_8149358532681301495_o.jpg?_nc_cat=105&cb=846ca55b-311e05c7&ccb=2&_nc_sid=843cd7&_nc_ohc=vEgVXBN4oAIAX8eDOHX&_nc_oc=AQnBIbBCL8S9P0uqdLSo7vP2K9f4rpM2yKe8xRqZkU18y6aklh7Q9wKOM1Va-CR8C3s&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=2d8abf04aa28c66a0f7f3a6b8caae027&oe=5FE63C4D",
+      "keywords": [
+        "Epiphone"
+      ]
+    },
+    {
+      "title": "Vendo Bajo \"Viola\" Epiphone ( solo venta )",
+      "link": "https://www.facebook.com/marketplace/item/137432437828367",
+      "price": "$300.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.139.539.539a/s261x260/126990247_10221300740659951_2145209879098141247_n.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=4K0yBGFQzfgAX_fmsop&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=a0c398863188494d4e2232511513fc13&oe=5FE7194A",
+      "keywords": [
+        "Epiphone"
+      ]
+    },
+    {
+      "title": "Guitarra electroacustica epiphone",
+      "link": "https://www.facebook.com/marketplace/item/1184048105323801",
+      "price": "$110.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/128529853_1483590028498373_359019445805323096_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=aR3_e9c4gBUAX9ZyIA3&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=b5e16a92f3cee41d1c1ba44ce325c460&oe=5FE8BC0C",
+      "keywords": [
+        "Epiphone"
+      ]
+    },
+    {
+      "title": "Guitarra Electrica EPI - Epiphone by Gibson",
+      "link": "https://www.facebook.com/marketplace/item/3402515909861237",
+      "price": "$69.990",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.630.1304.1304a/s261x260/127280794_199164505110099_3251092839316728996_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=t48vgFSG0I4AX_d9XU0&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=14c77b92d8d3438d3f95c6aec5bcdf8b&oe=5FE72BAE",
+      "keywords": [
+        "Epiphone"
+      ]
+    }
+  ],
   "last_update": {
-    "$date": "2020-06-13T03:40:02.079Z"
+    "date": "11/29/2020, 6:01:40 AM",
+    "receivers": [
+      "Julio"
+    ],
+    "data": [
+      {
+        "title": "Guitarra Electrica EPI - Epiphone by Gibson",
+        "link": "https://www.facebook.com/marketplace/item/3402515909861237",
+        "price": "$69.990",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.630.1304.1304a/s261x260/127280794_199164505110099_3251092839316728996_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=t48vgFSG0I4AX_d9XU0&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=14c77b92d8d3438d3f95c6aec5bcdf8b&oe=5FE72BAE",
+        "keywords": [
+          "Epiphone"
+        ]
+      }
+    ]
   },
-  "active": true
-},
-{
+  "active": true,
+  "lastExecutionDuration": "954.552 ms "
+},{
   "_id": {
     "$oid": "5ecb489fba39b14b689ea7e0"
   },
@@ -90,11 +390,44 @@
     "64",
     "gamecube"
   ],
-  "data": [],
+  "data": [
+    {
+      "title": "Juegos Nintendo  gameboy , ds , 64",
+      "link": "https://www.facebook.com/marketplace/item/179311333908007",
+      "price": "$9.990",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.341.888.888a/s261x260/127276741_10158830616174812_3488655703794939849_o.jpg?_nc_cat=100&ccb=2&_nc_sid=b9115d&_nc_ohc=0UkXXLFSwnsAX9Tv8I4&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=9d645779484531f12a6fff340eeaa7e1&oe=5FE764A9",
+      "keywords": [
+        "gameboy",
+        "64"
+      ]
+    },
+    {
+      "title": "Casas polly pocket",
+      "link": "https://www.facebook.com/marketplace/item/372637333962989",
+      "price": "GRATIS",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.296.1152.1152a/s261x260/127617515_3825679850784587_6627936717707177878_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=7aey7aQgmmIAX9g28mU&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=ab8f613bf88a1a807fa0920b1c4aff1c&oe=5FEA2D77",
+      "keywords": [
+        "pocket"
+      ]
+    }
+  ],
   "last_update": {
-    "$date": "2020-06-10T05:10:03.122Z"
+    "date": "11/29/2020, 3:32:08 AM",
+    "receivers": [],
+    "data": [
+      {
+        "title": "Casas polly pocket",
+        "link": "https://www.facebook.com/marketplace/item/372637333962989",
+        "price": "GRATIS",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.296.1152.1152a/s261x260/127617515_3825679850784587_6627936717707177878_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=7aey7aQgmmIAX9g28mU&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=ab8f613bf88a1a807fa0920b1c4aff1c&oe=5FEA2D77",
+        "keywords": [
+          "pocket"
+        ]
+      }
+    ]
   },
-  "active": true
+  "active": true,
+  "lastExecutionDuration": "240.010 ms "
 },{
   "_id": {
     "$oid": "5ed00ad708d9e6b1485c8ac9"
@@ -109,11 +442,228 @@
     "smash",
     "mario"
   ],
-  "data": [],
+  "data": [
+    {
+      "title": "Nintendo 64",
+      "link": "https://www.facebook.com/marketplace/item/3618255334900328",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.330.1049.1049a/s261x260/127577337_1573765406164693_2445127177176229390_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=UAZC_A0q9yoAX8GZhyL&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=124822544e0061608bbc61946c9c6f19&oe=5FE45809",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Juegos Nintendo 64 - N64 /\\/ REPRO",
+      "link": "https://www.facebook.com/marketplace/item/1592310987628048",
+      "price": "$20.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/126959788_729571667968766_8234010806800773083_n.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=RBr0AQhQxr0AX88nFWM&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=b4d393f76cf3fdd9032b0fbaa53463f7&oe=5FE6677C",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Juegos Nintendo 64 + Caja protectora",
+      "link": "https://www.facebook.com/marketplace/item/1012060772602760",
+      "price": "$25.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.106.960.960a/s261x260/126906203_3312338368863482_7101085860832699520_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=Y7pnQUxw-sgAX_qxjwH&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=b3e4ef7cf31e75d1f1c93a3cb39c96e2&oe=5FE5DD79",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Juego Nintendo 64 Impecable Original",
+      "link": "https://www.facebook.com/marketplace/item/1103444540090987",
+      "price": "$20.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127812843_811663666283573_8164467698639972853_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=z7UYP1ukP3IAX-kzkO9&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=ccaa16b78c710c6b1e964e075d2f9ebe&oe=5FE4AAAB",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Controles alternativo para Nintendo 64 NUEVOS",
+      "link": "https://www.facebook.com/marketplace/item/198791721819550",
+      "price": "$15.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/127705878_395304021663180_5341942064973773666_n.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=eWrWc10xoSoAX9ESDnM&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=12ef82b214a969853234313d92957fdc&oe=5FE4F2AB",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Transformador Cargador Fuente de poder – Nintendo 64",
+      "link": "https://www.facebook.com/marketplace/item/134999544744263",
+      "price": "$15.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/126815534_10221168806264492_8280101450446165111_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=fWMVWD2fK4kAX9r7Xjw&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=e4a9a883cf063112cef0a4e1bab62b2a&oe=5FE442DD",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "HOLA ALGUEN QUE VENDA UN NINTENDO 64 QUE ESTE EN BUEN ESTASO Y CON JUEGO XFAVOR",
+      "link": "https://www.facebook.com/marketplace/item/834308613992903",
+      "price": "GRATIS",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.46.1080.1080a/s261x260/127176150_3472403186176666_8578875535924389472_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=uYA2gP3FYeMAX8OBRmq&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=abf8c4588564361e1df3b672a0082158&oe=5FE77870",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "A bug´s life de nintendo 64",
+      "link": "https://www.facebook.com/marketplace/item/690014745238735",
+      "price": "$20.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/126903597_2134434836689832_2316597118020299687_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=t9s0aMp3ElYAX8O_mNK&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=e2ddf2048c3b91911c2994d3e7e9ac02&oe=5FE59A02",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Juegos N64 nuevos",
+      "link": "https://www.facebook.com/marketplace/item/397113821428920",
+      "price": "$25.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c91.0.260.260a/p261x260/126934624_10158914447614330_256553788588588890_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=3VKyXq_IuvIAX9gKWsZ&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=390595ca996341e94020fd190a5f7cf2&oe=5FE67F95",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Consola y Juegos de Nintendo 64",
+      "link": "https://www.facebook.com/marketplace/item/184160949918255",
+      "price": "$1",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.79.720.720a/s261x260/126928003_10158947092686449_7884175624099158480_n.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=FEzcD5Jh6SMAX9h2BuU&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=878567f579ddac61d022a8403d013e10&oe=5FE47E90",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Fuentes y controles de 64",
+      "link": "https://www.facebook.com/marketplace/item/3068774650016425",
+      "price": "$15.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/125560380_201939174860392_3623029856809605383_n.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=JVsqUx97OiEAX9ydvn5&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=e8b118b8e10065fb81be53ac84b9e243&oe=5FE45492",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Pokemon Stadium 64",
+      "link": "https://www.facebook.com/marketplace/item/827431324466350",
+      "price": "$16.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127551274_966185770458373_5504486848135701468_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=TkGzGfY9xaQAX9DB_Pj&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=9c42a4a0e68633a428924f07a2ec12db&oe=5FE6137F",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Mario Party 3 repro N64",
+      "link": "https://www.facebook.com/marketplace/item/1056278178117476",
+      "price": "$25.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/126516125_966181023792181_7596306862277570907_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=XhNQsxbWaOwAX9TT6Yw&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=54c0eb703c5f444b556a8fec08976012&oe=5FE77F5D",
+      "keywords": [
+        "64",
+        "mario"
+      ]
+    },
+    {
+      "title": "Juegos de Nintendo 64",
+      "link": "https://www.facebook.com/marketplace/item/2872399919703078",
+      "price": "$1",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c8.0.260.260a/p261x260/128174227_10158953585356449_7269667796944350650_n.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=2ezT4y5XBukAX-TD3Uv&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=9aeda6ccf8d845d7ccf9e3d13e63ad1a&oe=5FE67CD7",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Mission Impossible nintendo 64",
+      "link": "https://www.facebook.com/marketplace/item/3870816262952439",
+      "price": "$15.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.277.1080.1080a/s261x260/127220404_3525884907531654_3058102689949748573_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=CdNaThRse5kAX_GrSQt&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=1241883cfe545b28ff6ce2b7b48b9318&oe=5FE598A8",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Dr Mario 64",
+      "link": "https://www.facebook.com/marketplace/item/140735017426348",
+      "price": "$15.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.87.261.261a/p261x260/127233836_10158953433413624_7663603964141566662_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=jAYs9h8p_sUAX8LFtBN&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=2970274873c8c256845b6f39c7ac516f&oe=5FE63B0B",
+      "keywords": [
+        "64",
+        "mario"
+      ]
+    },
+    {
+      "title": "Juegos Nintendo  gameboy , ds , 64",
+      "link": "https://www.facebook.com/marketplace/item/374053130521853",
+      "price": "$9.990",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.341.888.888a/s261x260/126842155_10158830598109812_5599988639944413188_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=puYkqcIUVQAAX_97znt&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=fff8c939150dd9330b101339b2228eb6&oe=5FE8F461",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Nintendo 64 Más un Juego y dos Controles funcionando ..",
+      "link": "https://www.facebook.com/marketplace/item/397477791669119",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/127228000_814026372713969_3825712377731042431_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=yHrUiwAagoMAX_yIade&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=b0beabc61a2262db599d841d7c07d601&oe=5FE9F1C7",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Super mario 64",
+      "link": "https://www.facebook.com/marketplace/item/781243639125016",
+      "price": "$23.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/127282434_10223135590714529_8787005614674237053_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=u5zhRFF20_kAX_aJcvn&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=20dc0ea873f401cf2b12cb79f64adbf7&oe=5FEA4481",
+      "keywords": [
+        "64",
+        "mario"
+      ]
+    },
+    {
+      "title": "Donkey kong 64",
+      "link": "https://www.facebook.com/marketplace/item/3321222121338559",
+      "price": "$23.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.13.1080.1080a/s261x260/128551490_10223135534873133_2365249504033887233_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=-ed5aK0G8EYAX8Dn_Oc&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=fd50b995ea051098a4f2d1cf37915e92&oe=5FE7C4EC",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Juegos  N64  para celular",
+      "link": "https://www.facebook.com/marketplace/item/400789314397783",
+      "price": "$3.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c87.0.260.260a/p261x260/128425789_722858828627653_3595852548417892489_n.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=F2zsuCmtHvAAX87wAcu&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=12dbff909113d7619543d617fe3bd88a&oe=5FE7618D",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "JUEGOS NINTENDO 64",
+      "link": "https://www.facebook.com/marketplace/item/859224664835036",
+      "price": "$15.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/127842510_10225396607201350_4057411702847196206_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=qXXGLjsFD1UAX8kh3ts&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=ae15acd8fbbd1b59c7997ddf60b2c596&oe=5FE947D3",
+      "keywords": [
+        "64"
+      ]
+    }
+  ],
   "last_update": {
-    "$date": "2020-06-15T16:00:03.549Z"
+    "date": "11/29/2020, 5:48:32 PM",
+    "receivers": [
+      "Julio"
+    ],
+    "data": [
+      {
+        "title": "JUEGOS NINTENDO 64",
+        "link": "https://www.facebook.com/marketplace/item/859224664835036",
+        "price": "$15.000",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/127842510_10225396607201350_4057411702847196206_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=qXXGLjsFD1UAX8kh3ts&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=ae15acd8fbbd1b59c7997ddf60b2c596&oe=5FE947D3",
+        "keywords": [
+          "64"
+        ]
+      }
+    ]
   },
-  "active": true
+  "active": true,
+  "lastExecutionDuration": "480.331 ms "
 },{
   "_id": {
     "$oid": "5ed00b0d08d9e6b1485c8aca"
@@ -126,35 +676,246 @@
     "PSP",
     "Vita"
   ],
-  "data": [],
+  "data": [
+    {
+      "title": "PSP desbloqueada en excelentes condiciones",
+      "link": "https://www.facebook.com/marketplace/item/1282769505422955",
+      "price": "$60.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127177317_4898639953509315_3344089614531546765_o.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=iuQfZbWa_TYAX_5WSFd&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=be69573d714495ad6c751f74b5974d51&oe=5FE651AD",
+      "keywords": [
+        "PSP"
+      ]
+    },
+    {
+      "title": "Juegos ps vita",
+      "link": "https://www.facebook.com/marketplace/item/2076039572529353",
+      "price": "$8.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.148.576.576a/s261x260/128076394_10222237463399733_7150867605218926976_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=yok_JB7tP0kAX8Ua8l-&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=56b644f9b1adaa2ec29d157acece9259&oe=5FE45DB2",
+      "keywords": [
+        "Vita"
+      ]
+    },
+    {
+      "title": "Psvita edicion rojas slim y fat",
+      "link": "https://www.facebook.com/marketplace/item/169614981508602",
+      "price": "$280",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.28.261.261a/p261x260/127247550_3720777551347013_4057001407463085098_o.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=UnXWXspglRAAX8J-QbX&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=027f0b5714fab63336d249409023c562&oe=5FE73808",
+      "keywords": [
+        "Vita"
+      ]
+    },
+    {
+      "title": "Psvita edicion roja slim y fat",
+      "link": "https://www.facebook.com/marketplace/item/169614981508602",
+      "price": "$280",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.28.261.261a/p261x260/127815244_3720777461347022_7226142270445409748_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=9qioaQ4gpkYAX8CRZ6H&_nc_oc=AQnghsPc9SesfNh0nIVdVgeZ-zGl1Hvnot_0qyalS-N38YoSEyNOqam2nPd8Or8x-sY&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=f85c27210fa285a22d15aac7ffda87ee&oe=5FE514AC",
+      "keywords": [
+        "Vita"
+      ]
+    },
+    {
+      "title": "VENDO PSVITA con 4 juegos con su estuche SIN CARGADOR ",
+      "link": "https://www.facebook.com/marketplace/item/385524076018003",
+      "price": "$90",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/128376224_382634033172486_6113263137888004223_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=Ig3zkIU7AWkAX-EVCyb&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=b5dfa6822eae4e67928497882353ac4d&oe=5FE90CD9",
+      "keywords": [
+        "Vita"
+      ]
+    },
+    {
+      "title": "PSP",
+      "link": "https://www.facebook.com/marketplace/item/1008678319614289",
+      "price": "$50.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/128451442_794425897783970_4611970562132504785_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=podfQpGl-2gAX9nox13&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=9fd88658a3fd3924abded82959d1afdc&oe=5FE8319D",
+      "keywords": [
+        "PSP"
+      ]
+    },
+    {
+      "title": "DESBLOQUEO PS VITA",
+      "link": "https://www.facebook.com/marketplace/item/2365855863559712",
+      "price": "$3.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.296.1152.1152a/s261x260/127182798_10222067431369793_8433109930000553168_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=WYr9MNWYT98AX-llQrr&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=15d2db79768737e4a94c38fbcd948f14&oe=5FE68E37",
+      "keywords": [
+        "Vita"
+      ]
+    },
+    {
+      "title": "Psp 3000",
+      "link": "https://www.facebook.com/marketplace/item/171561147975666",
+      "price": "$50.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c71.0.260.260a/p261x260/127237478_10224356775410341_7932280621520347511_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=-jJ1n4dmgiYAX9H0qns&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=fc38bc412ac066a4c812a6b0cda86b8d&oe=5FE8A49E",
+      "keywords": [
+        "PSP"
+      ]
+    },
+    {
+      "title": "Psp go",
+      "link": "https://www.facebook.com/marketplace/item/121665426287354",
+      "price": "$50.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.498.1427.1427a/s261x260/128446124_726746858193967_4035460839300143474_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=jGb_-sdGo_0AX_8hG00&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=7d75003541c6903a5d26fc47d51507f1&oe=5FEA6D23",
+      "keywords": [
+        "PSP"
+      ]
+    },
+    {
+      "title": "Cartuchera ps vita",
+      "link": "https://www.facebook.com/marketplace/item/438594733805631",
+      "price": "$7.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/127618679_10224356751049732_3346560218221302284_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=stPwgKxyCvsAX_Xa3qn&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=a09d7299466f831ff0eaba5440ed3c0f&oe=5FE97636",
+      "keywords": [
+        "Vita"
+      ]
+    },
+    {
+      "title": "Juegos de ps vita ",
+      "link": "https://www.facebook.com/marketplace/item/380656739878036",
+      "price": "$6.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127111076_10224356678247912_5616410093277624320_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=SvBvHYZ4gJUAX9B5Nk1&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=e0bd8cea3cdecee56d6f66c386d47470&oe=5FEA5E2E",
+      "keywords": [
+        "Vita"
+      ]
+    },
+    {
+      "title": "Carcasa PSP 1000 (frontal original)",
+      "link": "https://www.facebook.com/marketplace/item/4043996552280354",
+      "price": "$15.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/p261x260/127813544_10158817636994758_286107569712210826_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=riz6kT-dKWoAX_IX-0c&_nc_ht=scontent.fscl19-1.fna&tp=6&oh=d74354b682c009d55c580b2a6c2ee313&oe=5FE826BF",
+      "keywords": [
+        "PSP"
+      ]
+    },
+    {
+      "title": "Psvita memorias",
+      "link": "https://www.facebook.com/marketplace/item/407529997293424",
+      "price": "$35.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/128609020_1619031738438170_5614229537801410409_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=-smCGg3SxzsAX9I5RcY&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=288187e692d4c290e8ade8dbe8c7faf7&oe=5FE82A57",
+      "keywords": [
+        "Vita"
+      ]
+    },
+    {
+      "title": "Carcasa con skin PSP 1000 origonal usada",
+      "link": "https://www.facebook.com/marketplace/item/756859558509771",
+      "price": "$2.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/p261x260/127656818_10158817555069758_8060631976203881865_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=dGx0UiJaxMEAX9brZX7&_nc_ht=scontent.fscl19-1.fna&tp=6&oh=792a88d7c08f3bcf332a8573fef404b4&oe=5FE6B256",
+      "keywords": [
+        "PSP"
+      ]
+    }
+  ],
   "last_update": {
-    "$date": "2020-06-15T18:20:02.130Z"
+    "date": "11/28/2020, 11:33:08 PM",
+    "receivers": [
+      "Julio"
+    ],
+    "data": [
+      {
+        "title": "Psp go",
+        "link": "https://www.facebook.com/marketplace/item/121665426287354",
+        "price": "$50.000",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.498.1427.1427a/s261x260/128446124_726746858193967_4035460839300143474_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=jGb_-sdGo_0AX_8hG00&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=7d75003541c6903a5d26fc47d51507f1&oe=5FEA6D23",
+        "keywords": [
+          "PSP"
+        ]
+      },
+      {
+        "title": "Cartuchera ps vita",
+        "link": "https://www.facebook.com/marketplace/item/438594733805631",
+        "price": "$7.000",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/127618679_10224356751049732_3346560218221302284_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=stPwgKxyCvsAX_Xa3qn&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=a09d7299466f831ff0eaba5440ed3c0f&oe=5FE97636",
+        "keywords": [
+          "Vita"
+        ]
+      },
+      {
+        "title": "Juegos de ps vita ",
+        "link": "https://www.facebook.com/marketplace/item/380656739878036",
+        "price": "$6.000",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127111076_10224356678247912_5616410093277624320_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=SvBvHYZ4gJUAX9B5Nk1&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=e0bd8cea3cdecee56d6f66c386d47470&oe=5FEA5E2E",
+        "keywords": [
+          "Vita"
+        ]
+      },
+      {
+        "title": "Carcasa PSP 1000 (frontal original)",
+        "link": "https://www.facebook.com/marketplace/item/4043996552280354",
+        "price": "$15.000",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/p261x260/127813544_10158817636994758_286107569712210826_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=riz6kT-dKWoAX_IX-0c&_nc_ht=scontent.fscl19-1.fna&tp=6&oh=d74354b682c009d55c580b2a6c2ee313&oe=5FE826BF",
+        "keywords": [
+          "PSP"
+        ]
+      },
+      {
+        "title": "Psvita memorias",
+        "link": "https://www.facebook.com/marketplace/item/407529997293424",
+        "price": "$35.000",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/128609020_1619031738438170_5614229537801410409_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=-smCGg3SxzsAX9I5RcY&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=288187e692d4c290e8ade8dbe8c7faf7&oe=5FE82A57",
+        "keywords": [
+          "Vita"
+        ]
+      },
+      {
+        "title": "Carcasa con skin PSP 1000 origonal usada",
+        "link": "https://www.facebook.com/marketplace/item/756859558509771",
+        "price": "$2.000",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/p261x260/127656818_10158817555069758_8060631976203881865_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=dGx0UiJaxMEAX9brZX7&_nc_ht=scontent.fscl19-1.fna&tp=6&oh=792a88d7c08f3bcf332a8573fef404b4&oe=5FE6B256",
+        "keywords": [
+          "PSP"
+        ]
+      }
+    ]
   },
-  "active": true
+  "active": true,
+  "lastExecutionDuration": "508.619 ms "
 },{
   "_id": {
     "$oid": "5ed00b7f08d9e6b1485c8acb"
   },
   "name": "PSP Vita Yapo",
   "url": "https://www.yapo.cl/region_metropolitana/consolas_videojuegos?ca=15_s&l=0&q=PSP+vita&w=1&cmn=&pe=3",
+  "encoding": "latin1",
   "query": "* > td.thumbs_subject > a",
+  "image_query": "* > td.listing_thumbs_image > div > div > div > img",
+  "link_query": "* > td.thumbs_subject > a.redirect-to-url",
+  "price_query": "* > td.thumbs_subject | module.exports = $(elem).find('span').text();",
   "keywords": [
     "psp",
     "vita"
   ],
   "dynamic": false,
-  "data": [],
+  "data": [
+    {
+      "title": "Hand wrist strap para PSP Sony, PS Vita",
+      "keywords": [
+        "psp",
+        "vita"
+      ]
+    },
+    {
+      "title": "Transformador de corriente psp origina, vita tv or",
+      "keywords": [
+        "psp",
+        "vita"
+      ]
+    }
+  ],
   "last_update": {
-    "$date": "2020-06-01T02:48:52.626Z"
+    "$date": "2020-11-26T18:03:31.284Z"
   },
-  "active": true
+  "active": true,
+  "lastExecutionDuration": "271.280 ms "
 },{
   "_id": {
     "$oid": "5ed00bb408d9e6b1485c8acc"
   },
   "name": "Nintendo 64 Yapo",
   "url": "https://www.yapo.cl/region_metropolitana/consolas_videojuegos?ca=15_s&l=0&q=nintendo+64&w=1&cmn=&pe=3",
+  "encoding": "latin1",
   "query": "* > td.thumbs_subject > a",
+  "image_query": "* > td.listing_thumbs_image > div > div > div > img",
+  "link_query": "* > td.thumbs_subject > a.redirect-to-url",
+  "price_query": "* > td.thumbs_subject | module.exports = $(elem).find('span').text();",
   "keywords": [
     "64",
     "smash",
@@ -162,11 +923,294 @@
     "mario"
   ],
   "dynamic": false,
-  "data": [],
+  "data": [
+    {
+      "title": "Juegos Nintendo 64 - N64 // REPRO",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Compro nintendo 64 con juegos",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Transformador Cargador Fuente de poder Nintendo 64",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Juego Nintendo 64 Impecable Original",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Conrol nintendo 64",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Control nintendo 64",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Control RetroFighters para Nintendo 64",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Mario kart nintendo 64",
+      "keywords": [
+        "64",
+        "mario"
+      ]
+    },
+    {
+      "title": "Zelda nintendo 64",
+      "keywords": [
+        "64",
+        "zelda"
+      ]
+    },
+    {
+      "title": "Nintendo 64 transfer pack",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Juegos de Nintendo 64",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Juego de Nintendo 64",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "A bug´s life nintendo 64 original con caja",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "3 rumble pack nintendo 64",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "WF War Zone Ninendo64 N64",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "South Park 64",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Juego nintendo 64 Zelda majora mask repro",
+      "keywords": [
+        "64",
+        "zelda"
+      ]
+    },
+    {
+      "title": "Cable rca super nintendo nuevo audio video n64 gc",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Snes gamecube n64 cables rca audio video nuevos",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Super smash bros nintendo 64 repro",
+      "keywords": [
+        "64",
+        "smash"
+      ]
+    },
+    {
+      "title": "Juego Pikachu japonA©s Para nintendo 64",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Transferpack Nintendo 64",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Nintendo 64 originales",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "WCW Nitro Nintendo 64 Pelea Lucha Libre WWF",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Juegos n64, nintendo 64 repro",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Wave Race 64 Nintendo N64 Racing Carreras",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "WCW Mayhem Nintendo N64 Pelea WWF Wrestling Deport",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "FIFA Soccer 64 Nintendo N64 Futbol Deportes",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Micro Machines 64 Turbo Nintendo N64 Codemasters M",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Nintendo 64 juego Mario kart 64",
+      "keywords": [
+        "64",
+        "mario"
+      ]
+    },
+    {
+      "title": "Juego Nintendo 64 - Dr. Mario 64 en caja",
+      "keywords": [
+        "64",
+        "mario"
+      ]
+    },
+    {
+      "title": "Control original nintendo 64",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "F-1 Pole Position 64 Nintendo 64 Racing",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Nagano Winter Olympics '98 Nintendo 64 Sports",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "NHL Breakaway 98 Nintendo 64 Sports Hockey",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Madden NFL 99 Nintendo 64 EA Sports",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Blast Corps Nintendo 64 Action, puzzle Rare",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Magical Tetris Challenge Nintendo 64 Puzzle Capcom",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "A Bug's Life Bichos Nintendo 64 Activision",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Juegos nintendo 64 repro",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Juego nintendo 64",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Juego Pikachu japones Para nintendo 64",
+      "keywords": [
+        "64"
+      ]
+    },
+    {
+      "title": "Juego Pikachu japon�s Para nintendo 64",
+      "image": "https://img.yapo.cl/thumbsli/06/0685297581.jpg",
+      "link": "https://www.yapo.cl/region_metropolitana/consolas_videojuegos/juego_pikachu_japon_s_para_nintendo_64_74076253.htm?ca=15_s&oa=74076253&xsp=25",
+      "price": "$20.000",
+      "keywords": [
+        "64"
+      ]
+    }
+  ],
   "last_update": {
-    "$date": "2020-06-15T21:25:01.309Z"
+    "date": "11/29/2020, 9:05:45 PM",
+    "receivers": [
+      "Julio"
+    ],
+    "data": [
+      {
+        "title": "Juego Pikachu japon�s Para nintendo 64",
+        "image": "https://img.yapo.cl/thumbsli/06/0685297581.jpg",
+        "link": "https://www.yapo.cl/region_metropolitana/consolas_videojuegos/juego_pikachu_japon_s_para_nintendo_64_74076253.htm?ca=15_s&oa=74076253&xsp=25",
+        "price": "$20.000",
+        "keywords": [
+          "64"
+        ]
+      }
+    ]
   },
-  "active": true
+  "active": true,
+  "lastExecutionDuration": "548.206 ms "
 },{
   "_id": {
     "$oid": "5ee1288bcb6c5442558a5e81"
@@ -184,8 +1228,7 @@
     "$date": "2020-06-11T01:30:04.121Z"
   },
   "active": false
-},
-{
+},{
   "_id": {
     "$oid": "5ee1288bcb6c5442558a5e82"
   },
@@ -194,13 +1237,2581 @@
   "query": "facebook_marketplace",
   "dynamic": true,
   "keywords": [
-    "hp",
-    "x360"
+    "x360",
+    "360"
   ],
-  "data": [],
+  "data": [
+    {
+      "title": "Hp x360 14 g1. Intel Pentium 4415u HDD 500gb. 4gb ram. Pantalla 14. Tactil . Impecable.",
+      "link": "https://www.facebook.com/marketplace/item/3312566592189051",
+      "price": "$220.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/124223338_10223580611081261_6096296596029760716_o.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=nq207h7iHOcAX-ng9QY&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=72f10e13f87c3d1ad68e1ba35da4704e&oe=5FE7598F",
+      "keywords": [
+        "hp",
+        "x360"
+      ]
+    },
+    {
+      "title": "HP PAVILION X360",
+      "link": "https://www.facebook.com/marketplace/item/384899012761475",
+      "price": "$300.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/126303962_3553572204731159_8975447079276908431_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=33uGzcdHqWIAX9ngJjg&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=34547bab1e35d3d1893371707bfca5a5&oe=5FE4B2EF",
+      "keywords": [
+        "hp",
+        "x360"
+      ]
+    },
+    {
+      "title": "Notebook HP X360 I5 7TH. 8GB RAM, 1TB HDD",
+      "link": "https://www.facebook.com/marketplace/item/129594478675331",
+      "price": "$380.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.30.260.260a/p235x350/125924942_10224708012072275_4720503414876058181_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=nXZ6TWhBZrwAX9ZmCDh&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=7a4ac0eef17f6c4f2ae7c358a16efc5a&oe=5FE71FCE",
+      "keywords": [
+        "hp",
+        "x360"
+      ]
+    },
+    {
+      "title": "Notebook HP Pavilion x360 + lápiz",
+      "link": "https://www.facebook.com/marketplace/item/192258602537291",
+      "price": "$300.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/126201613_10220906698328756_7316216647869837168_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=JM3_9XnJIlAAX_YVbdy&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=ea9109d86789cc48649837dd19e2f044&oe=5FE630EF",
+      "keywords": [
+        "hp",
+        "x360"
+      ]
+    },
+    {
+      "title": "Ultrabook HP Spectre x360 Táctil ( i7 6th Gen ) 8GB de Ram SSD 256 Gb 13,3 FHD Win10Pro",
+      "link": "https://www.facebook.com/marketplace/item/304745487177588",
+      "price": "$400.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/124868280_1001732000340047_7448355040572406179_o.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=rtCfNmjfF14AX8BDn2-&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=cedb48d529ad9ed4c25123b47fcbea4f&oe=5FE700AD",
+      "keywords": [
+        "hp",
+        "x360"
+      ]
+    },
+    {
+      "title": "Hp pavilion x360 touch  convertible",
+      "link": "https://www.facebook.com/marketplace/item/338359724056129",
+      "price": "$450.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/120756934_3597538683631499_4423641657956358197_o.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=_sM9hEzgB68AX_enqx5&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=935a01dedff9c742e79f92833a97d28b&oe=5FE40CE0",
+      "keywords": [
+        "hp",
+        "x360"
+      ]
+    },
+    {
+      "title": "HP ENVY X360 \nAMD RYZEN\n8 GB DE RAM\nDISCO DURO EXTERNO 500gb\nMOUSE GAMER",
+      "link": "https://www.facebook.com/marketplace/item/359995921729886",
+      "price": "$550.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/123774326_3864271813605812_4318482620489575947_o.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=H187Iecpf7QAX8Q7zg5&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=4db82611d47061694cf61071d48a46e3&oe=5FE4929F",
+      "keywords": [
+        "hp",
+        "x360"
+      ]
+    },
+    {
+      "title": "Notebook HP Pavilion x360 (Convertible / Touch)",
+      "link": "https://www.facebook.com/marketplace/item/1777963052381092",
+      "price": "$320.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c101.0.260.260a/p261x260/123241541_1092375954532684_1684520400238110235_n.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=sufGmHqvxAkAX81qc5o&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=470887547251aa60b67c812c92be3338&oe=5FE71371",
+      "keywords": [
+        "hp",
+        "x360"
+      ]
+    },
+    {
+      "title": "Notebook Hp 2en1 i3, 8gb ram, 128gb ssd",
+      "link": "https://www.facebook.com/marketplace/item/284472956337229",
+      "price": "$350.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127577338_10222677447737407_1178424154692035490_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=VjR75yx9GTQAX9-ffcK&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=ee3402df657dec9f2fadd94d2d7ef859&oe=5FE3E04A",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "Notebook gamer hp Pavilion 15-cx003la",
+      "link": "https://www.facebook.com/marketplace/item/1009724706176210",
+      "price": "$500.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/125436854_10223953309398471_3740231230721632441_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=FrYO7WzAnw4AX_osymb&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=6c36139954beece4421d307ba19839c7&oe=5FE70B61",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "Laptop HP ENVY 13 excelente estado conversable",
+      "link": "https://www.facebook.com/marketplace/item/359076178678327",
+      "price": "$450.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/122806837_10220665802127698_4937071593487078410_o.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=UY_meEBp-10AX_iBI3Q&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=dbe82a0595891bdb949d4d0713ec6332&oe=5FE5D2E2",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "NOTEBOOK HP PAVILION GAMER, NVIDIA 1050 QUAD CORE, UNICO DETALLE EN LA PANTALLA (NO ESTA ROTA)",
+      "link": "https://www.facebook.com/marketplace/item/1011882192558836",
+      "price": "$400.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/121479259_2696588737219743_7805465824584226972_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=mMmqc6hgCGsAX968t9N&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=9ad65fdf2a3c32d6ef8f1ef0851ad16a&oe=5FE7516B",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "Notebook Hp Folio 9470m (intel I5 8gb Ram 320gb Dd)",
+      "link": "https://www.facebook.com/marketplace/item/376712913608817",
+      "price": "$280.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.10.261.261a/p261x260/125562682_10224074792279436_726426315216664686_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=vlemfozgYb4AX9PLU8x&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=cd255228b2a061a284380cf18bc96d3d&oe=5FE5E76F",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "Venta Notebook Hp EliteBook 9480m / i5 - 4ta Generación .",
+      "link": "https://www.facebook.com/marketplace/item/272346297542173",
+      "price": "$300.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/124085588_10157838170283284_6212497511032320343_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=LihN7VRB00QAX_lVIGY&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=094027befb3685b5ec3c53c73341c045&oe=5FE7559D",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "HP pavilion x360",
+      "link": "https://www.facebook.com/marketplace/item/971227073360284",
+      "price": "$359.990",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/124642180_4534943836580478_3184191417170969428_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=N8_U1VmiyJQAX9IQhMZ&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=2f46b8577ebde3df8245ee06138d6e00&oe=5FE73D86",
+      "keywords": [
+        "hp",
+        "x360"
+      ]
+    },
+    {
+      "title": "Notebook Hp Envy 8va generación i5 con caja",
+      "link": "https://www.facebook.com/marketplace/item/2525125854451153",
+      "price": "$500.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/123136833_10164336592690858_2006285775167487200_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=kyqodE6Jv70AX9E0j41&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=6c7744f4df26bc2be0b30c55e98cba53&oe=5FE4D99B",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "Hp envy \nI7 de 7 th generación \nTraída de EEUU 🇺🇸 \n🤩🤩🤩🤩🤩🤩",
+      "link": "https://www.facebook.com/marketplace/item/703825046925502",
+      "price": "$480.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/124332639_356289935628088_2867679639920601399_o.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=UXyzKyciErUAX8vTI1h&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=10b348254bd353e3dc0a3c41c6c0bb5e&oe=5FE588B8",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "Laptop HP PAVILION (dias de uso)",
+      "link": "https://www.facebook.com/marketplace/item/788869028335880",
+      "price": "$550.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/125865318_10217259071658799_3545730418307492978_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=qD4cfHCCwKAAX9W6CZ8&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=959af841cf03a6661710880451dc07e6&oe=5FE62146",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "Notebook gamer hp pavilion core i7 de 7th gen 16gb de ram 1tera disco 4gb tarjeta de video nvidia",
+      "link": "https://www.facebook.com/marketplace/item/416782956011623",
+      "price": "$549.900",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.106.960.960a/s261x260/123708182_3397674923652734_802137630761265890_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=yEDiMj7BDOwAX_9_lCb&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=fc8b0c6826808399695ddb8e66ea47e6&oe=5FE43903",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "HP Stream x360 TOUCH",
+      "link": "https://www.facebook.com/marketplace/item/697032420946233",
+      "price": "$250.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.79.960.960a/s261x260/126929887_10223942048120675_4027758369685816934_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=GV6Pbs7qyTQAX_wnIdh&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=67ba9327b17c25cd803641eac9af4b92&oe=5FE3DDF2",
+      "keywords": [
+        "hp",
+        "x360"
+      ]
+    },
+    {
+      "title": "Vendo Notebook Hp Envy 13-4103dx",
+      "link": "https://www.facebook.com/marketplace/item/376265690304781",
+      "price": "$400.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/125339529_10158085153883073_5071781546432680765_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=NUPgLxxO5JMAX9c71b_&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=4214f0ad168248e9513289c1b4aaba50&oe=5FE7A331",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "REMATO Notebook HP 13.3\" i7 8550u 8gb RAM ultrabook Funcionando con detalles",
+      "link": "https://www.facebook.com/marketplace/item/377507793599380",
+      "price": "$320.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/124182991_3622523237791586_7971832848269155853_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=FNExVHVPrd4AX8nZQXX&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=7c5c0d42fdccd90a1d8aa9b96d550c96&oe=5FE6F3CF",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "HP PAVILION x360 convertible",
+      "link": "https://www.facebook.com/marketplace/item/386203106068611",
+      "price": "$399.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c48.0.260.260a/p261x260/124965666_3631043093606152_8633033352217426917_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=AEC_ol40XXsAX_8YutZ&_nc_oc=AQk5DPdwSof2ltkjkJrVSGb9qnJltaOe5UVyhnegQ2VcWcSCeRCDDgacdA2PXmMcgTo&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=41bca2c9a2b0d561549d8d41ee167c7a&oe=5FE48256",
+      "keywords": [
+        "hp",
+        "x360"
+      ]
+    },
+    {
+      "title": "HP PAVILION X360 DH0025LA / INTEL® CORE™ I3",
+      "link": "https://www.facebook.com/marketplace/item/327515981800053",
+      "price": "$450.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.84.768.768a/s261x260/119520823_10219765330576740_7539448315197885429_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=y7Mpv32iAU4AX-88Wpv&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=77d7e1831c5e4c87a07dac339d2dfc09&oe=5FE544F2",
+      "keywords": [
+        "hp",
+        "x360"
+      ]
+    },
+    {
+      "title": "Hp elitebook 840 g5",
+      "link": "https://www.facebook.com/marketplace/item/2506890902941514",
+      "price": "$500.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/124352979_10224935250028873_3013528254339683912_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=h1ppnFZRQLMAX_8Lmwx&_nc_oc=AQkBh73LRMTTwGSXsEW139sH3JelrLDEtYX0HE4FnoDrl88A7Ml6UeVQMyoSFFI4EAw&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=eabb70c0871c64928b25c17f8ca39a5c&oe=5FE60722",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "Notebook Hp Pavilion/AMD A10-9620P\\/ 8GB DDR4\\/ 1TB\\/ AMD Radeon 530 (2GB)",
+      "link": "https://www.facebook.com/marketplace/item/2705914752991873",
+      "price": "$350.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/124258748_805996243295733_3003842102579300493_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=Gm-jvxsjB3MAX_Linyx&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=e36731504a177a1568aa10e5db974acc&oe=5FE698CC",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "HP Pavilon x360 convertible Intel Core i5 8va gen /\\/ 8GB RAM  \\/\\/ 500GB HDD",
+      "link": "https://www.facebook.com/marketplace/item/760046851531418",
+      "price": "$450.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/127993801_3869333349777775_4881402568904546908_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=r1wocFCfruoAX-86TYI&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=afa5501f7e3166bfe7f9a611a0876cbe&oe=5FE748E8",
+      "keywords": [
+        "hp",
+        "x360"
+      ]
+    },
+    {
+      "title": "Permuto notebook HP I5-8gb RAM-500HDD",
+      "link": "https://www.facebook.com/marketplace/item/475429680084534",
+      "price": "$300.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c47.0.260.260a/p261x260/124913706_10157217199610938_7312123028127681519_n.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=oaFbSPP7m9sAX98ds3F&_nc_oc=AQmBtf4yfOxRBIox8j5UGdadHhUV-ty06lvUKccRUKG7HmQP0veQocg7lgOdvF_XYE4&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=16b28d85a6f7545db344bfde42df4abd&oe=5FE56540",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "Notebook hp \nIdeal para tele trabajo y clases online\nDe regalo 🎁 aro de luz \nOpen box\nVer espec.👇\n",
+      "link": "https://www.facebook.com/marketplace/item/1109454392769750",
+      "price": "$220.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/105985176_259158658674550_3193149960072978801_o.jpg?_nc_cat=104&cb=846ca55b-311e05c7&ccb=2&_nc_sid=843cd7&_nc_ohc=cGV-1SE1EuUAX96CHcg&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=7aa8db63b812efc921e2ade6dfea5694&oe=5FE7AD4C",
+      "keywords": [
+        "hp"
+      ]
+    },
+    {
+      "title": "HP pavilion 360 convertible",
+      "link": "https://www.facebook.com/marketplace/item/323969305713713",
+      "price": "$260.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127102118_1851408384997502_1473053824640040247_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=YukQ9cqd14MAX8LnWk9&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=9a9387b4e1bed55dadfd7b2a03c2a082&oe=5FE78E44",
+      "keywords": [
+        "360"
+      ]
+    }
+  ],
   "last_update": {
-    "$date": "2020-06-11T01:30:04.121Z"
+    "date": "11/28/2020, 10:04:39 PM",
+    "receivers": [
+      "Julio"
+    ],
+    "data": [
+      {
+        "title": "HP pavilion 360 convertible",
+        "link": "https://www.facebook.com/marketplace/item/323969305713713",
+        "price": "$260.000",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127102118_1851408384997502_1473053824640040247_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=YukQ9cqd14MAX8LnWk9&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=9a9387b4e1bed55dadfd7b2a03c2a082&oe=5FE78E44",
+        "keywords": [
+          "360"
+        ]
+      }
+    ]
   },
-  "active": true
-}
-]
+  "active": true,
+  "lastExecutionDuration": "67.239 ms "
+},{
+  "_id": {
+    "$oid": "5fc015600cfb254f94d1d492"
+  },
+  "name": "Silla Gamer Facebook Coquimbo",
+  "url": "https://www.facebook.com/marketplace/105686679466017/search?query=silla%20gamer",
+  "query": "facebook_marketplace",
+  "dynamic": true,
+  "keywords": [
+    "gamer"
+  ],
+  "data": [
+    {
+      "title": "SILLA GAMER",
+      "link": "https://www.facebook.com/marketplace/item/1059115271185930",
+      "price": "$100.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.94.256.255a/p180x540/127874933_10224393817731183_1183845619860545636_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=k9f9-jG2dawAX9UyNnb&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=b4988721756c46766844096dfca99381&oe=5FE591B6",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Sillas Gamer - Home Office",
+      "link": "https://www.facebook.com/marketplace/item/993783144478400",
+      "price": "$139.990",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.119.1080.1080a/s261x260/123553844_10218076104107334_6609870724791522884_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=i7GvSjlllagAX_OjRrW&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=071a03d049efcdf3dfb2618c8f35b3e7&oe=5FE632A2",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Silla gamer",
+      "link": "https://www.facebook.com/marketplace/item/3432556506793060",
+      "price": "$130.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.166.648.648a/s261x260/126825599_1822302197916795_5072245020762735272_o.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=9tc8k6F-dsYAX_MjgN4&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=3ae11454c3d15434c6e5d2e1e6b4a98d&oe=5FE6F418",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Sillas gamer",
+      "link": "https://www.facebook.com/marketplace/item/1013020749197520",
+      "price": "$100.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c4.0.260.260a/p261x260/127819055_2708318539497971_1041497967533562366_n.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=_kAzANrhCSkAX9MCbaS&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=32f2c3cc20fd750605d2b48fcc10d125&oe=5FE629EF",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Sillas gamer🎮‼️",
+      "link": "https://www.facebook.com/marketplace/item/709816619962446",
+      "price": "$151.990",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/127983985_134069418468898_2227279132194922220_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=cLW_GHKgxgsAX-VPo5_&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=ddf33cbbacb7589f2a29ff0eee5e4038&oe=5FE50F2D",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Sillas gamer",
+      "link": "https://www.facebook.com/marketplace/item/2744729072522761",
+      "price": "$250.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.139.540.540a/s261x260/122976701_10221938115580701_481091242702941503_n.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=G3z4eoumy68AX8HgFw4&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=256b87dc60570fdc8c5c9946d0974a0e&oe=5FE61967",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "SILLA GAMER PROFESIONAL RECLINABLE\nSILLA ESCRITORIO",
+      "link": "https://www.facebook.com/marketplace/item/2782286395382542",
+      "price": "$119.900",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/123448174_1829727587177426_181413387436248220_n.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=qiRHFSJbgywAX-eDGHX&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=d4baf718c38e265d83f61da618cd7bd2&oe=5FE4E2FF",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Sillas gamer azul con negro",
+      "link": "https://www.facebook.com/marketplace/item/327776658566042",
+      "price": "$149.900",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/122289392_3613398902032666_8976629984412475110_n.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=gBsnaYaTnqcAX82aWtd&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=a1c633490a87daf031b54ffb533d5865&oe=5FE43C50",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "PREVENTA SILLAS GAMER 🎁5 COLORES DISPONIBLES",
+      "link": "https://www.facebook.com/marketplace/item/372910747151189",
+      "price": "$139.990",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.79.720.720a/s261x260/125956952_185418439730850_4410185584183942658_n.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=hw3g3XCIu-sAX_jwqH1&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=21cb4798e059c7f9ac0464d95244eaa9&oe=5FE69137",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Silla gamer nueva sin uso",
+      "link": "https://www.facebook.com/marketplace/item/3396172533811176",
+      "price": "$130.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t45.5328-4/c0.252.648.648a/126622650_3409157402453226_8674078874378113070_n.jpg?_nc_cat=110&ccb=2&_nc_sid=c48759&_nc_ohc=6GIM-m7SUzkAX_ipRcQ&_nc_ht=scontent.fscl19-1.fna&oh=8cd04c6c4fcfda438db90a8635c704c8&oe=5FE6ECA3",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Sillas gamer 🎮🕹️",
+      "link": "https://www.facebook.com/marketplace/item/2634534590191178",
+      "price": "$159.900",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.99.1200.1200a/s261x260/122721032_3632276786811544_8947649682242213516_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=m7AJWiGB0CoAX-V7GB_&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=c9eef78a4b6d99626d46a79b5e52622c&oe=5FE407E5",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Silla para gamer",
+      "link": "https://www.facebook.com/marketplace/item/769512763904703",
+      "price": "$128.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.139.860.860a/s261x260/123284490_10223753612485792_8587654112402887722_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=8yjWgbsFqJgAX-lyGa0&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=c0a50e1b1bd1c5332b3ff1473ff687c0&oe=5FE4654C",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "PREVENTA SILLAS GAMER 15 DE DICIEMBRE",
+      "link": "https://www.facebook.com/marketplace/item/3969448619746172",
+      "price": "$139.990",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.150.584.584a/s261x260/126433594_187960429476651_173467644399574329_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=LI3Am2E3StIAX_12tQy&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=c9a7efd4f3f2a3d7a5cf40526f045bba&oe=5FE5C9FB",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Silla Gamer profesional para Escritorio RECLINABLE",
+      "link": "https://www.facebook.com/marketplace/item/1814689858671787",
+      "price": "$119.900",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.131.564.564a/s261x260/120617103_1799050933578425_367045019887239777_n.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=Q4l96RuvgmAAX-ApmHa&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=2c32beb7485052af1945b850adca0180&oe=5FE3B7D3",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Sillas gamer!!! Reclinable, silla para escritorio, super cómoda.",
+      "link": "https://www.facebook.com/marketplace/item/994531271025275",
+      "price": "$129.500",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.436.1080.1080a/s261x260/123255217_10223959354872942_6528365908109811899_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=r19aPQW_KmQAX8mZklr&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=55e35c9d7b02b9151d315935a19a5ef8&oe=5FE53672",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Silla gamer clio con rgb",
+      "link": "https://www.facebook.com/marketplace/item/374749593671847",
+      "price": "$310",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/123047962_798176030967808_4816072768507946900_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=eKCVzKPipagAX884UkV&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=69aace55f96e0ad37ec2d8266485bb7b&oe=5FE61D4E",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "VENDO SILLA GAMER PRACTICAMENTE NUEVA",
+      "link": "https://www.facebook.com/marketplace/item/374809157169255",
+      "price": "$350.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/p261x260/123195763_931095667724610_6446359724387842526_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=UyP9Nd0i__oAX-Qh92g&_nc_ht=scontent.fscl19-1.fna&tp=6&oh=321f0e282439e17f180a385a803a91e5&oe=5FE3E309",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Silla gamer clio",
+      "link": "https://www.facebook.com/marketplace/item/386344385913257",
+      "price": "$300",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.70.640.640a/s261x260/125218550_811861039599307_6114498333814527514_n.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=ioI99-EcxM0AX_qDIgv&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=2c0cc9ff192c3531014fb86530fa2e22&oe=5FE6F867",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "kit gamer teclado retro iluminado mas mouse gaming",
+      "link": "https://www.facebook.com/marketplace/item/3323778347738271",
+      "price": "$25.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/117899878_646012642707932_7042430399289660136_n.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=k8_wu-RAUcIAX_96vYM&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=95e2af809c0dcbefc0ae720ec0423b68&oe=5FE70BBF",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Se vende teclado gamer (uso adulto)",
+      "link": "https://www.facebook.com/marketplace/item/349760262987863",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/125073361_862159951197402_6481230263023591349_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=7xPi5LDbc1UAX91nBlq&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=d625f1093bb04cba3e9a022a985a0e55&oe=5FE6DDA3",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Pc Gamer - Cotización + Armado",
+      "link": "https://www.facebook.com/marketplace/item/697496431171795",
+      "price": "$20.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/123800780_5151559444861623_2749636921347213364_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=A05x2JPhuBAAX_4OubZ&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=003e477ff979a652810f2313f427abf9&oe=5FE69B02",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "OPORTUNIDAD DE COMPRA SILLAS GAMER",
+      "link": "https://www.facebook.com/marketplace/item/1883362211805971",
+      "price": "$135.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.150.584.584a/s261x260/127088913_187937912812236_2649557477574114204_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=i4OIc8OGqHoAX-kIqPj&_nc_oc=AQnzb60gmbSUPG7Nkudrl8G7jFe5dHo4yopT8HSZnYWTQFA-YcgPPh7AWe1yHH5HE-c&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=331a4cbcdeaaf6e4672268b425cf9372&oe=5FE6A874",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Silla Gamer",
+      "link": "https://www.facebook.com/marketplace/item/691346444718892",
+      "price": "$100.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.94.256.255a/p180x540/128121378_10224403403730827_5802844530216048825_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=oQmycjk5-TEAX-WgAgg&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=d8e7fa9b25d1b3a54eb65f9dc8f969e3&oe=5FE7FBD7",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "🎮 Gamer over.",
+      "link": "https://www.facebook.com/marketplace/item/301848354188604",
+      "price": "$6.500",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/124539730_152137369945673_1755748251790858081_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=mL3MW-hq_50AX_WV2s6&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=c5c16652927f5a92197f19addf9c7ad3&oe=5FE5887C",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Silla gamer nueva",
+      "link": "https://www.facebook.com/marketplace/item/666881800656622",
+      "price": "$130.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.166.648.648a/s261x260/128391243_1823782191102129_6413124342516802160_o.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=BLCn4A6PTcsAX98eqoS&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=6f63c9a9e2e2143092f09f5766870b14&oe=5FE79F16",
+      "keywords": [
+        "gamer"
+      ]
+    },
+    {
+      "title": "Escritorio gamer",
+      "link": "https://www.facebook.com/marketplace/item/1959658597502918",
+      "price": "$1",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/120973411_3900472793303053_4627945629338074374_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=P18V6Kh1n8wAX_-smV3&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=d4880639f688680c57bcf7cdf1468999&oe=5FEB4860",
+      "keywords": [
+        "gamer"
+      ]
+    }
+  ],
+  "last_update": {
+    "date": "11/29/2020, 7:17:04 PM",
+    "receivers": [
+      "Asqueroso"
+    ],
+    "data": [
+      {
+        "title": "Escritorio gamer",
+        "link": "https://www.facebook.com/marketplace/item/1959658597502918",
+        "price": "$1",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/120973411_3900472793303053_4627945629338074374_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=P18V6Kh1n8wAX_-smV3&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=d4880639f688680c57bcf7cdf1468999&oe=5FEB4860",
+        "keywords": [
+          "gamer"
+        ]
+      }
+    ]
+  },
+  "active": true,
+  "lastExecutionDuration": "836.346 ms "
+},{
+  "_id": {
+    "$oid": "5fc015600cfb254f94d1d493"
+  },
+  "name": "Plotter Facebook Coquimbo",
+  "url": "https://www.facebook.com/marketplace/105686679466017/search?query=plotter",
+  "query": "facebook_marketplace",
+  "dynamic": true,
+  "keywords": [
+    "plotter"
+  ],
+  "data": [
+    {
+      "title": "PLOTTER DE CORTE",
+      "link": "https://www.facebook.com/marketplace/item/376869423689383",
+      "price": "$450.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/121173143_1451827335015674_6333977812978218377_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=t_gYQT5BwjcAX_mEPIz&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=a0d99bba504c7b7a2928ce72e2a7e05a&oe=5FE44000",
+      "keywords": [
+        "plotter"
+      ]
+    },
+    {
+      "title": "PLOTTER",
+      "link": "https://www.facebook.com/marketplace/item/1436318156757467",
+      "price": "$600.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/121163066_1448836048645728_6969140326741295490_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=gQyzHB-OEYUAX8LKoOU&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=aa13dda421e510b3c1566268b73c5586&oe=5FE44E14",
+      "keywords": [
+        "plotter"
+      ]
+    },
+    {
+      "title": "VENDO Plotter Hp Z5600",
+      "link": "https://www.facebook.com/marketplace/item/365797954518053",
+      "price": "$2.100.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.133.518.518a/s261x260/125549675_10224029583345653_6113093173172912540_n.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=23L_N9dxn8kAX8WRa_S&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=459111852f8fb70bd0cba8ab565a3a80&oe=5FE457F1",
+      "keywords": [
+        "plotter"
+      ]
+    },
+    {
+      "title": "Vendo Plotter de impresión Hp Z5600",
+      "link": "https://www.facebook.com/marketplace/item/718566175441885",
+      "price": "$2.200.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.258.640.640a/s261x260/125051050_10224012642882152_1435615399982223948_o.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=a-YervrXxR0AX9PFo4u&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=591436d6aeca7872e9bcee598d9b6a6c&oe=5FE413FA",
+      "keywords": [
+        "plotter"
+      ]
+    },
+    {
+      "title": "Plotter HP Z5600",
+      "link": "https://www.facebook.com/marketplace/item/761526514685841",
+      "price": "$2.200.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.139.540.540a/s261x260/118318014_10223312301854064_4617333155518217965_n.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=Ba9deDLVjJ8AX87RzEc&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=9ed1efe7bb67c485e63c563a2ac511e4&oe=5FE6D562",
+      "keywords": [
+        "plotter"
+      ]
+    },
+    {
+      "title": "Plotter z5600",
+      "link": "https://www.facebook.com/marketplace/item/2676137979319915",
+      "price": "$2.200.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.152.592.592a/s261x260/117715628_10223283596496448_5968640892976427329_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=ckNU67XPSF8AX8PUQhn&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=ee185624adea84f771b4d4df2e9f4c21&oe=5FE6AD5E",
+      "keywords": [
+        "plotter"
+      ]
+    },
+    {
+      "title": "Plotter de Impresión Hp Z5600",
+      "link": "https://www.facebook.com/marketplace/item/637358197187330",
+      "price": "$2.100.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.139.540.540a/s261x260/119060556_10223431676078345_355068422282209652_n.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=14KD2nyE9HEAX-NEzk-&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=36e514db4ee4b701e8df5090ae7df94e&oe=5FE5C5E1",
+      "keywords": [
+        "plotter"
+      ]
+    },
+    {
+      "title": "Plotter de corte",
+      "link": "https://www.facebook.com/marketplace/item/348539869632113",
+      "price": "$650.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/120260954_10158116205086107_4060528074534208460_n.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=wHlurEQe93AAX9lycq_&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=1e86857b7ea7a6ee7733d242f490857f&oe=5FE3EC62",
+      "keywords": [
+        "plotter"
+      ]
+    }
+  ],
+  "last_update": {
+    "$date": "2020-11-26T18:05:38.695Z"
+  },
+  "active": true,
+  "lastExecutionDuration": "681.769 ms "
+},{
+  "_id": {
+    "$oid": "5fc015600cfb254f94d1d494"
+  },
+  "name": "Star wars Facebook Coquimbo",
+  "url": "https://www.facebook.com/marketplace/105686679466017/search?query=star%wars",
+  "query": "facebook_marketplace",
+  "dynamic": true,
+  "keywords": [
+    "star wars",
+    "starwars"
+  ],
+  "data": [
+    {
+      "title": "Star Wars",
+      "link": "https://www.facebook.com/marketplace/item/775468269687984",
+      "price": "$2.990",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c98.0.260.260a/p261x260/121254718_10225153191716403_1998892482174944968_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=9q4sz8akK_EAX_aFgNt&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=06e1110116c2a89f8bcaa3aef85d1213&oe=5FE691F5",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Star wars diorama impresión 3d",
+      "link": "https://www.facebook.com/marketplace/item/768980453831091",
+      "price": "$10.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/126980322_10207763508962144_3415340620155223349_n.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=kP68SOBf6UkAX9-Xo1K&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=a2c29d3a7a54247dc4f8ab78d2ea3868&oe=5FE63D77",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Figuras Star Wars",
+      "link": "https://www.facebook.com/marketplace/item/1324930971181992",
+      "price": "$9.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.0.780.780a/s261x260/126835625_10160324464043998_101825763223754352_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=bFE8KbWx1d4AX9xefeb&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=7128c5c6d03474d4eddc17dfbaf1ad7f&oe=5FE607A8",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Colección figuras Star wars",
+      "link": "https://www.facebook.com/marketplace/item/802082747006373",
+      "price": "$20.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c101.0.260.260a/p261x260/120955121_1611814702312745_6134795047356298910_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=FMC8APbCIEQAX-ieigp&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=fc4b497d1b908db371ebd53379582450&oe=5FE3EE4B",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Espadas star wars",
+      "link": "https://www.facebook.com/marketplace/item/360596298326599",
+      "price": "$5.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.79.720.720a/s261x260/121566142_10219924600638042_5368694560125053775_n.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=GkHIcS1CMHAAX_iZQXI&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=b344457ab61ee40d8f2c03f0978e1469&oe=5FE4FFE7",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Figuras star wars",
+      "link": "https://www.facebook.com/marketplace/item/3149124558502353",
+      "price": "$6.500",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c37.0.260.260a/p261x260/115710094_10220547822540069_4070292013610455666_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=Il-P6vWQ56IAX9JFvZr&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=acbeedd46d5940904742d215100ed922&oe=5FE426AC",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Funko pop star Wars",
+      "link": "https://www.facebook.com/marketplace/item/233264288010999",
+      "price": "$12.345",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/118537990_10224133894714726_1845911797263718630_n.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=Blr4X3qU_34AX_sGH-M&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=361dd3a709571cd4b554c7c607d0f77e&oe=5FE68587",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Figuras de star wars",
+      "link": "https://www.facebook.com/marketplace/item/430431678117817",
+      "price": "$4.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.79.720.720a/s261x260/128011253_2876557709242932_540935058335950366_n.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=T4eYUCM6YgkAX93KJHZ&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=ee4f8a11a2c2fb89158f1b59067c4ae3&oe=5FE61998",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Funkos pop de Star Wars",
+      "link": "https://www.facebook.com/marketplace/item/1705535672953905",
+      "price": "$12.345",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c10.0.260.260a/p261x260/118516738_10224127239988362_2710273276118357515_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=hKJKOxnfycgAX86x8qR&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=fa5db0bc2327fea59e7a23008c8c9343&oe=5FE72525",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Robot bb8 star wars",
+      "link": "https://www.facebook.com/marketplace/item/1220060431684766",
+      "price": "$45.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.211.640.640a/s261x260/120476593_10222021823629944_7352269454345129242_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=-z3JBa0sX70AX-4VmLi&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=171a5201efb55078c99928a11da7006c&oe=5FE79050",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Figuras Star wars 3,75 \nLeer la descripción",
+      "link": "https://www.facebook.com/marketplace/item/1215725878768103",
+      "price": "$11.111.111",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/106001833_4093467517390958_5941570707425786044_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=PpCXB3dRaVkAX_KZcAa&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=91ce1d3f7e29e0148eda87036845df79&oe=5FE65592",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Disfraz Star wars",
+      "link": "https://www.facebook.com/marketplace/item/2576742232637744",
+      "price": "$1",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/p261x260/116875521_10224008692584500_5283465411000850843_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=4IPmzHrkaPIAX-zRYL3&_nc_ht=scontent.fscl19-1.fna&tp=6&oh=a7bfd16cf7e293729e7f13252d81f238&oe=5FE4730B",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Toallas cars, star wars",
+      "link": "https://www.facebook.com/marketplace/item/440548537343196",
+      "price": "$5.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.0.260.260a/p261x260/124871526_828277224672572_1841128745108892149_o.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=CPWlbsOodY0AX_upyaG&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=70a8b1ed79677c8a6a6ecd6c3ada6960&oe=5FE6CAAE",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Protectores star wars toy story etc",
+      "link": "https://www.facebook.com/marketplace/item/323353105482449",
+      "price": "$2.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/117597691_1404906936375477_8329733569421471411_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=9qqFVLizJpAAX_mLzHk&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=f2ab0ef54922a141cf22c330bcb93e21&oe=5FE6A5F5",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Star wars",
+      "link": "https://www.facebook.com/marketplace/item/408558347218217",
+      "price": "$8.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.79.720.720a/s261x260/126959466_10220172503195451_3216629442049400746_n.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=Rp9HEZ7fxw4AX_jY7X9&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=a885c8dd8b1e24127b85a4eef14ef742&oe=5FE4E54D",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Puzzle Star Wars 100 Piezas",
+      "link": "https://www.facebook.com/marketplace/item/634851360479765",
+      "price": "$6.500",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.94.256.255a/p180x540/116434011_954823184967037_790651443588250604_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=Xl81ic_N7MsAX_R1Y8W&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=cb9bbc126186d0f8d57fbee2e5c2a860&oe=5FE3C4AB",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Figura Articulada Star Wars",
+      "link": "https://www.facebook.com/marketplace/item/1457610561102842",
+      "price": "$18.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/118837072_153359653076238_1972779872585618579_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=ORRMj4vJmmkAX-DzIUW&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=01f1381375405569d3407f97a0c96a36&oe=5FE584D8",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Lanyard, correa, portacredencial star wars",
+      "link": "https://www.facebook.com/marketplace/item/407621337035312",
+      "price": "$3.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/p261x260/126537765_10224585425726635_2934749794830192130_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=oT_7IjXG_rIAX8-M01H&_nc_ht=scontent.fscl19-1.fna&tp=6&oh=fe45d5baf1d8792414a884b27b8f9b65&oe=5FE6CFB2",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Accesorios the mandalorian impresión 3d Star wars",
+      "link": "https://www.facebook.com/marketplace/item/286672706089140",
+      "price": "$10.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.79.720.720a/s261x260/125846874_10207763947613110_3129093173664501118_n.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=5xNO7r1LCWEAX9p8JIC&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=4e33194120b725e038daae2d7e4db272&oe=5FE531C0",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Pop star wars",
+      "link": "https://www.facebook.com/marketplace/item/1889049464567440",
+      "price": "$15.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/122068140_1493692960841986_963141772911083128_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=ng6A0ZR_xrwAX8K9aq6&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=0fbcf8a756cff102974d2e6dc548f835&oe=5FE4CE81",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Cascos Star Wars.",
+      "link": "https://www.facebook.com/marketplace/item/289727598740110",
+      "price": "$123.456",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.296.1150.1150a/s261x260/102669533_3182715365139051_4543740124053653959_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=s6D-sdJbcxQAX_PyHkc&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=81d2ae09ea9f5adad6dd8df1680d145f&oe=5FE6AEAE",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Figuras de star wars",
+      "link": "https://www.facebook.com/marketplace/item/382288886224140",
+      "price": "$4.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.79.720.720a/s261x260/124667064_10221568631019420_1136702830712065293_n.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=RSAKsc4mNo4AX-1OYg3&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=908485fdd2fddd5bb2f927a6cd1e8daa&oe=5FE4F679",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Figura Star Wars, 79 cms ",
+      "link": "https://www.facebook.com/marketplace/item/552051392342202",
+      "price": "$18.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.99.900.900a/s261x260/103309875_2385277055105644_8977434159252937472_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=jrXuEZc9reUAX9vWAs-&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=5842396be68c774ddcf969cba4611bd5&oe=5FE6654E",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "TSHIRT STARWARS",
+      "link": "https://www.facebook.com/marketplace/item/382966152784289",
+      "price": "$6.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/125878922_3713246505381615_4917980658762056368_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=ufYgHe32ykMAX8cglc5&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=090df839222d0ae4c384512a456fd29f&oe=5FE799CC",
+      "keywords": [
+        "starwars"
+      ]
+    },
+    {
+      "title": "Libro star wars episodio 1",
+      "link": "https://www.facebook.com/marketplace/item/835594057210744",
+      "price": "$9.500",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/p261x260/124359727_398263547984174_5842236030089947600_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=FQXlybEPPFgAX916FRU&_nc_ht=scontent.fscl19-1.fna&tp=6&oh=d73b7d2880ccae985b08525539c32f93&oe=5FE649B7",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Android Star Wars",
+      "link": "https://www.facebook.com/marketplace/item/757468641681252",
+      "price": "$10.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/117526733_10222406625889487_6701341680132101242_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=fXePjvBrQtMAX9e34-M&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=c8a18c0794359b659e96ab9403d63e9d&oe=5FE50269",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Disfraz Star Wars",
+      "link": "https://www.facebook.com/marketplace/item/3616246968420037",
+      "price": "$7.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/122708194_810394859796027_7245027613166569297_o.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=dm2V5P_X_poAX8349pV&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=32bc970b1e30c0a116f2b269f6038115&oe=5FE87854",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "COD: Infinite Warfare, Fallout 4 y Lego Star Wars the force awakens perfecto estado",
+      "link": "https://www.facebook.com/marketplace/item/2726059387637382",
+      "price": "$10.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.165.720.720a/s261x260/120948331_1519302498272318_1848366809100430561_n.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=xN7EPKveZCcAX-HRSAM&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=5057eaf273b1994894b3d8fce19c3201&oe=5FE5DDEB",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Figuras de star wars ultimas unidades",
+      "link": "https://www.facebook.com/marketplace/item/835994250278951",
+      "price": "$4.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/128308335_10221674805433714_4204598126022416989_n.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=DjPeKV0xN7MAX-ZwLYB&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=7dcac4ae4bf64bce3539b29a8bb0b5a9&oe=5FE6F740",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "figuras starwars",
+      "link": "https://www.facebook.com/marketplace/item/201933154704890",
+      "price": "$13.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.398.1120.1120a/s261x260/127180171_10225874360830016_3955682629737147472_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=z-ZO1wrcnnIAX-7Hn8t&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=f66e358cd7128765fdd0b270b3d7970f&oe=5FE6BEEE",
+      "keywords": [
+        "starwars"
+      ]
+    },
+    {
+      "title": "Nintendo 64 star wars",
+      "link": "https://www.facebook.com/marketplace/item/173534181091050",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.296.1152.1152a/s261x260/128549612_1718279121679993_2349312350509354623_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=QC0JEWV4Dy4AX8VPhCr&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=f769c675f3433b9bf7dad2a89ed68aa1&oe=5FE6B512",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Star wars originales",
+      "link": "https://www.facebook.com/marketplace/item/1599352463604767",
+      "price": "$10.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.79.720.720a/s261x260/125896563_10220176369572108_2962614058644692761_n.jpg?_nc_cat=105&ccb=2&_nc_sid=b9115d&_nc_ohc=BswY0KG-Vi4AX_NeLUj&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=fa35def9782542293de442dbd9f10cec&oe=5FE9A902",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Star wars gamecube",
+      "link": "https://www.facebook.com/marketplace/item/128119978904802",
+      "price": "$40.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c101.0.260.260a/p261x260/127040673_1718303238344248_7702230343960596316_n.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=hp6yN1shfLwAX-1ZUBT&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=702b193ae7755d0c5c7e1dab0bd2bcb0&oe=5FE8DCF8",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Pins baby yoda, star wars",
+      "link": "https://www.facebook.com/marketplace/item/636011027275503",
+      "price": "$3.500",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/p261x260/122624069_10224359719444119_6130830910024592311_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=IsQ5wUDJISsAX8R71lN&_nc_oc=AQkJOL5yozJ6y8dlrWJNNwq4DZ5slJ6ZCv8rS2991cgvb4goqj6XLz_Nw2jAyctpvXQ&_nc_ht=scontent.fscl19-1.fna&tp=6&oh=d83bd8b4eb4dfbab404f653319fd321c&oe=5FE79969",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Llavero Star Wars",
+      "link": "https://www.facebook.com/marketplace/item/884401812096305",
+      "price": "$3.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/126949228_10160324371953998_6088069278153736037_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=KzD9JbKVSZkAX8ftX2H&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=b03da7bd8ce234ba9d45dfc709c9ee5a&oe=5FE947EC",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Accesorios Star wars Impresión 3d",
+      "link": "https://www.facebook.com/marketplace/item/718604692099445",
+      "price": "$10.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/127159125_10207780161818455_8878952556766120720_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=2ScUckB3iRoAX9aLxBz&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=fba91f91810d75ae7d844c86a726697f&oe=5FEA8E9D",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Accesorios Star Wars Impresion 3d",
+      "link": "https://www.facebook.com/marketplace/item/3511174882332148",
+      "price": "$10.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t45.5328-4/c160.0.960.960a/p960x960/127586221_5309525799061194_2044894153963005034_n.jpg?_nc_cat=104&cb=846ca55b-311e05c7&ccb=2&_nc_sid=c48759&_nc_ohc=QDSZshZLNSwAX_jL0-3&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=5e380586f47b2f6e1a993a2388007e3d&oe=5FE88605",
+      "keywords": [
+        "star wars"
+      ]
+    },
+    {
+      "title": "Moledor Grinder Star Wars Darth Vader",
+      "link": "https://www.facebook.com/marketplace/item/1584504571737688",
+      "price": "$15.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/123907898_10159413191616800_1825153580503433553_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=rz1geT3b0hcAX93V_kU&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=b3264b6b343e791f7b037cc6dcd61578&oe=5FEA791C",
+      "keywords": [
+        "star wars"
+      ]
+    }
+  ],
+  "last_update": {
+    "date": "11/29/2020, 9:07:52 PM",
+    "receivers": [
+      "Asqueroso"
+    ],
+    "data": [
+      {
+        "title": "Moledor Grinder Star Wars Darth Vader",
+        "link": "https://www.facebook.com/marketplace/item/1584504571737688",
+        "price": "$15.000",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/123907898_10159413191616800_1825153580503433553_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=rz1geT3b0hcAX93V_kU&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=b3264b6b343e791f7b037cc6dcd61578&oe=5FEA791C",
+        "keywords": [
+          "star wars"
+        ]
+      }
+    ]
+  },
+  "active": true,
+  "lastExecutionDuration": "146.550 ms "
+},{
+  "_id": {
+    "$oid": "5fc015600cfb254f94d1d495"
+  },
+  "name": "Nintendo Facebook Coquimbo",
+  "url": "https://www.facebook.com/marketplace/105686679466017/search?query=nintendo",
+  "query": "facebook_marketplace",
+  "dynamic": true,
+  "keywords": [
+    "nintendo"
+  ],
+  "data": [
+    {
+      "title": "Nintendo wii",
+      "link": "https://www.facebook.com/marketplace/item/1303400183345348",
+      "price": "$70.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c48.0.260.260a/p261x260/123828108_10223312798629029_2079055326224994247_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=aKsD3NOALdUAX_si8gK&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=1e33c888f0e9b7f7890309a862276611&oe=5FE7174A",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Vendo Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/2910244669198682",
+      "price": "$290.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127219813_10225564537640472_5610512771529000368_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=bgo7qQXGunwAX9mxEih&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=19a34b1bf263291276f71430d03042b7&oe=5FE6B5BA",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo WII",
+      "link": "https://www.facebook.com/marketplace/item/1076540129482844",
+      "price": "$60.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.79.720.720a/s261x260/126296392_10225041889698434_4218720527873303739_n.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=i-0NSMUuPWQAX-Heghu&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=6e601443ce96f494292d3c30edb4b6af&oe=5FE71B6B",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Súper Nintendo antigua",
+      "link": "https://www.facebook.com/marketplace/item/2862439253999496",
+      "price": "$120.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/125353297_399753251165668_6146015820242959821_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=k6zSqs5wn2QAX_HDofb&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=5593a7cd5447a95fd5058be36a492ecf&oe=5FE4627E",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo swith lite",
+      "link": "https://www.facebook.com/marketplace/item/379234236858987",
+      "price": "$180",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c151.0.260.260a/p261x260/127222824_10220978934001914_8323551012626177130_o.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=I310QrrEv20AX9QSrjv&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=4b3cb7658c3782dce632f562a82d7678&oe=5FE67F8A",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo Wii",
+      "link": "https://www.facebook.com/marketplace/item/293036845326633",
+      "price": "$60.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c101.0.260.260a/p261x260/127164876_2812069045698709_5254396580318393617_o.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=WzhZg6QNsF4AX-iZwec&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=a135620d316b207a1724e053d46d7bb1&oe=5FE42459",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo Switch, excelente estado.",
+      "link": "https://www.facebook.com/marketplace/item/659876778034690",
+      "price": "$300.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/125034393_1007378549768848_5602337943763584140_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=4GeIIYmavlcAX_sqZd-&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=4debb1e2f7207dc487c420a2d4afb880&oe=5FE5F3EC",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Animal Crossing Nintendo Switch Nuevo Sellado",
+      "link": "https://www.facebook.com/marketplace/item/1828862163932764",
+      "price": "$52.990",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127141899_10222365834547670_5158987060710629554_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=UPAoM3z20T8AX_4uOwt&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=ba2ccab3e025a6469303a337a87a1e2f&oe=5FE68F46",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Juegos Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/1122336881515476",
+      "price": "$1.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127121412_10221398396483276_1910478858725510578_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=AWsG3a7ccosAX8ndzg6&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=ddd1d1e351a4d24ab0bb073193308842&oe=5FE6B1ED",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo 2DS + Tarjeta 64GB",
+      "link": "https://www.facebook.com/marketplace/item/661881781154121",
+      "price": "$85.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/126924498_1525646171157653_2384479813960396032_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=LAXMMbl19hMAX-hBVTV&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=6c3b51dfc8ce8d4860039cbb4edd6bd5&oe=5FE40165",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/189272032847167",
+      "price": "$330.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/126229905_10224843440412273_932550177402338080_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=HqbLMby98sAAX9lhZCJ&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=f0ecc23b53f5331997e30a5be15ee4d6&oe=5FE6D548",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo Switch Diablo III",
+      "link": "https://www.facebook.com/marketplace/item/405428847325723",
+      "price": "$350.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/125549766_10157951846401342_6682023856105701386_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=CZGSG37SLIoAX_aLZmk&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=591b3864fbeef42946595ed56ffe31b2&oe=5FE44523",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Juegos Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/1253957504978796",
+      "price": "$15.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c101.0.260.260a/p261x260/127013511_10157483631799147_4679450808814464433_n.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=uE3Lzpk_EgUAX9rniSC&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=cf65a930c8b35dd8fcc90cb0eb946cea&oe=5FE6A3F5",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Juegos de Nintendo switch vendo",
+      "link": "https://www.facebook.com/marketplace/item/2664707887082059",
+      "price": "$123.456.789",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/101206529_3586151778078941_3122727213179338752_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=FNHP-6zMGIsAX8XWi6l&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=4cf2a88a832df5655f9c7b3c41e49e7a&oe=5FE641A3",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo Switch Lite 128 gb",
+      "link": "https://www.facebook.com/marketplace/item/394446601706835",
+      "price": "$250.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127765780_1707435832749527_2454555117991557534_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=1fcaPSWUR8wAX_JQyau&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=ed6ec79c00d6091da9fac20a6618a2f9&oe=5FE40CD8",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo Switch Lite",
+      "link": "https://www.facebook.com/marketplace/item/707356873517602",
+      "price": "$245.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/126418218_3902987446389124_2098827260778107981_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=qC5eYwGuWzMAX8W-owU&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=0b65b67b94830efaa7875dfe7a789f6f&oe=5FE72B32",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo switch lite",
+      "link": "https://www.facebook.com/marketplace/item/786165455308443",
+      "price": "$200.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.14.261.261a/p261x260/127598321_10224456922797604_8755627691231558710_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=qkYe59uXXt8AX-lFniT&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=d2da63c1678a2108caa5f78dd9abdcc1&oe=5FE50B5F",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo switch lite",
+      "link": "https://www.facebook.com/marketplace/item/365670404736901",
+      "price": "$250.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.79.720.720a/s261x260/125202495_1086118798474864_2810752147358315450_n.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=PWFSNccGVbEAX8d5lMx&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=7adae3bf1c2b9f230150f0185287547d&oe=5FE76131",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/811744919641274",
+      "price": "$200.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/125526043_10157962751736342_57307344599689095_o.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=BbkOjJ2WiP0AX-uswIv&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=df6cbb7b3e33c87f78393e6a1fa67d4b&oe=5FE3E64F",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo Switch + dock + estuche +memoria 128gb + 2juegos físicos +soporte control",
+      "link": "https://www.facebook.com/marketplace/item/1342449832776739",
+      "price": "$320.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.79.720.720a/s261x260/127661157_10224189357703244_219740645286903732_n.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=QnCFwpj2KLwAX_WcZad&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=eb40d7a99f6ef1d586f3b64c81cd4885&oe=5FE3DC60",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Yoshi's Nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/203498001362791",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/127152156_402250297570238_2123993293672997560_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=YeLZcEkslSQAX_Q_C52&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=2b325f9756f5f280a23a0dc8e066bb18&oe=5FE4B9BC",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Consola Nintendo Switch + 3 juegos",
+      "link": "https://www.facebook.com/marketplace/item/709474533012866",
+      "price": "$370.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/126406033_10224320658944489_1748480888798863499_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=eGC1y7Wsst4AX_tFAfT&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=f0d77c5cb96ff6145a03f8c7453ad1bd&oe=5FE52421",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Wii Nintendo Juegos",
+      "link": "https://www.facebook.com/marketplace/item/316966899641498",
+      "price": "$13.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/118699014_10223876542803808_7268363734845621379_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=Nn16ldBI6LUAX9bbj0u&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=d1eb28b47b4db4517765d50b8856b3d0&oe=5FE50E02",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Estuché nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/829938747794302",
+      "price": "$10.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127178577_10158786953869605_8272834684384672173_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=YsOCJ1L21O8AX8pecYL&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=946e0e5a0084d8ac65a9a1c13b3edfea&oe=5FE6BF60",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Super nintendo juegos clasicos snes (Solo juegos)",
+      "link": "https://www.facebook.com/marketplace/item/3068405726597756",
+      "price": "$12.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/121707035_787712145133053_8872655200019299729_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=-7gfLWsUR8UAX_7nGEi&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=e8fde138386266a7fb1a9766d792063d&oe=5FE48A22",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Juegos super nintendo",
+      "link": "https://www.facebook.com/marketplace/item/3441737689212498",
+      "price": "$1",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/118525538_10224445018579246_4687185742900569928_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=BpvkgnBZyqQAX_OZdeR&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=a5c32b3082c265bf71315e96bdc278ad&oe=5FE5B874",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/380264056364933",
+      "price": "$340.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/126181613_10224887501116493_1364420267568874297_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=NdDoZV_rPWAAX_IQ3hM&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=7ec1ff340e4df99f2c24373145ad61d6&oe=5FE43009",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo 64",
+      "link": "https://www.facebook.com/marketplace/item/1559498090912997",
+      "price": "$90.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127031573_10225176104375934_7303757425379142744_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=1FVsnodpdK4AX_m2Ypu&_nc_oc=AQm4ygosgfHxr4_uIrkwS8GDf9votoL0Tr44wSKeWJ4Nktb0aziK3Yc_IW3XqUfvrkM&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=01b5c361dc95ff8ac203b9ee38a25a7e&oe=5FE4BC0D",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo 64 transparente",
+      "link": "https://www.facebook.com/marketplace/item/390839592154645",
+      "price": "$100.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/127285040_10225176134936698_7725098731606604604_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=IciP9Z6KAT0AX-Zqrd2&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=5a65fba79d610e1c79ae8939f8e8412b&oe=5FE48250",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo 64 en caja",
+      "link": "https://www.facebook.com/marketplace/item/408504137070934",
+      "price": "$120.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/126818846_10225176094535688_5903964120254936862_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=tN8lkGOZiPAAX8SyCPM&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=13ed8134dee873dd3372badf970e91a0&oe=5FE708DC",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Permuto por nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/845143662965542",
+      "price": "$200.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/128257834_3532406593515333_4324642284586385840_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=ctjDN5DlooQAX9VAyNd&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=2125f6406487e1343861e5b0e48a3299&oe=5FE57897",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "NINTENDO WIIU ORIGINAL",
+      "link": "https://www.facebook.com/marketplace/item/1488269298041323",
+      "price": "$180.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.0.260.260a/p261x260/126598483_10159275733894589_1437371768621847201_o.jpg?_nc_cat=104&ccb=2&_nc_sid=825194&_nc_ohc=zOpZbsgiu8cAX9zfU4z&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=b21bd6bc4783526be4da39a52950e98b&oe=5FE60EE7",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo New 3ds XL",
+      "link": "https://www.facebook.com/marketplace/item/401488490989151",
+      "price": "$150.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/124089130_987009718455230_9169919695444983779_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=hAtViuIG8nAAX9M8VR6&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=8243aeca3cebd2fd368c244d53792fab&oe=5FE7CB34",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "N64/ Nintendo 64 10\\/10",
+      "link": "https://www.facebook.com/marketplace/item/2667701646827353",
+      "price": "$25.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c145.0.260.260a/p261x260/121267542_1672010386306867_7094186104975684137_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=lME2foN8gJAAX94LF54&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=c412dd6f7b39ae1e306a83e35c4b9d1f&oe=5FE4E8FA",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Se vende NINTENDO 3DS XL GALAXY",
+      "link": "https://www.facebook.com/marketplace/item/182912306836816",
+      "price": "$140.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/126272295_407476993769288_8798518070451853319_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=I4bv4d_Io44AX8P6yhC&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=b3da7148adf8a46cc49ac4d4d876efcc&oe=5FE67F76",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": " C.ompro SUPER NINTENDO ",
+      "link": "https://www.facebook.com/marketplace/item/2798180150447033",
+      "price": "GRATIS",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c17.0.260.260a/p261x260/128410882_1554205314778532_60819352619383189_n.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=BZ_vwpl4YIMAX-ostvD&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=2103f12d0607ad087783fd5f627f58c1&oe=5FE619A3",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Juego de nintendo wii wii sports",
+      "link": "https://www.facebook.com/marketplace/item/123121632783421",
+      "price": "$5.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.53.480.480a/s261x260/127011521_472659053712407_2450746828605983468_n.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=JlWrqW9yWYUAX8cVd0r&_nc_oc=AQlibjqh8GsSIZ7hkyaoSCmFC9XD4SP3MB2hWvCYnw_z9rdf4JnaPtjDJUrpLvRdig4&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=2153cede85737a72f663f81546f8f18f&oe=5FE6696A",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "C.ompro NINTENDO 64 Leer imagen ",
+      "link": "https://www.facebook.com/marketplace/item/937109223486998",
+      "price": "GRATIS",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-9/c19.0.206.206a/128312018_1554205884778475_7576753101730796100_n.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=rODbG5pEpLUAX_T9WbP&_nc_ht=scontent.fscl19-1.fna&oh=e921a7db88ef1ab695349f6912a2702d&oe=5FE791D6",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Vendo o permuto Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/4860063097344663",
+      "price": "$450.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c138.0.260.260a/p261x260/121730688_10224023741119399_6726988171277387088_o.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=WUbouzfm21kAX8220BU&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=4c2e94c6796bd5f1826f51c48275f6ac&oe=5FE6D684",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Juegos de nintendo 3DS",
+      "link": "https://www.facebook.com/marketplace/item/769711750236170",
+      "price": "$80.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.151.503.503a/s261x260/117757488_10214301124002157_8929388283837883303_n.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=tKV7RHhLPDUAX9yFeep&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=a7dac155836111d9788ad7a0f955f87b&oe=5FE564B6",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Super nintendo juegos ORIGINALES",
+      "link": "https://www.facebook.com/marketplace/item/1215570948829324",
+      "price": "$25.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c145.0.260.260a/p261x260/123683628_1701099550064617_3891728310044724180_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=ynP-R0V6TcgAX9BNo4o&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=b4727614bc0b5de42e30c320f9c76fd3&oe=5FE86463",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Juegos Nintendo Switch y Dock",
+      "link": "https://www.facebook.com/marketplace/item/864835527584446",
+      "price": "$35.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127110001_10157967727776342_722574825244115770_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=k3jC2BJI6eAAX-mowUf&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=5df8985e4b9fd426bde403083a03d2dc&oe=5FE7AA99",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "B.USCO SUPER NINTENDO con juegos",
+      "link": "https://www.facebook.com/marketplace/item/671337760161969",
+      "price": "GRATIS",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c48.0.260.260a/p261x260/128434083_2896518833913518_7877295353870228725_n.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=hKKgnUE7XPYAX_M82TQ&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=86b2f19fe240b0ffe7d9c55809bbf008&oe=5FE77FA7",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Ps4 y Nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/258393795483974",
+      "price": "$123.456.789",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c72.0.260.260a/p261x260/101540508_3605479966146122_4223158137200631052_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=cp_mrtMK-O0AX_-l7LF&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=ec1cc92d51d33884e757f455bc072d0d&oe=5FE7B0A2",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Joystick nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/126862822369878",
+      "price": "$49.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.230.1080.1080a/s261x260/127194913_3551988974887005_8524034994977255090_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=qbrg3sBtDaoAX-Juh0b&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=4791e035cd9b695e8e86bc7463de1ebc&oe=5FE8E52E",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo Wii retrocompatible",
+      "link": "https://www.facebook.com/marketplace/item/842702476469961",
+      "price": "$80.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c87.0.260.260a/p261x260/121812351_10220527078099414_3645604757159957075_n.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=N7ssJjDayG0AX-Eygi4&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=7f91964a9752470e7c47a1269c1fef81&oe=5FE7B19A",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo DS lite",
+      "link": "https://www.facebook.com/marketplace/item/424569005206014",
+      "price": "$70.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/126318308_10224043313374874_6372423112882237339_n.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=TKLnc57NaLQAX_Qp2oB&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=b1bc91773010781ceaeb0402f0b184cb&oe=5FE7E81A",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Juegos nintendo 64",
+      "link": "https://www.facebook.com/marketplace/item/378902873198312",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c101.0.260.260a/p261x260/127601857_1717593481748557_3476894387808691550_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=mSFoNDZz1eoAX_E-9sl&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=e1a4d754e19d9d6b7d8fd6b8bd6731c3&oe=5FE635BA",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Wii nintendo",
+      "link": "https://www.facebook.com/marketplace/item/375378923736733",
+      "price": "$60.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/127712680_10158922538453762_4596902449215108356_o.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=xXXG8-vH2zAAX_rHMy7&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=76994a5aa4e500150158cdc67d8841e7&oe=5FE8BD51",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Se vende Nintendo 3DS XL",
+      "link": "https://www.facebook.com/marketplace/item/607331766719829",
+      "price": "$80.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/124860100_3773815362663409_2879301518599496199_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=1oTgYJ5UUlAAX8mMuKh&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=a6b8f27c77062cc7f373c1204d8c7ba3&oe=5FE5FEBE",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo 3ds xl+3 juegos",
+      "link": "https://www.facebook.com/marketplace/item/1100883763678591",
+      "price": "$150.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c138.0.260.260a/p261x260/126507087_3683966024976552_4465192599620473019_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=9a_MUpo7PhQAX9Y6VMF&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=6209179fc3e67385e745312212a235f5&oe=5FE79230",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "SUPER NINTENDO JR",
+      "link": "https://www.facebook.com/marketplace/item/381608699798638",
+      "price": "GRATIS",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/128418180_205266967856106_7512130339169172810_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=ti-zeDRZyQgAX_EorTH&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=b9807eda33524731647a43dbd6f6e82c&oe=5FE9274D",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Juegos Nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/359306101767153",
+      "price": "$983.971.669",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c18.0.260.260a/p296x100/117999706_3806179426076174_1713383213413831855_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=MyvOc1hzitsAX8lxhmr&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=ad854c402f0cbd19125b3ab02f33f6d8&oe=5FE9B053",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo 64 star wars",
+      "link": "https://www.facebook.com/marketplace/item/173534181091050",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.296.1152.1152a/s261x260/128549612_1718279121679993_2349312350509354623_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=QC0JEWV4Dy4AX8VPhCr&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=f769c675f3433b9bf7dad2a89ed68aa1&oe=5FE6B512",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "((C0MPRO)) Transformador Nintendo 64",
+      "link": "https://www.facebook.com/marketplace/item/1017822548719508",
+      "price": "GRATIS",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.18.1028.1028a/s261x260/128082384_10224309935558983_7745677498233156517_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=ff3BmPFF88oAX8fAO6u&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=18731732b77f9d548d6604846e95825b&oe=5FE68A8E",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "cuanto ofrecen NINTENDO 3DS XL",
+      "link": "https://www.facebook.com/marketplace/item/1263931674006531",
+      "price": "$35",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127159125_5107985139212445_6707938605671965610_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=wy56b9ir9wQAX8HO2Rq&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=1659e77d9fe4bfbb95199d8fdf3e8962&oe=5FE8A61E",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "MINI CONSOLAS NINTENDO",
+      "link": "https://www.facebook.com/marketplace/item/773107546752683",
+      "price": "$15.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/128219080_10224221831310540_2013171613973813161_n.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=mfpN4Kjw_KoAX9rycqa&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=58e9f79ca401b151af03047c488773e7&oe=5FE83484",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Super Mario odyssey - Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/345617850060679",
+      "price": "$45.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/123117634_2747787245478315_4878128561857197329_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=480niR32n54AX9gzKn1&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=c2b82c3ecb89bf1f739eb6b144ac1600&oe=5FE6B4E7",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Juegos nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/1751558071668385",
+      "price": "$111",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.79.720.720a/s261x260/128551487_185983446466426_4069278301706845388_n.jpg?_nc_cat=109&ccb=2&_nc_sid=825194&_nc_ohc=nnNji0hxZXcAX__ByrW&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=206120325584a58071d7f90619ff8c6a&oe=5FE82348",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Crash Team Racing Nitro fueled Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/376309100146960",
+      "price": "$25.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/128580705_3608891292524335_8798879851222200707_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=FT35aKrUUbcAX_DPVEK&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=435a43c6b29daa0cf6e87c1f304bd67f&oe=5FE6CD15",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Contro pro nintendo switch \n(Alternativo)",
+      "link": "https://www.facebook.com/marketplace/item/2700756410137566",
+      "price": "$25.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/120802507_10159558459932871_7733496889811988528_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=5ScV9voQnaAAX_e5Tpb&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=2ca146205d9f82b88ac864f7aab341b6&oe=5FE9E116",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Super nintendo",
+      "link": "https://www.facebook.com/marketplace/item/148057007010714",
+      "price": "$70",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/128592596_823486711764283_3834174002777034382_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=7KxZiCrANwIAX9n8kEn&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=cd11da163ac87824957e0d22aec1bde7&oe=5FE98343",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Mini super Nintendo",
+      "link": "https://www.facebook.com/marketplace/item/211751003796056",
+      "price": "GRATIS",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.79.720.720a/s261x260/128753872_1294737967528614_2320637140372786067_n.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=Xe_tvU4xWLMAX_9vItr&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=349059b94590c54e94cc5fe738691a5a&oe=5FE8CB87",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Super nintendo + mario world",
+      "link": "https://www.facebook.com/marketplace/item/3737861386258611",
+      "price": "$80.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.30.261.260a/p235x350/127196980_10224316546564254_2902154641499025599_o.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=AQ9qao1-2GYAX_BxCw6&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=57b085c28e0140f4f1f564a60073b83c&oe=5FEB3FD1",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo switch casi nuevo",
+      "link": "https://www.facebook.com/marketplace/item/126192075779744",
+      "price": "$450.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c6.0.260.260a/p261x260/128102435_4138921952801303_4165116377748778514_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=D5m2n-feFKcAX8kCT0w&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=4e6594b3904d44907356c8ea7c79add9&oe=5FEA44B8",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Vendo Nintendo Wii LEER DESCRIPCIÓN",
+      "link": "https://www.facebook.com/marketplace/item/2060610717413459",
+      "price": "$70.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/123878486_1318285191852441_8872439971420759013_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=Vxehe92DA-gAX--d3Vs&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=af6a8a322faec3974cc37e0ef3957982&oe=5FE873B2",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo 3ds",
+      "link": "https://www.facebook.com/marketplace/item/1103711500087150",
+      "price": "$180.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c101.0.260.260a/p261x260/128320037_1828514393965939_1379655904040290687_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=IDdc2Ldo4oAAX8PP6PJ&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=0b89c0ec4a53215c304220f2add5fe29&oe=5FEB486B",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo switch+mando pro nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/381388056520658",
+      "price": "$310.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.498.1427.1427a/s261x260/126447922_3683960838310404_4090005365312630338_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=6q3owN1NxT8AX8xQr3i&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=1e1dc977d9f72c8f9d2645d002ebdbe6&oe=5FE92621",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Bolso y control nintendo WII",
+      "link": "https://www.facebook.com/marketplace/item/766434140751389",
+      "price": "$20.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.277.1080.1080a/s261x260/127218415_5112386455438980_4877950354795305888_o.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=95dT3WsEojMAX_0AYpm&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=c98f0f791b1d9d85f96032b24b1437eb&oe=5FE94DA7",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Super nintendo juegos varios 2 (solo juegos)",
+      "link": "https://www.facebook.com/marketplace/item/351891459569236",
+      "price": "$11",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/121825793_787711655133102_905343016046299739_o.jpg?_nc_cat=106&ccb=2&_nc_sid=b9115d&_nc_ohc=RNUnVivp-qwAX_uw9i8&_nc_oc=AQmEXnua04v-1gMMnIPFR_2PxldH2j9UdQYZSq1KszTnzWaLYMwiEFfVWJCUVFOwdUc&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=76e4f4a62103754b323ffbb593e16e6b&oe=5FEAB38E",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo switch lite gris",
+      "link": "https://www.facebook.com/marketplace/item/1144479855954364",
+      "price": "$220.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.232.576.576a/s261x260/127890985_133666341869727_6956197589221113946_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=q3dB81PWgXkAX_42vun&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=60b40c9a7dfe952049f20a28f696c0f7&oe=5FE86402",
+      "keywords": [
+        "nintendo"
+      ]
+    },
+    {
+      "title": "Nintendo switch black",
+      "link": "https://www.facebook.com/marketplace/item/414436436589723",
+      "price": "$250.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/128347567_1684778128368117_3620651934773326210_o.jpg?_nc_cat=107&ccb=2&_nc_sid=b9115d&_nc_ohc=3E3yVfGy8S8AX8QJnnr&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=7c6e7e5feca0ad479fe627d679d46880&oe=5FEA68C5",
+      "keywords": [
+        "nintendo"
+      ]
+    }
+  ],
+  "last_update": {
+    "date": "11/29/2020, 8:36:38 PM",
+    "receivers": [
+      "Asqueroso"
+    ],
+    "data": [
+      {
+        "title": "Bolso y control nintendo WII",
+        "link": "https://www.facebook.com/marketplace/item/766434140751389",
+        "price": "$20.000",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.277.1080.1080a/s261x260/127218415_5112386455438980_4877950354795305888_o.jpg?_nc_cat=103&ccb=2&_nc_sid=843cd7&_nc_ohc=95dT3WsEojMAX_0AYpm&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=c98f0f791b1d9d85f96032b24b1437eb&oe=5FE94DA7",
+        "keywords": [
+          "nintendo"
+        ]
+      },
+      {
+        "title": "Super nintendo juegos varios 2 (solo juegos)",
+        "link": "https://www.facebook.com/marketplace/item/351891459569236",
+        "price": "$11",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/121825793_787711655133102_905343016046299739_o.jpg?_nc_cat=106&ccb=2&_nc_sid=b9115d&_nc_ohc=RNUnVivp-qwAX_uw9i8&_nc_oc=AQmEXnua04v-1gMMnIPFR_2PxldH2j9UdQYZSq1KszTnzWaLYMwiEFfVWJCUVFOwdUc&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=76e4f4a62103754b323ffbb593e16e6b&oe=5FEAB38E",
+        "keywords": [
+          "nintendo"
+        ]
+      },
+      {
+        "title": "Nintendo switch lite gris",
+        "link": "https://www.facebook.com/marketplace/item/1144479855954364",
+        "price": "$220.000",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.232.576.576a/s261x260/127890985_133666341869727_6956197589221113946_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=q3dB81PWgXkAX_42vun&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=60b40c9a7dfe952049f20a28f696c0f7&oe=5FE86402",
+        "keywords": [
+          "nintendo"
+        ]
+      },
+      {
+        "title": "Nintendo switch black",
+        "link": "https://www.facebook.com/marketplace/item/414436436589723",
+        "price": "$250.000",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/128347567_1684778128368117_3620651934773326210_o.jpg?_nc_cat=107&ccb=2&_nc_sid=b9115d&_nc_ohc=3E3yVfGy8S8AX8QJnnr&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=7c6e7e5feca0ad479fe627d679d46880&oe=5FEA68C5",
+        "keywords": [
+          "nintendo"
+        ]
+      }
+    ]
+  },
+  "active": true,
+  "lastExecutionDuration": "153.610 ms "
+},{
+  "_id": {
+    "$oid": "5fc015600cfb254f94d1d496"
+  },
+  "name": "Juegos Switch Facebook Coquimbo",
+  "url": "https://www.facebook.com/marketplace/105686679466017/search?minPrice=15000&maxPrice=35000&query=juegos%20switch&exact=false",
+  "query": "facebook_marketplace",
+  "dynamic": true,
+  "keywords": [
+    "switch"
+  ],
+  "data": [
+    {
+      "title": "Juegos Nintendo Switch Digitales",
+      "link": "https://www.facebook.com/marketplace/item/265145674861123",
+      "price": "$21.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.0.605.605a/s261x260/122035358_174404104285844_338907748658982603_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=DPFc_AHfcFIAX9Aazud&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=1ac5a0377555a2cbaf70ed7175e93b68&oe=5FE4F348",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Juegos Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/133762861521314",
+      "price": "$35.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.86.780.780a/s261x260/126041224_10157962918981342_2858248188288332161_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=uNWroju4nzoAX-hztTi&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=01830bb59990b58962ca706482263b56&oe=5FE471BC",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Juegos ps4 nintendo switch y xbox one",
+      "link": "https://www.facebook.com/marketplace/item/1004053986753194",
+      "price": "$15.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-9/126412361_2897975186972218_342226609682595894_n.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=4KaC__GwNcoAX-oW9RQ&_nc_ht=scontent.fscl19-1.fna&oh=24d71d4d3c952b1c2a881d554a40c199&oe=5FE744A1",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Juegos Nintendo Switch y Dock",
+      "link": "https://www.facebook.com/marketplace/item/864835527584446",
+      "price": "$35.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127110001_10157967727776342_722574825244115770_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=eeAnmmgcwYsAX_ceHdc&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=2b49fc2af2afa31859f4fb4749918d80&oe=5FE3B619",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Juego switch",
+      "link": "https://www.facebook.com/marketplace/item/158994379245411",
+      "price": "$20.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.436.1080.1080a/s261x260/127183157_1789939551171488_8275195692097973160_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=YZS9t-Yp5ukAX_H1MYl&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=9ae4860ce8ab541bd87b38450aa970bd&oe=5FE502B3",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Juegos Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/1253957504978796",
+      "price": "$15.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c101.0.260.260a/p261x260/127013511_10157483631799147_4679450808814464433_n.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=uE3Lzpk_EgUAX9rniSC&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=cf65a930c8b35dd8fcc90cb0eb946cea&oe=5FE6A3F5",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Juego minecraf Nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/771644953694512",
+      "price": "$35.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c14.0.260.260a/p261x260/126456100_10224127346308549_7939181715089282556_n.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=nI6qEPnxrGcAX8Rhdig&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=6f5e1bf9042ee7d05385c746e1602ec9&oe=5FE5E3E2",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Juegos Switch",
+      "link": "https://www.facebook.com/marketplace/item/322927645483076",
+      "price": "$21.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.203.985.985a/s261x260/119039513_160864658973122_1555466709436763983_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=QWeMA_i9vRwAX9pb_lM&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=34e620565da6a9d8f3fbb0acceaa1cd4&oe=5FE72488",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "JUEGOS DIGITALES NINTENDO SWITCH",
+      "link": "https://www.facebook.com/marketplace/item/2893494804264740",
+      "price": "$20.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c25.0.260.260a/p261x260/121133245_5159049897453937_5094212959541484112_n.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=t2-SMs2EhfAAX_4l7Aq&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=91ca8016466c742ce8df101aa5066283&oe=5FE78C98",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "SE VENDEN JUEGOS DIGITALES DE NINTENDO SWITCH",
+      "link": "https://www.facebook.com/marketplace/item/3407361482823137",
+      "price": "$25.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.296.1152.1152a/s261x260/125193046_1622440524603056_1842567568654939883_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=Trfj3uAtkBAAX8JsfhE&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=20123e3630d27715080c0875ad256dbe&oe=5FE6DED2",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Animal Crossing New Horizon Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/685961332025980",
+      "price": "$21.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.118.823.823a/s261x260/121656990_174461830946738_7900085061329195421_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=d5ZDR4JSn4QAX-d2SUd&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=492d9cc605c51620c846f26863805f5e&oe=5FE54B77",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Dragon Ball Xenoverse 2 - Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/693634484611280",
+      "price": "$35.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/122666653_10224673161596399_763846531549408320_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=BYHhT0GGBwgAX-L8rrs&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=84df3b6fb70b0525a395273bedbd965a&oe=5FE605CC",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Pokemon Sword Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/704749673724878",
+      "price": "$21.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.225.1036.1036a/s261x260/122127320_174462944279960_2022754768519779896_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=jKLf_OXkt30AX_ORSm-&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=77f1be1e4b0b02e0c144cf8f0c8ef775&oe=5FE5AD3A",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Estuche protector Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/986291635212815",
+      "price": "$15.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/p261x260/127225064_3472487999466002_6751741454163451646_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=VfY91e3AFhsAX-FTv0h&_nc_oc=AQkg6pNufow5SeWX0pLrirNj4Kgwmjp2bpLlrXYJd4UcievxMB3j8V2UsVqNKEqOVME&_nc_ht=scontent.fscl19-1.fna&tp=6&oh=b80b3be8f9b95aa3dd088731e94b6b64&oe=5FE4255E",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "switch juego skyrim",
+      "link": "https://www.facebook.com/marketplace/item/428016838378658",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.296.1152.1152a/s261x260/125880714_2066397893494569_5526124874858986922_o.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=43-8FUtTaQgAX84S1R6&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=cd7b28aade6e87d6cb9e1e3e1b5c66f1&oe=5FE66F99",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Zelda Nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/399259094444920",
+      "price": "$35.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/125429763_3536095153174367_6799031272102790738_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=iima7RlhT6EAX90Zbbg&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=02f27350d2063caa96b699574e3cec11&oe=5FE55646",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Pokémon sword Nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/2792351400985094",
+      "price": "$35.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.95.864.864a/s261x260/125207424_10158891264449214_2401219294554641325_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=xoV2YOnoSbUAX9CbudD&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=5c409ad4d1e97f6938f27949cd0957aa&oe=5FE72923",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Joy con izquierdo switch",
+      "link": "https://www.facebook.com/marketplace/item/2713971022152407",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.17.261.261a/p261x260/117985966_10223717680757015_537247003549146959_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=TWB93KchSRkAX_XQfBa&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=468c6c6b6b4890e1f0808457c85fb0fa&oe=5FE71BCA",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Juego Just dance 2018 nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/329833911643739",
+      "price": "$20.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.277.1080.1080a/s261x260/121651055_2477527482556802_1919626605066201630_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=drSCHGcZGWUAX-GUzx9&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=22ad800427200ff92b34bdfebb957686&oe=5FE60E79",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Juego switch Skyrim",
+      "link": "https://www.facebook.com/marketplace/item/1706194696222804",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.30.258.259a/p235x350/126049192_2067226683411690_7475968844950690718_o.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=COqw4lBv6MYAX8ZtX2x&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=e6551d40e13a90ee2b09d40a0e56a088&oe=5FE685B9",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Juego nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/3883456561715494",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.6.261.261a/p261x260/126334829_2067250066742685_7243448363853031853_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=SkeI2IFu5TMAX9K6L0J&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=3b9df16f23f2bc53576d749cf4339afc&oe=5FE7926D",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Juego nintendo switch Skyrim",
+      "link": "https://www.facebook.com/marketplace/item/834781823946838",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.21.261.261a/p261x260/125958735_2067253073409051_996433191039748296_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=PThVZ2KEqFYAX_abxP8&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=280f59b4bb7756f3a7c54bdc8593b912&oe=5FE6F9F0",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Yoshi's Nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/203498001362791",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/127152156_402250297570238_2123993293672997560_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=YeLZcEkslSQAX_Q_C52&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=2b325f9756f5f280a23a0dc8e066bb18&oe=5FE4B9BC",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Juegos Nintendo Switch Mario Minecraft Diablo Megaman sonic",
+      "link": "https://www.facebook.com/marketplace/item/349053826144943",
+      "price": "$29.990",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.87.261.261a/p261x260/119279186_3258338384247654_8037489555810449454_o.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=P8fjBcPLFGYAX8CszM-&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=b6b34e476eb770c147d5b4e1ceab432f&oe=5FE520F5",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "D3sbloqueo Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/306628273652032",
+      "price": "$20.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c100.0.260.260a/p261x260/124089171_3706264216092628_1380423198566985207_o.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=_V1OSyKCxL0AX9Vc3jn&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=73557d62cc8ce58fe40749ce70e0e18a&oe=5FE5015C",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Estuche +lámina Nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/3068099316629963",
+      "price": "$22.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/121106508_10224200043732614_4646574338380289046_n.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=EZEqgrVFTr8AX8JJ3-G&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=0663dac7971c8a65b578e88666852ff5&oe=5FE52031",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "switch just dance juego",
+      "link": "https://www.facebook.com/marketplace/item/3297911697004632",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.185.720.720a/s261x260/126206634_2068236756644016_8359791669602220043_o.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=sLsaqfJ7diAAX809mtT&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=d6af5bf62cfc5e5e1473fff0997d71a2&oe=5FE58E84",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "🎮Juegos digitales Nintendo switch🎮",
+      "link": "https://www.facebook.com/marketplace/item/267358961090987",
+      "price": "$20.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.50.809.809a/s261x260/120434687_1456826577845444_5995360794385570492_n.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=8EGt9iUbihwAX95WJqc&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=59aea46ec4ed5054e5ca338856e9c92b&oe=5FE6DFD2",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Juegos de nintendo switch",
+      "link": "https://www.facebook.com/marketplace/item/674877706574545",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.0.260.260a/p261x260/106367288_10217242123675013_6086756441453723525_o.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=rZ-J3QME-c8AX9jP4Ac&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=996dc42fbf78452235b682da664a6aba&oe=5FE986F4",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Contro pro nintendo switch \n(Alternativo)",
+      "link": "https://www.facebook.com/marketplace/item/2700756410137566",
+      "price": "$25.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/s261x260/120802507_10159558459932871_7733496889811988528_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=5ScV9voQnaAAX_e5Tpb&_nc_ht=scontent.fscl19-1.fna&tp=7&oh=2ca146205d9f82b88ac864f7aab341b6&oe=5FE9E116",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Crash Team Racing Nitro fueled Nintendo Switch",
+      "link": "https://www.facebook.com/marketplace/item/376309100146960",
+      "price": "$25.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.29.261.261a/p261x260/128529443_3608891232524341_2685480351009940814_o.jpg?_nc_cat=100&ccb=2&_nc_sid=843cd7&_nc_ohc=TXEEyISHLGUAX-nVdDJ&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=24edd2f137d1015672d29ddd94d7a8e9&oe=5FE86005",
+      "keywords": [
+        "switch"
+      ]
+    },
+    {
+      "title": "Mando Nintendo Switch de Cable",
+      "link": "https://www.facebook.com/marketplace/item/982708685550440",
+      "price": "$20.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c44.0.260.260a/p261x260/125885776_3624623530927494_3251294226815169590_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=CCsBJtUswa4AX_vyzwY&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=e944d5e5d29e9c1915df8b8ba3aa0035&oe=5FE84A19",
+      "keywords": [
+        "switch"
+      ]
+    }
+  ],
+  "last_update": {
+    "date": "11/29/2020, 5:53:01 PM",
+    "receivers": [
+      "Falsedad"
+    ],
+    "data": [
+      {
+        "title": "Mando Nintendo Switch de Cable",
+        "link": "https://www.facebook.com/marketplace/item/982708685550440",
+        "price": "$20.000",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c44.0.260.260a/p261x260/125885776_3624623530927494_3251294226815169590_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=CCsBJtUswa4AX_vyzwY&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=e944d5e5d29e9c1915df8b8ba3aa0035&oe=5FE84A19",
+        "keywords": [
+          "switch"
+        ]
+      }
+    ]
+  },
+  "active": true,
+  "lastExecutionDuration": "475.621 ms "
+},{
+  "_id": {
+    "$oid": "5fc015600cfb254f94d1d497"
+  },
+  "name": "Comoda Facebook Coquimbo",
+  "url": "https://www.facebook.com/marketplace/105686679466017/search/?query=comoda",
+  "query": "facebook_marketplace",
+  "dynamic": true,
+  "keywords": [
+    "comoda"
+  ],
+  "data": [
+    {
+      "title": "Se vende comoda 5 cajones 60x40x100 cm - NUEVA",
+      "link": "https://www.facebook.com/marketplace/item/202400377872005",
+      "price": "$60.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/110174107_10224058788763248_4792196795597148476_n.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=PjsrpgpcLQ4AX_WqAjp&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=40a2907047508337ceee6ed448ff69f4&oe=5FE79583",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda rustica nueva",
+      "link": "https://www.facebook.com/marketplace/item/249127569703134",
+      "price": "$50.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c26.0.260.260a/p261x260/78105380_2981687591898474_413498092386516992_n.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=W23j5r-kPcQAX_C-bSE&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=ecd7566bce37c2a9f6acb7c5e5121f60&oe=5FE707A0",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda doble rustica nueva",
+      "link": "https://www.facebook.com/marketplace/item/3024278624324121",
+      "price": "$120.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c94.0.260.260a/p261x260/103947746_2997308707003029_5460445973982980398_n.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=TyVvUXuzJRwAX-FX7dj&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=ae765f6c7f1b3e5581aa36ed4748840e&oe=5FE3F8E1",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "comoda rustica nueva",
+      "link": "https://www.facebook.com/marketplace/item/921234318407995",
+      "price": "$50.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c17.0.260.260a/p261x260/126502058_3463817423685486_6293561576475741887_n.jpg?_nc_cat=111&ccb=2&_nc_sid=843cd7&_nc_ohc=RdPURe2WEYkAX9TF_lM&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=fdec2c6d9f4b711d42869cc81a7c78c7&oe=5FE4E852",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda 5",
+      "link": "https://www.facebook.com/marketplace/item/379452453479400",
+      "price": "$95.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.350.1003.1003a/s261x260/125250807_3834746409870191_4829775351318966404_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=OP9A680xQGoAX9lHKpq&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=8da39f058550d0732f3f78af0ce0f36c&oe=5FE5EB5F",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Linda comoda",
+      "link": "https://www.facebook.com/marketplace/item/495765341217734",
+      "price": "$135.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.86.780.780a/s261x260/83427799_1604860633009607_2798209336652939676_o.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=PNLRd8GDsnYAX_myHnn&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=7a6a5f18efe3f54764237cdb2cc3ae33&oe=5FE3E61D",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda rustica",
+      "link": "https://www.facebook.com/marketplace/item/2808068562762264",
+      "price": "$100.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/127211042_447737226592930_8791175823054316898_n.jpg?_nc_cat=107&ccb=2&_nc_sid=843cd7&_nc_ohc=aFQLUIirrkUAX-C809X&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=19a1ac122b7fbc5b2c8d10095c676227&oe=5FE4FC9C",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda doble 8 cajones",
+      "link": "https://www.facebook.com/marketplace/item/598835574202558",
+      "price": "$170.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c101.0.260.260a/p261x260/126348212_446893880010598_2831646996587503867_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=m66WGQUrHG8AX-hUddd&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=8d75765b32f1247069c262c1b5970bdf&oe=5FE46171",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "comodas rusticas nuevas",
+      "link": "https://www.facebook.com/marketplace/item/388551519245949",
+      "price": "$1.111",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c17.0.260.260a/p261x260/125796958_3468076653259563_2574915215889744140_n.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=tkpcQjZzcikAX8pj14d&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=5b03c5732490500ce99ff55de71a8148&oe=5FE3FC31",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comodas dobles rusticas nuevas ",
+      "link": "https://www.facebook.com/marketplace/item/265017731371287",
+      "price": "$11.111",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c94.0.260.260a/p261x260/102770279_2987278424672724_665427558028508428_n.jpg?_nc_cat=106&ccb=2&_nc_sid=843cd7&_nc_ohc=zxQU3cPQ73MAX-7_S8b&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=abf691c9959d3c01225175937ba26424&oe=5FE6C7E5",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda",
+      "link": "https://www.facebook.com/marketplace/item/377705313580212",
+      "price": "$30.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/123634085_1535600629964661_2216167601240658795_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=BFO4NarUxW4AX_XMn1-&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=886bd1b0899ddef194d0d5534c098a24&oe=5FE47473",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comodas dobles rusticas nuevas",
+      "link": "https://www.facebook.com/marketplace/item/2775994642631686",
+      "price": "$11.111",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c52.0.260.260a/p261x260/107295052_3066760086724557_2865329466320346512_n.jpg?_nc_cat=101&ccb=2&_nc_sid=843cd7&_nc_ohc=wb8eFrYjT2gAX-Rs-qT&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=56f1307a66fc8dd89a131e9b2d1e2f65&oe=5FE65C05",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "MUEBLES A  CRÉDITOS , COMODAS DESPENSAS O BAÑO",
+      "link": "https://www.facebook.com/marketplace/item/723640411559535",
+      "price": "GRATIS",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.139.539.539a/s261x260/122579828_2862711904045913_4897282168062607341_n.jpg?_nc_cat=109&ccb=2&_nc_sid=843cd7&_nc_ohc=rQKk-vBh3eAAX-YDmnK&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=e1c33e8411b5d379c040f09117387168&oe=5FE8CF1C",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Cama y comoda",
+      "link": "https://www.facebook.com/marketplace/item/170681167952201",
+      "price": "$80.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.96.960.960a/s261x260/128310239_851052458981997_4746982636417283024_o.jpg?_nc_cat=110&ccb=2&_nc_sid=843cd7&_nc_ohc=k2zHLTIeK1EAX9T1Vew&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=edd5fc79deae790559bdbce4751e5e3c&oe=5FE669E4",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda 7",
+      "link": "https://www.facebook.com/marketplace/item/724226081467622",
+      "price": "$135.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.350.1003.1003a/s261x260/119896294_3655088831169284_2595198945205368805_o.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=ZFUM_zhf0qIAX8BT6l5&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=ceaa4595c1a1c070dfe369bc588cc76d&oe=5FE85222",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "comoda rustica doble",
+      "link": "https://www.facebook.com/marketplace/item/1266931177026968",
+      "price": "$100.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c107.0.260.260a/p261x260/126805579_3463853997015162_2501472783672779490_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=eXfsbzHad5IAX8Exhqq&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=450c4bb7314470027307da37792dcf06&oe=5FEA0D95",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda 125 x 90x  42",
+      "link": "https://www.facebook.com/marketplace/item/1885656478250981",
+      "price": "$120.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.232.576.576a/s261x260/127217028_10223071020897329_3980296345666048327_o.jpg?_nc_cat=104&ccb=2&_nc_sid=843cd7&_nc_ohc=Us7XUcDD7E0AX-RuXPh&_nc_ht=scontent.fscl19-1.fna&_nc_tp=28&oh=3cc0cea4a139f4f2137802605529f486&oe=5FE9AB45",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda para niña",
+      "link": "https://www.facebook.com/marketplace/item/377705313580212",
+      "price": "$25.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c43.0.260.260a/p261x260/123634085_1535600629964661_2216167601240658795_o.jpg?_nc_cat=102&ccb=2&_nc_sid=843cd7&_nc_ohc=_HOA4gFh0wYAX9EjVpT&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=6bb792a0e80c7abd84c0c38bfbdf954e&oe=5FE868F3",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Closet y comoda",
+      "link": "https://www.facebook.com/marketplace/item/296447421660324",
+      "price": "$65.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.94.256.256a/p180x540/128370930_3763009730376835_7725073279371134661_o.jpg?_nc_cat=105&ccb=2&_nc_sid=843cd7&_nc_ohc=cVF-AlgBnI4AX8Lumj8&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=abe76a1f9eea9b8b94e2cab7c29b5cf4&oe=5FE9E702",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "comoda doble nueva rustica",
+      "link": "https://www.facebook.com/marketplace/item/789606095221552",
+      "price": "$120.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c82.0.260.260a/p261x260/127669560_3489777257756169_3416911306327544498_n.jpg?_nc_cat=108&ccb=2&_nc_sid=843cd7&_nc_ohc=w9Lp8X1WAFQAX-OiCQ2&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=7223f1fd5adada5e6803c9b998800b4e&oe=5FEB4352",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comodas",
+      "link": "https://www.facebook.com/marketplace/item/2757889234473764",
+      "price": "$10.000",
+      "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.30.261.260a/p235x350/128681735_1527988944075797_8436197138125859364_o.jpg?_nc_cat=109&ccb=2&_nc_sid=825194&_nc_ohc=aWiHN8UXCegAX_icTkW&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=5110b5cd2f3624dc43009e481127d005&oe=5FE96FEC",
+      "keywords": [
+        "comoda"
+      ]
+    }
+  ],
+  "last_update": {
+    "date": "11/29/2020, 9:09:21 PM",
+    "receivers": [
+      "TU ELE MALO ENRI"
+    ],
+    "data": [
+      {
+        "title": "Comodas",
+        "link": "https://www.facebook.com/marketplace/item/2757889234473764",
+        "price": "$10.000",
+        "image": "https://scontent.fscl19-1.fna.fbcdn.net/v/t1.0-0/c0.30.261.260a/p235x350/128681735_1527988944075797_8436197138125859364_o.jpg?_nc_cat=109&ccb=2&_nc_sid=825194&_nc_ohc=aWiHN8UXCegAX_icTkW&_nc_ht=scontent.fscl19-1.fna&tp=27&oh=5110b5cd2f3624dc43009e481127d005&oe=5FE96FEC",
+        "keywords": [
+          "comoda"
+        ]
+      }
+    ]
+  },
+  "active": true,
+  "lastExecutionDuration": "255.766 ms "
+},{
+  "_id": {
+    "$oid": "5fc015600cfb254f94d1d499"
+  },
+  "name": "Comoda Yapo Coquimbo",
+  "url": "https://www.yapo.cl/coquimbo/muebles?ca=5_s&l=0&q=comoda&w=1&cmn=",
+  "encoding": "latin1",
+  "query": "* > td.thumbs_subject > a",
+  "image_query": "* > td.listing_thumbs_image > div > div > div > img",
+  "link_query": "* > td.thumbs_subject > a.redirect-to-url",
+  "price_query": "* > td.thumbs_subject | module.exports = $(elem).find('span').text();",
+  "keywords": [
+    "comoda"
+  ],
+  "dynamic": false,
+  "data": [
+    {
+      "title": "Comoda 3 cajones",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda velador",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comodas Rusticas nuevas de 8 cajones!",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda buen estado",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda de pino de oregon",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Rack comoda ",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Compro comoda de 1mt de largo x 60 ancho",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "comoda",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Necesito comoda o closet",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda / cajonera",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Cajonera o comoda",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Rack pino oregon y comoda blanca",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda nina",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda normando vintage",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda infantil ",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comodas Rusticas Nuevas! Despacho graris",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Cama y comoda",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Escritorio comoda o licorera",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Compro respaldo , veladores y comoda",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda estilo Normando",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda rustica",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda ",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda modelo Venecia, nueva entrega a domicilio",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda rustica doble",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda Soy Luna",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda para ropa",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda y mueble de cocina",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda Gold,calidad y resistencia, nuevas",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda grande",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "comoda infantil nina Minnie ",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda de madera",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda de 6 cajones",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda antigua",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda - EXCELENTE ESTADO - Reparto a Domicilio",
+      "keywords": [
+        "comoda"
+      ],
+      "price": "",
+      "image": "https://via.placeholder.com/140x100",
+      "link": "https://www.yapo.cl/coquimbo/muebles?ca=5_s&l=0&q=comoda&w=1&cmn="
+    },
+    {
+      "title": "Comoda, varios ",
+      "keywords": [
+        "comoda"
+      ],
+      "price": "",
+      "image": "https://via.placeholder.com/140x100",
+      "link": "https://www.yapo.cl/coquimbo/muebles?ca=5_s&l=0&q=comoda&w=1&cmn="
+    },
+    {
+      "title": "Comoda 3 cajones de madera 65.000",
+      "image": "https://img.yapo.cl/thumbsli/95/9500609234.jpg",
+      "link": "https://www.yapo.cl/coquimbo/muebles/comoda_3_cajones_de_madera_65_000_75642264.htm?ca=5_s&first=1&oa=75642264&xsp=0",
+      "price": "$65.000",
+      "keywords": [
+        "comoda"
+      ]
+    },
+    {
+      "title": "Comoda 3 cajones de madera 45.000",
+      "image": "https://img.yapo.cl/thumbsli/95/9534598366.jpg",
+      "link": "https://www.yapo.cl/coquimbo/muebles/comoda_3_cajones_de_madera_45_000_75642227.htm?ca=5_s&oa=75642227&xsp=1",
+      "price": "$45.000",
+      "keywords": [
+        "comoda"
+      ]
+    }
+  ],
+  "last_update": {
+    "date": "11/29/2020, 8:38:01 PM",
+    "receivers": [
+      "TU ELE MALO ENRI"
+    ],
+    "data": [
+      {
+        "title": "Comoda 3 cajones de madera 65.000",
+        "image": "https://img.yapo.cl/thumbsli/95/9500609234.jpg",
+        "link": "https://www.yapo.cl/coquimbo/muebles/comoda_3_cajones_de_madera_65_000_75642264.htm?ca=5_s&first=1&oa=75642264&xsp=0",
+        "price": "$65.000",
+        "keywords": [
+          "comoda"
+        ]
+      },
+      {
+        "title": "Comoda 3 cajones de madera 45.000",
+        "image": "https://img.yapo.cl/thumbsli/95/9534598366.jpg",
+        "link": "https://www.yapo.cl/coquimbo/muebles/comoda_3_cajones_de_madera_45_000_75642227.htm?ca=5_s&oa=75642227&xsp=1",
+        "price": "$45.000",
+        "keywords": [
+          "comoda"
+        ]
+      }
+    ]
+  },
+  "active": true,
+  "lastExecutionDuration": "560.303 ms "
+}]

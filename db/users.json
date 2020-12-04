@@ -1,7 +1,4 @@
 [{
-  "_id": {
-    "$oid": "5eca0c62f5ea751c9c12df2b"
-  },
   "name": "Julio",
   "email": "jlabarca25@gmail.com",
   "active": true,
@@ -16,4 +13,33 @@
     "5ed00bb408d9e6b1485c8acc",
     "5ee1288bcb6c5442558a5e82"
   ]
-}]
+},
+{
+  "name": "Asqueroso",
+  "email": "juanflea@gmail.com",
+  "active": true,
+  "snapshots_ids": [
+    "5fc015600cfb254f94d1d492",
+    "5fc015600cfb254f94d1d493",
+    "5fc015600cfb254f94d1d494",
+    "5fc015600cfb254f94d1d495"
+  ]
+},
+{
+  "name": "TU ELE MALO ENRI",
+  "email": "a.e.osorio.pinto@gmail.com, armando.osorio2@outlook.es",
+  "active": true,
+  "snapshots_ids": [
+    "5fc015600cfb254f94d1d497",
+    "5fc015600cfb254f94d1d499"
+  ]
+},
+{
+  "name": "Falsedad",
+  "email": "ps.diego.r.cortes@gmail.com, diebolainas@gmail.com",
+  "active": true,
+  "snapshots_ids": [
+    "5fc015600cfb254f94d1d496"
+  ]
+}
+]
