@@ -1,6 +1,7 @@
 # Falco Web Scraper
 
-The idea is to given an specfic URL be able to scrap data and detect changes.
+Configurable web scraper
+Cheerio - Nightmarejs - MongoDB
 
 # To Do:
 
@@ -14,10 +15,9 @@ The idea is to given an specfic URL be able to scrap data and detect changes.
 - [ ] Typescript
  
  # Database
- Uses Mongodb, reads connection string from ./db.config
- database structure inside /db folder
-
- configuration, snapshots and users are collections
+ Mongo reads connection string from ./db.config
+ 
+ Database structure sample inside /db folder, a db with configuration, snapshots and users collections is required
 
  # Dynamic web scraper
 
